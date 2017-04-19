@@ -13,6 +13,10 @@ import SVProgressHUD
 
 class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var firstContainerView: UIView!
+    @IBOutlet weak var secondContainerView: UIView!
+    @IBOutlet weak var thirdContainerView: UIView!
+    @IBOutlet weak var fourthContainerView: UIView!
     
     @IBOutlet weak var menuView: UIView!
     
@@ -43,8 +47,14 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         let selectedIndexPath = IndexPath(item: 0, section: 0)
         menuCollection.selectItem(at: selectedIndexPath, animated: false, scrollPosition: UICollectionViewScrollPosition())
         
+        //ㄧ進來就先選firstContainerView
+        firstContainerView.isHidden = false
+        secondContainerView.isHidden = true
+        thirdContainerView.isHidden = true
+        fourthContainerView.isHidden = true
+        
         navigationController?.hidesBarsOnSwipe = true
-        navigationItem.title = "1234"
+        navigationItem.title = "達人分享"
         setupHorizontalBar()
         
     }
@@ -213,32 +223,36 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         //決定要顯示哪一頁
         switch page
         {
-        case 0:
-            hostContainerView.isHidden = false
-            applyContainerView.isHidden = true
-        case 1:
-            hostContainerView.isHidden = true
-            applyContainerView.isHidden = false
-        case 2:
-            hostContainerView.isHidden = true
-            applyContainerView.isHidden = false
-        case 3:
-            hostContainerView.isHidden = true
-            applyContainerView.isHidden = false
-        default:
-            break
+            case 0:
+                firstContainerView.isHidden = false
+                secondContainerView.isHidden = true
+                thirdContainerView.isHidden = true
+                fourthContainerView.isHidden = true
+                navigationItem.title = "達人分享"
+            case 1:
+                firstContainerView.isHidden = true
+                secondContainerView.isHidden = false
+                thirdContainerView.isHidden = true
+                fourthContainerView.isHidden = true
+                navigationItem.title = "留學說明會"
+            case 2:
+                firstContainerView.isHidden = true
+                secondContainerView.isHidden = true
+                thirdContainerView.isHidden = false
+                fourthContainerView.isHidden = true
+                navigationItem.title = "學校面對面"
+            case 3:
+                firstContainerView.isHidden = true
+                secondContainerView.isHidden = true
+                thirdContainerView.isHidden = true
+                fourthContainerView.isHidden = false
+                navigationItem.title = "英語證照"
+            default:
+                break
         }
-        
-        
-        
         
     }
     
-    //collectionView有內建方法可以指定移動到indexPath
-//    func scrollToMenuIndex(_ menuIndex: Int) {
-//        let indexPath = IndexPath(item: menuIndex, section: 0)
-//        collectionView?.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition(), animated: true)
-//    }
 
     
 
