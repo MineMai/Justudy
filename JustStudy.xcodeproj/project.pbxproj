@@ -13,7 +13,6 @@
 		110CCA561EA3215B00F6BCAF /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110CCA551EA3215B00F6BCAF /* SignUpVC.swift */; };
 		110CCA581EA34D2600F6BCAF /* MenuTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110CCA571EA34D2600F6BCAF /* MenuTBVC.swift */; };
 		110CCA5A1EA3C4F100F6BCAF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110CCA591EA3C4F100F6BCAF /* Model.swift */; };
-		110CCA5C1EA476FF00F6BCAF /* MainCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110CCA5B1EA476FE00F6BCAF /* MainCollectionCell.swift */; };
 		110CCAA81EA5F92900F6BCAF /* MenuCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110CCAA71EA5F92900F6BCAF /* MenuCollectionCell.swift */; };
 		11C152591EA1FE7E00403394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C152581EA1FE7E00403394 /* AppDelegate.swift */; };
 		11C1525E1EA1FE7E00403394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C1525C1EA1FE7E00403394 /* Main.storyboard */; };
@@ -36,7 +35,6 @@
 		110CCA551EA3215B00F6BCAF /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		110CCA571EA34D2600F6BCAF /* MenuTBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTBVC.swift; sourceTree = "<group>"; };
 		110CCA591EA3C4F100F6BCAF /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		110CCA5B1EA476FE00F6BCAF /* MainCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionCell.swift; sourceTree = "<group>"; };
 		110CCAA71EA5F92900F6BCAF /* MenuCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionCell.swift; sourceTree = "<group>"; };
 		113E8DCB46BA3CA96A0FD6BD /* Pods-JustStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustStudy/Pods-JustStudy.release.xcconfig"; sourceTree = "<group>"; };
 		11C152551EA1FE7E00403394 /* JustStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,7 +137,6 @@
 				110CCA551EA3215B00F6BCAF /* SignUpVC.swift */,
 				110CCA571EA34D2600F6BCAF /* MenuTBVC.swift */,
 				11C152711EA2305200403394 /* MainVC.swift */,
-				110CCA5B1EA476FE00F6BCAF /* MainCollectionCell.swift */,
 				110CCAA71EA5F92900F6BCAF /* MenuCollectionCell.swift */,
 			);
 			name = Controller;
@@ -294,7 +291,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				110CCAA81EA5F92900F6BCAF /* MenuCollectionCell.swift in Sources */,
-				110CCA5C1EA476FF00F6BCAF /* MainCollectionCell.swift in Sources */,
 				110CCA561EA3215B00F6BCAF /* SignUpVC.swift in Sources */,
 				110CCA541EA31BC200F6BCAF /* FireBaseHandler.swift in Sources */,
 				11C152611EA1FE7E00403394 /* JustStudy.xcdatamodeld in Sources */,

@@ -18,8 +18,6 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     
     @IBOutlet weak var menuBarOutlet: UIBarButtonItem!
     
-    @IBOutlet weak var collectionView: UICollectionView!
-    
     @IBOutlet weak var menuCollection: UICollectionView!
     
     let menuIconNames = ["Menuhome", "Menutrending", "Menusubscriptions", "Menuaccount"]
@@ -30,8 +28,6 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.delegate = self
-        collectionView.dataSource = self
         menuCollection.delegate = self
         menuCollection.dataSource = self
         
@@ -50,16 +46,6 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         navigationController?.hidesBarsOnSwipe = true
         navigationItem.title = "1234"
         setupHorizontalBar()
-        
-        //************
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "CellID")
-        if let flow = collectionView.collectionViewLayout as?UICollectionViewFlowLayout
-        {
-            flow.scrollDirection = .horizontal
-            flow.minimumLineSpacing = 0
-        }
-        collectionView.isPagingEnabled = true
-        //************
         
     }
     
@@ -167,83 +153,35 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        
-        if collectionView == menuCollection
-        {
-            return 1
-        }
-        else
-        {
-            return 1
-        }
-        
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        if collectionView == menuCollection
-        {
-            return 4
-        }
-        else
-        {
-            return 4
-        }
-        
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if collectionView == menuCollection
-        {
-            let menucell = menuCollection.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: indexPath) as! MenuCollectionCell
-            menucell.menuIcon.image = UIImage(named: menuIconNames[indexPath.row])?.withRenderingMode(.alwaysTemplate)
-            menucell.tintColor = UIColor(red: 0.356, green: 0.054, blue: 0.05, alpha: 1.0)
-            menucell.backgroundColor = UIColor.red
-            return menucell
-        }
-        else
-        {
-            //let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MainCollectionCell
-            //cell.backgroundColor = UIColor.red
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellID", for: indexPath)
-            
-            let color:[UIColor] = [UIColor.blue, UIColor.brown, UIColor.darkGray, UIColor.green]
-            cell.backgroundColor = color[indexPath.row]
-            return cell
-        }
+        let menucell = menuCollection.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: indexPath) as! MenuCollectionCell
+        menucell.menuIcon.image = UIImage(named: menuIconNames[indexPath.row])?.withRenderingMode(.alwaysTemplate)
+        menucell.tintColor = UIColor(red: 0.356, green: 0.054, blue: 0.05, alpha: 1.0)
+        menucell.backgroundColor = UIColor.red
+        return menucell
+        
     }
     
     
     //CollectionView 內建就有scrollView的這方法
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
         print(scrollView.contentOffset.x)
         horizontalBarLeftAnchorConstraint?.constant = scrollView.contentOffset.x / 4
     }
     
     
-    
     //MARK: - collectionView Layout
     //有簽協定UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        if collectionView == menuCollection
-        {
-            return CGSize(width: view.frame.width / 4, height: view.frame.height)
-        }
-        else
-        {
-            //return CGSize(width: view.frame.width, height: 320)
-            return CGSize(width: view.frame.width, height: view.frame.height)
-        }
-    }
-    
-    //可以利用下面大的collectionView滑動結束後的位置，來決定上面小collectionView的位置
-    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        let index = targetContentOffset.pointee.x / view.frame.width
-        let indexPath = IndexPath(item: Int(index), section: 0)
-        menuCollection.selectItem(at: indexPath, animated: true, scrollPosition: .bottom)
+        return CGSize(width: view.frame.width / 4, height: view.frame.height)
     }
     
     
@@ -264,28 +202,43 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        if collectionView == menuCollection
+        let x = CGFloat(indexPath.item) * menuView.frame.width / 4
+        horizontalBarLeftAnchorConstraint?.constant = x
+        
+        UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping:1, initialSpringVelocity: 1, options: .curveEaseOut, animations:{
+                self.menuView.layoutIfNeeded()
+            }, completion: nil)
+        
+        let page = indexPath.item
+        //決定要顯示哪一頁
+        switch page
         {
-//            let x = CGFloat(indexPath.item) * menuView.frame.width / 4
-//            horizontalBarLeftAnchorConstraint?.constant = x
-//            
-//            UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
-//                self.menuView.layoutIfNeeded()
-//            }, completion: nil)
-            scrollToMenuIndex(indexPath.row)
+        case 0:
+            hostContainerView.isHidden = false
+            applyContainerView.isHidden = true
+        case 1:
+            hostContainerView.isHidden = true
+            applyContainerView.isHidden = false
+        case 2:
+            hostContainerView.isHidden = true
+            applyContainerView.isHidden = false
+        case 3:
+            hostContainerView.isHidden = true
+            applyContainerView.isHidden = false
+        default:
+            break
         }
-        else
-        {
-            //原collectionView要做的事
-        }
+        
+        
+        
         
     }
     
     //collectionView有內建方法可以指定移動到indexPath
-    func scrollToMenuIndex(_ menuIndex: Int) {
-        let indexPath = IndexPath(item: menuIndex, section: 0)
-        collectionView?.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition(), animated: true)
-    }
+//    func scrollToMenuIndex(_ menuIndex: Int) {
+//        let indexPath = IndexPath(item: menuIndex, section: 0)
+//        collectionView?.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition(), animated: true)
+//    }
 
     
 
