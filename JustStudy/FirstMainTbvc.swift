@@ -18,10 +18,17 @@ class FirstMainTbvc: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-
     
-
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        //self.tabBarController?.tabBar.isHidden = true
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -44,6 +51,12 @@ class FirstMainTbvc: UITableViewController {
         cell.firstImageView.image = UIImage(named: testdata.posts[indexPath.row]["image"]!)
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tabBarController?.tabBar.isHidden = true
+        let _ = performSegue(withIdentifier: "firstShowSegue", sender: nil)
+        
     }
     
 

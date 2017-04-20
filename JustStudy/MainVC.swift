@@ -53,7 +53,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         thirdContainerView.isHidden = true
         fourthContainerView.isHidden = true
         
-        navigationController?.hidesBarsOnSwipe = true
+        //navigationController?.hidesBarsOnSwipe = true
         navigationItem.title = "達人分享"
         setupHorizontalBar()
         
@@ -72,7 +72,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     func checkWhoLogin()
     {
         let currentID = FIRAuth.auth()?.currentUser?.uid
-        print("主頁currentUser = \(currentID ?? "") \n")
+        //print("主頁currentUser = \(currentID ?? "") \n")
         
         if let user = FIRAuth.auth()?.currentUser
         {
@@ -111,7 +111,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
             }
         }
         else {
-            print("無使用者登入")
+            //print("無使用者登入")
         }
     }
     

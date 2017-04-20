@@ -17,6 +17,7 @@
 		114E3A111EA8BD8400897B0E /* FirstMainTbvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A101EA8BD8400897B0E /* FirstMainTbvc.swift */; };
 		114E3A131EA8BDA700897B0E /* FirstMainTbvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A121EA8BDA700897B0E /* FirstMainTbvCell.swift */; };
 		114E3A151EA8C61900897B0E /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A141EA8C61800897B0E /* TestModel.swift */; };
+		114E3A171EA8D1AF00897B0E /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A161EA8D1AF00897B0E /* FirstVC.swift */; };
 		11C152591EA1FE7E00403394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C152581EA1FE7E00403394 /* AppDelegate.swift */; };
 		11C1525E1EA1FE7E00403394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C1525C1EA1FE7E00403394 /* Main.storyboard */; };
 		11C152611EA1FE7E00403394 /* JustStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11C1525F1EA1FE7E00403394 /* JustStudy.xcdatamodeld */; };
@@ -43,6 +44,7 @@
 		114E3A101EA8BD8400897B0E /* FirstMainTbvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstMainTbvc.swift; sourceTree = "<group>"; };
 		114E3A121EA8BDA700897B0E /* FirstMainTbvCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstMainTbvCell.swift; sourceTree = "<group>"; };
 		114E3A141EA8C61800897B0E /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		114E3A161EA8D1AF00897B0E /* FirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		11C152551EA1FE7E00403394 /* JustStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C152581EA1FE7E00403394 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11C1525D1EA1FE7E00403394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				114E3A101EA8BD8400897B0E /* FirstMainTbvc.swift */,
 				114E3A121EA8BDA700897B0E /* FirstMainTbvCell.swift */,
+				114E3A161EA8D1AF00897B0E /* FirstVC.swift */,
 			);
 			name = MainTBVC;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				11C152591EA1FE7E00403394 /* AppDelegate.swift in Sources */,
 				110CCA4B1EA316F900F6BCAF /* Reachability.m in Sources */,
 				114E3A111EA8BD8400897B0E /* FirstMainTbvc.swift in Sources */,
+				114E3A171EA8D1AF00897B0E /* FirstVC.swift in Sources */,
 				11C152701EA2303700403394 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
