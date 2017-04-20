@@ -38,10 +38,10 @@ class FirstMainTbvc: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FirstMainTbvCell", for: indexPath) as! FirstMainTbvCell
         
-        cell.firstTopicLabel.text = "AAA"
-        cell.firstTimeLabel.text = "BBB"
-        cell.firstPlaceLabel.text = "CCC"
-        cell.firstImageView.image = UIImage(named: "picture_placeholder")
+        cell.firstTopicLabel.text = testdata.posts[indexPath.row]["topic"]
+        cell.firstTimeLabel.text = testdata.posts[indexPath.row]["time"]
+        cell.firstPlaceLabel.text = testdata.posts[indexPath.row]["place"]
+        cell.firstImageView.image = UIImage(named: testdata.posts[indexPath.row]["image"]!)
 
         return cell
     }

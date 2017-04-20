@@ -772,6 +772,24 @@
             </objects>
             <point key="canvasLocation" x="4096.8000000000002" y="235.23238380809596"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="1Sv-U2-WWa">
+            <objects>
+                <viewController id="r9G-Hy-D3r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0rk-7j-qH3"/>
+                        <viewControllerLayoutGuide type="bottom" id="c6u-7P-X9W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BwI-Ha-5qU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="par-hv-wdk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5012" y="235"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="H5U-kJ-hcV">
             <objects>
@@ -862,7 +880,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnSwipe="YES" id="NPk-T2-xjU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="G6X-8E-ZrF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="YjH-VH-u8N">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YjH-VH-u8N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
