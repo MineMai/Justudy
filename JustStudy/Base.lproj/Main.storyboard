@@ -656,6 +656,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="279.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellBackground1" translatesAutoresizingMaskIntoConstraints="NO" id="OVJ-Xo-tSQ">
+                                            <rect key="frame" x="0.0" y="200" width="375" height="80"/>
+                                        </imageView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LqY-Gu-dV3">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                             <constraints>
@@ -729,16 +732,9 @@
                                                 <constraint firstItem="Hq6-lN-Gcb" firstAttribute="leading" secondItem="nBg-lL-2ap" secondAttribute="leading" id="ltg-n3-EbL"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8C-gz-fOe">
-                                            <rect key="frame" x="0.0" y="277.5" width="375" height="2"/>
-                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="2" id="1g4-Vy-Vi1"/>
-                                            </constraints>
-                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="F8C-gz-fOe" firstAttribute="leading" secondItem="hK0-UJ-0Qi" secondAttribute="leading" id="3Qv-hg-WoI"/>
+                                        <constraint firstAttribute="trailing" secondItem="OVJ-Xo-tSQ" secondAttribute="trailing" id="05p-PZ-3hn"/>
                                         <constraint firstItem="0fx-uq-mgE" firstAttribute="leading" secondItem="hK0-UJ-0Qi" secondAttribute="leading" constant="8" id="5IE-qz-MQf"/>
                                         <constraint firstItem="rpq-gy-XRq" firstAttribute="centerY" secondItem="0fx-uq-mgE" secondAttribute="centerY" id="5lf-dx-kJf"/>
                                         <constraint firstAttribute="trailing" secondItem="rpq-gy-XRq" secondAttribute="trailing" constant="20" id="Abi-gQ-meH"/>
@@ -746,10 +742,10 @@
                                         <constraint firstAttribute="trailing" secondItem="nBg-lL-2ap" secondAttribute="trailing" constant="5" id="CBn-eB-WQr"/>
                                         <constraint firstItem="B60-Qp-YHE" firstAttribute="leading" secondItem="2OS-aP-uEY" secondAttribute="trailing" constant="8" id="Ogn-dM-48w"/>
                                         <constraint firstAttribute="trailing" secondItem="LqY-Gu-dV3" secondAttribute="trailing" id="Q8j-F9-roD"/>
+                                        <constraint firstItem="OVJ-Xo-tSQ" firstAttribute="top" secondItem="LqY-Gu-dV3" secondAttribute="bottom" id="WPn-YN-qiF"/>
                                         <constraint firstItem="nBg-lL-2ap" firstAttribute="top" secondItem="hK0-UJ-0Qi" secondAttribute="top" constant="5" id="Wsq-n4-5ME"/>
-                                        <constraint firstAttribute="trailing" secondItem="F8C-gz-fOe" secondAttribute="trailing" id="Wuy-Jh-Yiv"/>
                                         <constraint firstItem="brN-rq-U2N" firstAttribute="leading" secondItem="Nca-4V-Shu" secondAttribute="trailing" constant="8" id="XXd-Fj-AzZ"/>
-                                        <constraint firstAttribute="bottom" secondItem="F8C-gz-fOe" secondAttribute="bottom" id="aj6-MY-bi5"/>
+                                        <constraint firstItem="OVJ-Xo-tSQ" firstAttribute="leading" secondItem="hK0-UJ-0Qi" secondAttribute="leading" id="Xpe-ok-U43"/>
                                         <constraint firstItem="brN-rq-U2N" firstAttribute="centerY" secondItem="Nca-4V-Shu" secondAttribute="centerY" id="d43-hV-Now"/>
                                         <constraint firstAttribute="trailing" secondItem="brN-rq-U2N" secondAttribute="trailing" constant="20" id="hDM-ZK-f9c"/>
                                         <constraint firstItem="Nca-4V-Shu" firstAttribute="top" secondItem="LqY-Gu-dV3" secondAttribute="bottom" constant="5" id="hjr-9N-w8T"/>
@@ -783,7 +779,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ArF-7U-eV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4598" y="240"/>
+            <point key="canvasLocation" x="4597.6000000000004" y="239.73013493253376"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1Sv-U2-WWa">
@@ -1186,6 +1182,7 @@
         <image name="OrLine" width="864" height="45"/>
         <image name="back" width="128" height="128"/>
         <image name="booking" width="30" height="28"/>
+        <image name="cellBackground1" width="375" height="80"/>
         <image name="chat" width="30" height="30"/>
         <image name="facebook" width="512" height="512"/>
         <image name="google" width="512" height="512"/>
