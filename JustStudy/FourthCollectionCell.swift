@@ -12,5 +12,15 @@ class FourthCollectionCell: UICollectionViewCell {
     
     @IBOutlet weak var heroImage: UIImageView!
     
+    @IBOutlet weak var heroBackImage: UIImageView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        let layer = heroImage?.layer
+        layer?.cornerRadius = 100
+        layer?.masksToBounds = true
+        
+    }
     
 }
