@@ -39,6 +39,7 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FourthCollectionCell", for: indexPath) as! FourthCollectionCell
         
         cell.heroImage.image = UIImage(named: testdata.posts[indexPath.row]["image"]!)
+        cell.heroBackImage.image = UIImage(named: testdata.posts[indexPath.row]["image"]!)
         
         return cell
     }

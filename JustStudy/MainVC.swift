@@ -54,7 +54,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         fourthContainerView.isHidden = true
         
         //navigationController?.hidesBarsOnSwipe = true
-        navigationItem.title = "達人分享"
+        navigationItem.title = "留學說明會"
         setupHorizontalBar()
         
     }
@@ -228,25 +228,25 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
                 secondContainerView.isHidden = true
                 thirdContainerView.isHidden = true
                 fourthContainerView.isHidden = true
-                navigationItem.title = "達人分享"
+                navigationItem.title = "留學說明會"
             case 1:
                 firstContainerView.isHidden = true
                 secondContainerView.isHidden = false
                 thirdContainerView.isHidden = true
                 fourthContainerView.isHidden = true
-                navigationItem.title = "留學說明會"
+                navigationItem.title = "學校面對面"
             case 2:
                 firstContainerView.isHidden = true
                 secondContainerView.isHidden = true
                 thirdContainerView.isHidden = false
                 fourthContainerView.isHidden = true
-                navigationItem.title = "學校面對面"
+                navigationItem.title = "英語證照"
             case 3:
                 firstContainerView.isHidden = true
                 secondContainerView.isHidden = true
                 thirdContainerView.isHidden = true
                 fourthContainerView.isHidden = false
-                navigationItem.title = "英語證照"
+                navigationItem.title = "達人分享"
             default:
                 break
         }

@@ -27,6 +27,9 @@
 		11A367581EAB1A85000BBAE2 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A367531EAB1A85000BBAE2 /* star.png */; };
 		11A3675A1EAB33FC000BBAE2 /* FirstDetailTbvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A367591EAB33FC000BBAE2 /* FirstDetailTbvc.swift */; };
 		11A3675C1EAB35FE000BBAE2 /* firstHeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3675B1EAB35FE000BBAE2 /* firstHeroCell.swift */; };
+		11A3675E1EAB5355000BBAE2 /* FirstMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3675D1EAB5355000BBAE2 /* FirstMapVC.swift */; };
+		11A367601EAB567C000BBAE2 /* ThirdMainTbvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3675F1EAB567C000BBAE2 /* ThirdMainTbvc.swift */; };
+		11A367661EAB5AC8000BBAE2 /* ThirdLicensTbvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A367651EAB5AC8000BBAE2 /* ThirdLicensTbvc.swift */; };
 		11C152591EA1FE7E00403394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C152581EA1FE7E00403394 /* AppDelegate.swift */; };
 		11C1525E1EA1FE7E00403394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C1525C1EA1FE7E00403394 /* Main.storyboard */; };
 		11C152611EA1FE7E00403394 /* JustStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11C1525F1EA1FE7E00403394 /* JustStudy.xcdatamodeld */; };
@@ -63,6 +66,9 @@
 		11A367531EAB1A85000BBAE2 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		11A367591EAB33FC000BBAE2 /* FirstDetailTbvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstDetailTbvc.swift; sourceTree = "<group>"; };
 		11A3675B1EAB35FE000BBAE2 /* firstHeroCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstHeroCell.swift; sourceTree = "<group>"; };
+		11A3675D1EAB5355000BBAE2 /* FirstMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstMapVC.swift; sourceTree = "<group>"; };
+		11A3675F1EAB567C000BBAE2 /* ThirdMainTbvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdMainTbvc.swift; sourceTree = "<group>"; };
+		11A367651EAB5AC8000BBAE2 /* ThirdLicensTbvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLicensTbvc.swift; sourceTree = "<group>"; };
 		11C152551EA1FE7E00403394 /* JustStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C152581EA1FE7E00403394 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11C1525D1EA1FE7E00403394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -130,8 +136,11 @@
 				114E3A161EA8D1AF00897B0E /* FirstVC.swift */,
 				11A367591EAB33FC000BBAE2 /* FirstDetailTbvc.swift */,
 				11A3675B1EAB35FE000BBAE2 /* firstHeroCell.swift */,
+				11A3675D1EAB5355000BBAE2 /* FirstMapVC.swift */,
 				114E3A181EA9086E00897B0E /* FourthVC.swift */,
 				114E3A1A1EA90C2400897B0E /* FourthCollectionCell.swift */,
+				11A3675F1EAB567C000BBAE2 /* ThirdMainTbvc.swift */,
+				11A367651EAB5AC8000BBAE2 /* ThirdLicensTbvc.swift */,
 			);
 			name = MainTBVC;
 			sourceTree = "<group>";
@@ -171,7 +180,6 @@
 				110CCA4E1EA3176300F6BCAF /* Model */,
 				110CCA4D1EA3175900F6BCAF /* View */,
 				11C152731EA2306800403394 /* Controller */,
-				11C152581EA1FE7E00403394 /* AppDelegate.swift */,
 			);
 			path = JustStudy;
 			sourceTree = "<group>";
@@ -179,12 +187,13 @@
 		11C152731EA2306800403394 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				114E3A0F1EA8BD4B00897B0E /* MainTBVC */,
+				11C152581EA1FE7E00403394 /* AppDelegate.swift */,
 				11C1526F1EA2303700403394 /* LoginVC.swift */,
 				110CCA551EA3215B00F6BCAF /* SignUpVC.swift */,
 				110CCA571EA34D2600F6BCAF /* MenuTBVC.swift */,
 				11C152711EA2305200403394 /* MainVC.swift */,
 				110CCAA71EA5F92900F6BCAF /* MenuCollectionCell.swift */,
+				114E3A0F1EA8BD4B00897B0E /* MainTBVC */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -341,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A3675E1EAB5355000BBAE2 /* FirstMapVC.swift in Sources */,
 				110CCAA81EA5F92900F6BCAF /* MenuCollectionCell.swift in Sources */,
 				110CCA561EA3215B00F6BCAF /* SignUpVC.swift in Sources */,
 				110CCA541EA31BC200F6BCAF /* FireBaseHandler.swift in Sources */,
@@ -348,9 +358,11 @@
 				11A367541EAB1A85000BBAE2 /* DOFavoriteButton.swift in Sources */,
 				11C152611EA1FE7E00403394 /* JustStudy.xcdatamodeld in Sources */,
 				110CCA581EA34D2600F6BCAF /* MenuTBVC.swift in Sources */,
+				11A367661EAB5AC8000BBAE2 /* ThirdLicensTbvc.swift in Sources */,
 				11A3675A1EAB33FC000BBAE2 /* FirstDetailTbvc.swift in Sources */,
 				114E3A131EA8BDA700897B0E /* FirstMainTbvCell.swift in Sources */,
 				11C152721EA2305200403394 /* MainVC.swift in Sources */,
+				11A367601EAB567C000BBAE2 /* ThirdMainTbvc.swift in Sources */,
 				110CCA5A1EA3C4F100F6BCAF /* Model.swift in Sources */,
 				110CCA481EA316BD00F6BCAF /* SWRevealViewController.m in Sources */,
 				11A3675C1EAB35FE000BBAE2 /* firstHeroCell.swift in Sources */,
