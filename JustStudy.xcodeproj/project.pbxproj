@@ -20,6 +20,11 @@
 		114E3A171EA8D1AF00897B0E /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A161EA8D1AF00897B0E /* FirstVC.swift */; };
 		114E3A191EA9086E00897B0E /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A181EA9086E00897B0E /* FourthVC.swift */; };
 		114E3A1B1EA90C2400897B0E /* FourthCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A1A1EA90C2400897B0E /* FourthCollectionCell.swift */; };
+		11A367541EAB1A85000BBAE2 /* DOFavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3674F1EAB1A85000BBAE2 /* DOFavoriteButton.swift */; };
+		11A367551EAB1A85000BBAE2 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A367501EAB1A85000BBAE2 /* heart.png */; };
+		11A367561EAB1A85000BBAE2 /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A367511EAB1A85000BBAE2 /* like.png */; };
+		11A367571EAB1A85000BBAE2 /* smile.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A367521EAB1A85000BBAE2 /* smile.png */; };
+		11A367581EAB1A85000BBAE2 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A367531EAB1A85000BBAE2 /* star.png */; };
 		11C152591EA1FE7E00403394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C152581EA1FE7E00403394 /* AppDelegate.swift */; };
 		11C1525E1EA1FE7E00403394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C1525C1EA1FE7E00403394 /* Main.storyboard */; };
 		11C152611EA1FE7E00403394 /* JustStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11C1525F1EA1FE7E00403394 /* JustStudy.xcdatamodeld */; };
@@ -49,6 +54,11 @@
 		114E3A161EA8D1AF00897B0E /* FirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		114E3A181EA9086E00897B0E /* FourthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthVC.swift; sourceTree = "<group>"; };
 		114E3A1A1EA90C2400897B0E /* FourthCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthCollectionCell.swift; sourceTree = "<group>"; };
+		11A3674F1EAB1A85000BBAE2 /* DOFavoriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOFavoriteButton.swift; sourceTree = "<group>"; };
+		11A367501EAB1A85000BBAE2 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		11A367511EAB1A85000BBAE2 /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like.png; sourceTree = "<group>"; };
+		11A367521EAB1A85000BBAE2 /* smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smile.png; sourceTree = "<group>"; };
+		11A367531EAB1A85000BBAE2 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		11C152551EA1FE7E00403394 /* JustStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C152581EA1FE7E00403394 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11C1525D1EA1FE7E00403394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -147,6 +157,11 @@
 				11C1525F1EA1FE7E00403394 /* JustStudy.xcdatamodeld */,
 				11C1526D1EA223FC00403394 /* GoogleService-Info.plist */,
 				11C152671EA1FE7E00403394 /* Info.plist */,
+				11A3674F1EAB1A85000BBAE2 /* DOFavoriteButton.swift */,
+				11A367501EAB1A85000BBAE2 /* heart.png */,
+				11A367511EAB1A85000BBAE2 /* like.png */,
+				11A367521EAB1A85000BBAE2 /* smile.png */,
+				11A367531EAB1A85000BBAE2 /* star.png */,
 				110CCA4E1EA3176300F6BCAF /* Model */,
 				110CCA4D1EA3175900F6BCAF /* View */,
 				11C152731EA2306800403394 /* Controller */,
@@ -255,7 +270,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				11C152661EA1FE7E00403394 /* LaunchScreen.storyboard in Resources */,
+				11A367571EAB1A85000BBAE2 /* smile.png in Resources */,
 				11C1526E1EA223FC00403394 /* GoogleService-Info.plist in Resources */,
+				11A367561EAB1A85000BBAE2 /* like.png in Resources */,
+				11A367551EAB1A85000BBAE2 /* heart.png in Resources */,
+				11A367581EAB1A85000BBAE2 /* star.png in Resources */,
 				11C152631EA1FE7E00403394 /* Assets.xcassets in Resources */,
 				11C1525E1EA1FE7E00403394 /* Main.storyboard in Resources */,
 			);
@@ -320,6 +339,7 @@
 				110CCA561EA3215B00F6BCAF /* SignUpVC.swift in Sources */,
 				110CCA541EA31BC200F6BCAF /* FireBaseHandler.swift in Sources */,
 				114E3A151EA8C61900897B0E /* TestModel.swift in Sources */,
+				11A367541EAB1A85000BBAE2 /* DOFavoriteButton.swift in Sources */,
 				11C152611EA1FE7E00403394 /* JustStudy.xcdatamodeld in Sources */,
 				110CCA581EA34D2600F6BCAF /* MenuTBVC.swift in Sources */,
 				114E3A131EA8BDA700897B0E /* FirstMainTbvCell.swift in Sources */,

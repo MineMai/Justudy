@@ -14,6 +14,9 @@ class FourthCollectionCell: UICollectionViewCell {
     
     @IBOutlet weak var heroBackImage: UIImageView!
     
+    @IBOutlet weak var effectView: UIVisualEffectView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -21,6 +24,26 @@ class FourthCollectionCell: UICollectionViewCell {
         layer?.cornerRadius = 100
         layer?.masksToBounds = true
         
+        let layer2 = heroBackImage?.layer
+        layer2?.cornerRadius = 20
+        layer2?.masksToBounds = true
+        
+        let layer3 = effectView?.layer
+        layer3?.cornerRadius = 20
+        layer3?.masksToBounds = true
+        layer3?.borderWidth = 1.0
+        layer3?.borderColor = UIColor.white.cgColor
+        
+        
     }
     
 }
+
+
+
+
+
+
+
+
+

@@ -9,6 +9,8 @@
 import UIKit
 
 class FirstMainTbvc: UITableViewController {
+    
+    var isLikeSelected = Array(repeating: false, count: testdata.posts.count)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,17 +40,21 @@ class FirstMainTbvc: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return testdata.posts.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FirstMainTbvCell", for: indexPath) as! FirstMainTbvCell
         
+        cell.firstLikeBtn.isSelected = isLikeSelected[indexPath.row]
         cell.firstTopicLabel.text = testdata.posts[indexPath.row]["topic"]
         cell.firstTimeLabel.text = testdata.posts[indexPath.row]["time"]
         cell.firstPlaceLabel.text = testdata.posts[indexPath.row]["place"]
         cell.firstImageView.image = UIImage(named: testdata.posts[indexPath.row]["image"]!)
+        
+        cell.firstLikeBtn.tag = indexPath.row
+        cell.firstLikeBtn.addTarget(self, action: #selector(likePressed), for: .touchUpInside)
 
         return cell
     }
@@ -56,6 +62,22 @@ class FirstMainTbvc: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tabBarController?.tabBar.isHidden = true
         let _ = performSegue(withIdentifier: "firstShowSegue", sender: nil)
+        
+    }
+    
+    func likePressed(sender:DOFavoriteButton)
+    {
+        let buttonRow = sender.tag
+        
+        if sender.isSelected {
+            sender.deselect()
+            isLikeSelected.remove(at: buttonRow)
+            isLikeSelected.insert(false, at: buttonRow)
+        } else {
+            sender.select()
+            isLikeSelected.remove(at: buttonRow)
+            isLikeSelected.insert(true, at: buttonRow)
+        }
         
     }
     

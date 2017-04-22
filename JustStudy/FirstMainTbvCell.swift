@@ -11,16 +11,29 @@ import UIKit
 class FirstMainTbvCell: UITableViewCell {
     
     @IBOutlet weak var firstImageView: UIImageView!
-    
     @IBOutlet weak var firstTopicLabel: UILabel!
     @IBOutlet weak var firstTimeLabel: UILabel!
     @IBOutlet weak var firstPlaceLabel: UILabel!
-    @IBOutlet weak var firstLikeBtn: UIButton!
+    @IBOutlet weak var firstLikeBtn: DOFavoriteButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        //firstLikeBtn.addTarget(self, action: #selector(likeTapped(sender:)), for: .touchUpInside)
+        
     }
+    
+//    func likeTapped(sender: DOFavoriteButton) {
+//        if sender.isSelected {
+//            // deselect
+//            sender.deselect()
+//        } else {
+//            // select with animation
+//            sender.select()
+//        }
+//    }
+    
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
