@@ -19,6 +19,8 @@
 		1138CF291EAC62E400593E4F /* FirstTeacherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138CF281EAC62E400593E4F /* FirstTeacherCell.swift */; };
 		1138CF2B1EAC649100593E4F /* FirstOrganizerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138CF2A1EAC649100593E4F /* FirstOrganizerCell.swift */; };
 		1138CF311EAC8E7400593E4F /* ThirdLiseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138CF301EAC8E7400593E4F /* ThirdLiseVC.swift */; };
+		1138CF331EACD93800593E4F /* ThirdDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138CF321EACD93800593E4F /* ThirdDescriptionCell.swift */; };
+		1138CF351EACD95400593E4F /* ThirdLiseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138CF341EACD95400593E4F /* ThirdLiseCell.swift */; };
 		114E3A111EA8BD8400897B0E /* FirstMainTbvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A101EA8BD8400897B0E /* FirstMainTbvc.swift */; };
 		114E3A131EA8BDA700897B0E /* FirstMainTbvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A121EA8BDA700897B0E /* FirstMainTbvCell.swift */; };
 		114E3A151EA8C61900897B0E /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A141EA8C61800897B0E /* TestModel.swift */; };
@@ -62,6 +64,8 @@
 		1138CF281EAC62E400593E4F /* FirstTeacherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTeacherCell.swift; sourceTree = "<group>"; };
 		1138CF2A1EAC649100593E4F /* FirstOrganizerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstOrganizerCell.swift; sourceTree = "<group>"; };
 		1138CF301EAC8E7400593E4F /* ThirdLiseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLiseVC.swift; sourceTree = "<group>"; };
+		1138CF321EACD93800593E4F /* ThirdDescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdDescriptionCell.swift; sourceTree = "<group>"; };
+		1138CF341EACD95400593E4F /* ThirdLiseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLiseCell.swift; sourceTree = "<group>"; };
 		113E8DCB46BA3CA96A0FD6BD /* Pods-JustStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustStudy/Pods-JustStudy.release.xcconfig"; sourceTree = "<group>"; };
 		114E3A101EA8BD8400897B0E /* FirstMainTbvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstMainTbvc.swift; sourceTree = "<group>"; };
 		114E3A121EA8BDA700897B0E /* FirstMainTbvCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstMainTbvCell.swift; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 			children = (
 				11A3675F1EAB567C000BBAE2 /* ThirdMainTbvc.swift */,
 				1138CF301EAC8E7400593E4F /* ThirdLiseVC.swift */,
+				1138CF321EACD93800593E4F /* ThirdDescriptionCell.swift */,
+				1138CF341EACD95400593E4F /* ThirdLiseCell.swift */,
 			);
 			name = Third;
 			sourceTree = "<group>";
@@ -420,10 +426,12 @@
 				11A3675A1EAB33FC000BBAE2 /* FirstDetailTbvc.swift in Sources */,
 				114E3A131EA8BDA700897B0E /* FirstMainTbvCell.swift in Sources */,
 				11C152721EA2305200403394 /* MainVC.swift in Sources */,
+				1138CF331EACD93800593E4F /* ThirdDescriptionCell.swift in Sources */,
 				11A367601EAB567C000BBAE2 /* ThirdMainTbvc.swift in Sources */,
 				110CCA5A1EA3C4F100F6BCAF /* Model.swift in Sources */,
 				110CCA481EA316BD00F6BCAF /* SWRevealViewController.m in Sources */,
 				11A3675C1EAB35FE000BBAE2 /* firstHeroCell.swift in Sources */,
+				1138CF351EACD95400593E4F /* ThirdLiseCell.swift in Sources */,
 				114E3A191EA9086E00897B0E /* FourthVC.swift in Sources */,
 				11C152591EA1FE7E00403394 /* AppDelegate.swift in Sources */,
 				1138CF311EAC8E7400593E4F /* ThirdLiseVC.swift in Sources */,

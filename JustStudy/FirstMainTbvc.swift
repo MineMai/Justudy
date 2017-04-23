@@ -78,7 +78,6 @@ class FirstMainTbvc: UITableViewController {
             isLikeSelected.remove(at: buttonRow)
             isLikeSelected.insert(true, at: buttonRow)
         }
-        
     }
     
 

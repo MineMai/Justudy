@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ThirdLiseVC: UIViewController, UIScrollViewDelegate {
+class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
-    var targetIndex:Int = -1
-    var timer:Timer?
+    var isLikeSelected = Array(repeating: false, count: testdata.posts.count)
     
     var myScrollView: UIScrollView!
     var pageControl: UIPageControl!
@@ -24,6 +23,66 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        setScrollImage()
+        
+        
+    }
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return testdata.posts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ThirdLiseCell", for: indexPath) as! ThirdLiseCell
+        
+        cell.lisenceLikeBtn.isSelected = isLikeSelected[indexPath.row]
+        cell.lisenceTopic.text = "哈利波特魔法"
+        cell.lisencePlace.text = "英國"
+        cell.lisenceKind.text = "魔術"
+        cell.lisenceImage.image = UIImage(named: "demo-6")
+        cell.lisenceLikeBtn.tag = indexPath.row
+        cell.lisenceLikeBtn.addTarget(self, action: #selector(likePressed),for: .touchUpInside)
+            
+        return cell
+        
+    }
+    
+    
+    
+    func likePressed(sender:DOFavoriteButton)
+    {
+        let buttonRow = sender.tag
+        
+        if sender.isSelected {
+            sender.deselect()
+            isLikeSelected.remove(at: buttonRow)
+            isLikeSelected.insert(false, at: buttonRow)
+        } else {
+            sender.select()
+            isLikeSelected.remove(at: buttonRow)
+            isLikeSelected.insert(true, at: buttonRow)
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    func setScrollImage()
+    {
         // 建立 UIScrollView
         myScrollView = UIScrollView()
         // 設置尺寸 也就是可見視圖範圍
@@ -70,8 +129,6 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate {
             myImageView.contentMode = .scaleAspectFill
             myScrollView.addSubview(myImageView)
         }
-        
-        
     }
     
 
