@@ -18,6 +18,7 @@
 		1138CF271EAC5A8F00593E4F /* FirstDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138CF261EAC5A8F00593E4F /* FirstDescriptionCell.swift */; };
 		1138CF291EAC62E400593E4F /* FirstTeacherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138CF281EAC62E400593E4F /* FirstTeacherCell.swift */; };
 		1138CF2B1EAC649100593E4F /* FirstOrganizerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138CF2A1EAC649100593E4F /* FirstOrganizerCell.swift */; };
+		1138CF311EAC8E7400593E4F /* ThirdLiseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138CF301EAC8E7400593E4F /* ThirdLiseVC.swift */; };
 		114E3A111EA8BD8400897B0E /* FirstMainTbvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A101EA8BD8400897B0E /* FirstMainTbvc.swift */; };
 		114E3A131EA8BDA700897B0E /* FirstMainTbvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A121EA8BDA700897B0E /* FirstMainTbvCell.swift */; };
 		114E3A151EA8C61900897B0E /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A141EA8C61800897B0E /* TestModel.swift */; };
@@ -33,7 +34,6 @@
 		11A3675C1EAB35FE000BBAE2 /* firstHeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3675B1EAB35FE000BBAE2 /* firstHeroCell.swift */; };
 		11A3675E1EAB5355000BBAE2 /* FirstMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3675D1EAB5355000BBAE2 /* FirstMapVC.swift */; };
 		11A367601EAB567C000BBAE2 /* ThirdMainTbvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3675F1EAB567C000BBAE2 /* ThirdMainTbvc.swift */; };
-		11A367661EAB5AC8000BBAE2 /* ThirdLicensTbvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A367651EAB5AC8000BBAE2 /* ThirdLicensTbvc.swift */; };
 		11A367691EAB74C5000BBAE2 /* MyActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A367681EAB74C5000BBAE2 /* MyActivityVC.swift */; };
 		11C152591EA1FE7E00403394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C152581EA1FE7E00403394 /* AppDelegate.swift */; };
 		11C1525E1EA1FE7E00403394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C1525C1EA1FE7E00403394 /* Main.storyboard */; };
@@ -61,6 +61,7 @@
 		1138CF261EAC5A8F00593E4F /* FirstDescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstDescriptionCell.swift; sourceTree = "<group>"; };
 		1138CF281EAC62E400593E4F /* FirstTeacherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTeacherCell.swift; sourceTree = "<group>"; };
 		1138CF2A1EAC649100593E4F /* FirstOrganizerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstOrganizerCell.swift; sourceTree = "<group>"; };
+		1138CF301EAC8E7400593E4F /* ThirdLiseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLiseVC.swift; sourceTree = "<group>"; };
 		113E8DCB46BA3CA96A0FD6BD /* Pods-JustStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustStudy/Pods-JustStudy.release.xcconfig"; sourceTree = "<group>"; };
 		114E3A101EA8BD8400897B0E /* FirstMainTbvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstMainTbvc.swift; sourceTree = "<group>"; };
 		114E3A121EA8BDA700897B0E /* FirstMainTbvCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstMainTbvCell.swift; sourceTree = "<group>"; };
@@ -77,7 +78,6 @@
 		11A3675B1EAB35FE000BBAE2 /* firstHeroCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstHeroCell.swift; sourceTree = "<group>"; };
 		11A3675D1EAB5355000BBAE2 /* FirstMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstMapVC.swift; sourceTree = "<group>"; };
 		11A3675F1EAB567C000BBAE2 /* ThirdMainTbvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdMainTbvc.swift; sourceTree = "<group>"; };
-		11A367651EAB5AC8000BBAE2 /* ThirdLicensTbvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLicensTbvc.swift; sourceTree = "<group>"; };
 		11A367681EAB74C5000BBAE2 /* MyActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyActivityVC.swift; sourceTree = "<group>"; };
 		11C152551EA1FE7E00403394 /* JustStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C152581EA1FE7E00403394 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		114E3A0F1EA8BD4B00897B0E /* MainTBVC */ = {
+		1138CF2C1EAC8CF300593E4F /* First */ = {
 			isa = PBXGroup;
 			children = (
 				114E3A101EA8BD8400897B0E /* FirstMainTbvc.swift */,
@@ -150,11 +150,43 @@
 				1138CF261EAC5A8F00593E4F /* FirstDescriptionCell.swift */,
 				1138CF281EAC62E400593E4F /* FirstTeacherCell.swift */,
 				11A3675D1EAB5355000BBAE2 /* FirstMapVC.swift */,
+				1138CF2A1EAC649100593E4F /* FirstOrganizerCell.swift */,
+			);
+			name = First;
+			sourceTree = "<group>";
+		};
+		1138CF2D1EAC8D2F00593E4F /* Second */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Second;
+			sourceTree = "<group>";
+		};
+		1138CF2E1EAC8D3700593E4F /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				11A3675F1EAB567C000BBAE2 /* ThirdMainTbvc.swift */,
+				1138CF301EAC8E7400593E4F /* ThirdLiseVC.swift */,
+			);
+			name = Third;
+			sourceTree = "<group>";
+		};
+		1138CF2F1EAC8D4300593E4F /* Fourth */ = {
+			isa = PBXGroup;
+			children = (
 				114E3A181EA9086E00897B0E /* FourthVC.swift */,
 				114E3A1A1EA90C2400897B0E /* FourthCollectionCell.swift */,
-				11A3675F1EAB567C000BBAE2 /* ThirdMainTbvc.swift */,
-				11A367651EAB5AC8000BBAE2 /* ThirdLicensTbvc.swift */,
-				1138CF2A1EAC649100593E4F /* FirstOrganizerCell.swift */,
+			);
+			name = Fourth;
+			sourceTree = "<group>";
+		};
+		114E3A0F1EA8BD4B00897B0E /* MainTBVC */ = {
+			isa = PBXGroup;
+			children = (
+				1138CF2C1EAC8CF300593E4F /* First */,
+				1138CF2D1EAC8D2F00593E4F /* Second */,
+				1138CF2E1EAC8D3700593E4F /* Third */,
+				1138CF2F1EAC8D4300593E4F /* Fourth */,
 			);
 			name = MainTBVC;
 			sourceTree = "<group>";
@@ -384,7 +416,6 @@
 				1138CF2B1EAC649100593E4F /* FirstOrganizerCell.swift in Sources */,
 				11C152611EA1FE7E00403394 /* JustStudy.xcdatamodeld in Sources */,
 				110CCA581EA34D2600F6BCAF /* MenuTBVC.swift in Sources */,
-				11A367661EAB5AC8000BBAE2 /* ThirdLicensTbvc.swift in Sources */,
 				11A367691EAB74C5000BBAE2 /* MyActivityVC.swift in Sources */,
 				11A3675A1EAB33FC000BBAE2 /* FirstDetailTbvc.swift in Sources */,
 				114E3A131EA8BDA700897B0E /* FirstMainTbvCell.swift in Sources */,
@@ -395,6 +426,7 @@
 				11A3675C1EAB35FE000BBAE2 /* firstHeroCell.swift in Sources */,
 				114E3A191EA9086E00897B0E /* FourthVC.swift in Sources */,
 				11C152591EA1FE7E00403394 /* AppDelegate.swift in Sources */,
+				1138CF311EAC8E7400593E4F /* ThirdLiseVC.swift in Sources */,
 				110CCA4B1EA316F900F6BCAF /* Reachability.m in Sources */,
 				114E3A111EA8BD8400897B0E /* FirstMainTbvc.swift in Sources */,
 				114E3A171EA8D1AF00897B0E /* FirstVC.swift in Sources */,

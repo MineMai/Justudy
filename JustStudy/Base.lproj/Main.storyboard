@@ -1121,7 +1121,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Udc-sH-i2u">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Udc-sH-i2u">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                 <connections>
                                     <outlet property="delegate" destination="ALl-UR-w72" id="V2h-8Z-EKx"/>
@@ -1138,6 +1138,9 @@
                                     <segment title="衛星"/>
                                     <segment title="混合"/>
                                 </segments>
+                                <connections>
+                                    <action selector="mapTypeChange:" destination="ALl-UR-w72" eventType="valueChanged" id="rc1-71-mWx"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1364,40 +1367,56 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="6u1-pL-vwP" kind="show" identifier="LicensSegue" id="CCx-Nc-XLZ"/>
+                        <segue destination="d5H-aE-MSs" kind="show" identifier="LicensSegue" id="7rn-0n-Wbq"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HcJ-nd-wFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4597.6000000000004" y="1490.1049475262371"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="uv0-0C-Sqx">
+        <!--Third LiseVC-->
+        <scene sceneID="0qG-qL-38R">
             <objects>
-                <tableViewController id="6u1-pL-vwP" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="o9k-LO-5Sr">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="d5H-aE-MSs" customClass="ThirdLiseVC" customModule="JustStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pv9-Hc-aJZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="BbK-7N-50c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RUV-Mx-iRq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nm-b3-wI8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="UPl-iu-zBh"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xzx-oa-DRB">
+                                <rect key="frame" x="0.0" y="200" width="375" height="319"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="EMc-Zq-a81">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EMc-Zq-a81" id="lwX-0t-EXg">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="6u1-pL-vwP" id="mMt-i9-ntC"/>
-                            <outlet property="delegate" destination="6u1-pL-vwP" id="rVH-Ah-X9f"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xst-Bn-qkl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8nm-b3-wI8" secondAttribute="trailing" id="7z1-sN-jIb"/>
+                            <constraint firstItem="BbK-7N-50c" firstAttribute="top" secondItem="xzx-oa-DRB" secondAttribute="bottom" id="DI4-09-nOq"/>
+                            <constraint firstItem="8nm-b3-wI8" firstAttribute="leading" secondItem="RUV-Mx-iRq" secondAttribute="leading" id="Dbd-5g-ZMN"/>
+                            <constraint firstItem="xzx-oa-DRB" firstAttribute="leading" secondItem="RUV-Mx-iRq" secondAttribute="leading" id="Nau-8q-9eT"/>
+                            <constraint firstItem="8nm-b3-wI8" firstAttribute="top" secondItem="Pv9-Hc-aJZ" secondAttribute="bottom" id="m81-jh-DGH"/>
+                            <constraint firstAttribute="trailing" secondItem="xzx-oa-DRB" secondAttribute="trailing" id="mNa-10-0gN"/>
+                            <constraint firstItem="xzx-oa-DRB" firstAttribute="top" secondItem="8nm-b3-wI8" secondAttribute="bottom" id="toA-GM-cmO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="xzx-oa-DRB" id="Lav-6B-ZOH"/>
+                        <outlet property="topView" destination="8nm-b3-wI8" id="8iC-TK-7E4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wt5-dU-Fcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5415" y="1490"/>
+            <point key="canvasLocation" x="5429.6000000000004" y="1489.2053973013494"/>
         </scene>
         <!--FourthVC-->
         <scene sceneID="9br-1Q-WGi">
@@ -1504,7 +1523,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ny-aA-PAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4598" y="2121"/>
+            <point key="canvasLocation" x="4598" y="2115"/>
         </scene>
         <!--Item-->
         <scene sceneID="wpM-D2-y01">
@@ -1512,7 +1531,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NPk-T2-xjU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" image="Menuhome" id="G6X-8E-ZrF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="YjH-VH-u8N">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YjH-VH-u8N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1574,7 +1593,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mZr-mQ-cyr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" image="HOT" id="0Yc-ST-LPo"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tNc-tg-W5U">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tNc-tg-W5U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1612,7 +1631,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0oP-D3-mza" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" image="chat" id="uOI-eI-gc0"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="K1V-71-MTg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K1V-71-MTg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

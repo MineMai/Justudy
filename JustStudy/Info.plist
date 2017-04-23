@@ -78,5 +78,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>取得您的位置以利尋找路線</string>
 </dict>
 </plist>
