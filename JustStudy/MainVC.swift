@@ -175,7 +175,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         let menucell = menuCollection.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: indexPath) as! MenuCollectionCell
         menucell.menuIcon.image = UIImage(named: menuIconNames[indexPath.row])?.withRenderingMode(.alwaysTemplate)
         menucell.tintColor = UIColor(red: 0.356, green: 0.054, blue: 0.05, alpha: 1.0)
-        menucell.backgroundColor = UIColor.red
+        menucell.backgroundColor = UIColor(red:0.15, green:0.75, blue:0.62, alpha:1.0)
         return menucell
         
     }
@@ -240,7 +240,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
                 secondContainerView.isHidden = true
                 thirdContainerView.isHidden = false
                 fourthContainerView.isHidden = true
-                navigationItem.title = "英語證照"
+                navigationItem.title = "證照介紹"
             case 3:
                 firstContainerView.isHidden = true
                 secondContainerView.isHidden = true

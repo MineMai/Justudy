@@ -19,10 +19,14 @@ class ThirdMainTbvc: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        performSegue(withIdentifier: "LicensSegue", sender: nil)
         print(indexPath.row)
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+    }
     
     
     

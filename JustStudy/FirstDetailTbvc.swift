@@ -29,7 +29,7 @@ class FirstDetailTbvc: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 4
+        return 5
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,34 +40,51 @@ class FirstDetailTbvc: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.section == 0
+        switch indexPath.section
         {
+        case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "heroCell", for: indexPath) as! firstHeroCell
             cell.heroImage.image = UIImage(named: "demo-6")
             heroCell = cell
             return cell
-        }
-        else
-        {
-            let cell = UITableViewCell()
-            
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as! FirstInfoCell
+            cell.firstInfoTopic.text = "123"
+            cell.firstInfoTime.text = "456"
+            cell.firstInfoPlaceBtn.setTitle("999", for: .normal)
+            return cell
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "descriptionCell", for: indexPath) as! FirstDescriptionCell
+            cell.firstDescription.text = "國際品牌顧問公司BrandKeys公佈2016全球百大忠誠品牌在前十名中，Apple的平板和手機各佔據兩個名次Amazon的三項服務各佔據三個名次"
+            return cell
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "teacherCell", for: indexPath) as! FirstTeacherCell
+            cell.firstTeacherLabel.text = "亞洲倍數模式實踐發揚者，豐富跨領域產業背景資深企業管理顧問輔導企業超過50間"
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "organizerCell", for: indexPath) as! FirstOrganizerCell
+            cell.firstOrganizerLabel.text = "工業研究院"
             return cell
         }
-    
+        
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
+        return UITableViewAutomaticDimension
+        /*
         switch indexPath.section {
         case 0:
             return UITableViewAutomaticDimension
         case 1:
-            return 150
+            return UITableViewAutomaticDimension
         case 2:
-            return 150
+            return UITableViewAutomaticDimension
+        case 3:
+            return UITableViewAutomaticDimension
         default:
             return 150
-        }
+        } */
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
