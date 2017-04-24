@@ -24,7 +24,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     
     @IBOutlet weak var menuCollection: UICollectionView!
     
-    let menuIconNames = ["Menuhome", "Menutrending", "Menusubscriptions", "Menuaccount"]
+    let menuIconNames = ["Menuhome", "Menusubscriptions", "Menuaccount"]
     //menuBar需要的Constraint
     var horizontalBarLeftAnchorConstraint: NSLayoutConstraint?
     
@@ -167,7 +167,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -184,14 +184,14 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     //CollectionView 內建就有scrollView的這方法
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         print(scrollView.contentOffset.x)
-        horizontalBarLeftAnchorConstraint?.constant = scrollView.contentOffset.x / 4
+        horizontalBarLeftAnchorConstraint?.constant = scrollView.contentOffset.x / 3
     }
     
     
     //MARK: - collectionView Layout
     //有簽協定UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width / 4, height: view.frame.height)
+        return CGSize(width: view.frame.width / 3, height: view.frame.height)
     }
     
     
@@ -206,13 +206,13 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         horizontalBarLeftAnchorConstraint?.isActive = true
         
         horizontalBarView.bottomAnchor.constraint(equalTo: menuView.bottomAnchor).isActive = true
-        horizontalBarView.widthAnchor.constraint(equalTo: menuView.widthAnchor, multiplier: 1/4).isActive = true
-        horizontalBarView.heightAnchor.constraint(equalToConstant: 4).isActive = true
+        horizontalBarView.widthAnchor.constraint(equalTo: menuView.widthAnchor, multiplier: 1/3).isActive = true
+        horizontalBarView.heightAnchor.constraint(equalToConstant: 3).isActive = true
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let x = CGFloat(indexPath.item) * menuView.frame.width / 4
+        let x = CGFloat(indexPath.item) * menuView.frame.width / 3
         horizontalBarLeftAnchorConstraint?.constant = x
         
         UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping:1, initialSpringVelocity: 1, options: .curveEaseOut, animations:{
@@ -229,19 +229,19 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
                 thirdContainerView.isHidden = true
                 fourthContainerView.isHidden = true
                 navigationItem.title = "留學說明會"
+//            case 1:
+//                firstContainerView.isHidden = true
+//                secondContainerView.isHidden = false
+//                thirdContainerView.isHidden = true
+//                fourthContainerView.isHidden = true
+//                navigationItem.title = "學校面對面"
             case 1:
-                firstContainerView.isHidden = true
-                secondContainerView.isHidden = false
-                thirdContainerView.isHidden = true
-                fourthContainerView.isHidden = true
-                navigationItem.title = "學校面對面"
-            case 2:
                 firstContainerView.isHidden = true
                 secondContainerView.isHidden = true
                 thirdContainerView.isHidden = false
                 fourthContainerView.isHidden = true
                 navigationItem.title = "證照介紹"
-            case 3:
+            case 2:
                 firstContainerView.isHidden = true
                 secondContainerView.isHidden = true
                 thirdContainerView.isHidden = true
