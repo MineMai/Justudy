@@ -37,6 +37,12 @@
 		11A3675E1EAB5355000BBAE2 /* FirstMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3675D1EAB5355000BBAE2 /* FirstMapVC.swift */; };
 		11A367601EAB567C000BBAE2 /* ThirdMainTbvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3675F1EAB567C000BBAE2 /* ThirdMainTbvc.swift */; };
 		11A367691EAB74C5000BBAE2 /* MyActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A367681EAB74C5000BBAE2 /* MyActivityVC.swift */; };
+		11AC16391EADD86B00C5D619 /* ThirdDetailTbvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC16381EADD86B00C5D619 /* ThirdDetailTbvc.swift */; };
+		11AC163B1EADDA3400C5D619 /* ThirdDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC163A1EADDA3400C5D619 /* ThirdDetailVC.swift */; };
+		11AC163D1EADDECF00C5D619 /* ThirdDetailHeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC163C1EADDECF00C5D619 /* ThirdDetailHeroCell.swift */; };
+		11AC16411EADE25400C5D619 /* ThirdDetailCourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC16401EADE25400C5D619 /* ThirdDetailCourseCell.swift */; };
+		11AC16431EADE27100C5D619 /* ThirdDetailSchoolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC16421EADE27100C5D619 /* ThirdDetailSchoolCell.swift */; };
+		11AC16451EADE28D00C5D619 /* ThirdDetailTourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC16441EADE28D00C5D619 /* ThirdDetailTourCell.swift */; };
 		11C152591EA1FE7E00403394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C152581EA1FE7E00403394 /* AppDelegate.swift */; };
 		11C1525E1EA1FE7E00403394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C1525C1EA1FE7E00403394 /* Main.storyboard */; };
 		11C152611EA1FE7E00403394 /* JustStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11C1525F1EA1FE7E00403394 /* JustStudy.xcdatamodeld */; };
@@ -83,6 +89,12 @@
 		11A3675D1EAB5355000BBAE2 /* FirstMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstMapVC.swift; sourceTree = "<group>"; };
 		11A3675F1EAB567C000BBAE2 /* ThirdMainTbvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdMainTbvc.swift; sourceTree = "<group>"; };
 		11A367681EAB74C5000BBAE2 /* MyActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyActivityVC.swift; sourceTree = "<group>"; };
+		11AC16381EADD86B00C5D619 /* ThirdDetailTbvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdDetailTbvc.swift; sourceTree = "<group>"; };
+		11AC163A1EADDA3400C5D619 /* ThirdDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdDetailVC.swift; sourceTree = "<group>"; };
+		11AC163C1EADDECF00C5D619 /* ThirdDetailHeroCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdDetailHeroCell.swift; sourceTree = "<group>"; };
+		11AC16401EADE25400C5D619 /* ThirdDetailCourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdDetailCourseCell.swift; sourceTree = "<group>"; };
+		11AC16421EADE27100C5D619 /* ThirdDetailSchoolCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdDetailSchoolCell.swift; sourceTree = "<group>"; };
+		11AC16441EADE28D00C5D619 /* ThirdDetailTourCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdDetailTourCell.swift; sourceTree = "<group>"; };
 		11C152551EA1FE7E00403394 /* JustStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C152581EA1FE7E00403394 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11C1525D1EA1FE7E00403394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -173,6 +185,12 @@
 				1138CF301EAC8E7400593E4F /* ThirdLiseVC.swift */,
 				1138CF321EACD93800593E4F /* ThirdDescriptionCell.swift */,
 				1138CF341EACD95400593E4F /* ThirdLiseCell.swift */,
+				11AC16381EADD86B00C5D619 /* ThirdDetailTbvc.swift */,
+				11AC163A1EADDA3400C5D619 /* ThirdDetailVC.swift */,
+				11AC163C1EADDECF00C5D619 /* ThirdDetailHeroCell.swift */,
+				11AC16401EADE25400C5D619 /* ThirdDetailCourseCell.swift */,
+				11AC16421EADE27100C5D619 /* ThirdDetailSchoolCell.swift */,
+				11AC16441EADE28D00C5D619 /* ThirdDetailTourCell.swift */,
 			);
 			name = Third;
 			sourceTree = "<group>";
@@ -422,21 +440,27 @@
 				1138CF2B1EAC649100593E4F /* FirstOrganizerCell.swift in Sources */,
 				11C152611EA1FE7E00403394 /* JustStudy.xcdatamodeld in Sources */,
 				110CCA581EA34D2600F6BCAF /* MenuTBVC.swift in Sources */,
+				11AC163D1EADDECF00C5D619 /* ThirdDetailHeroCell.swift in Sources */,
 				11A367691EAB74C5000BBAE2 /* MyActivityVC.swift in Sources */,
 				11A3675A1EAB33FC000BBAE2 /* FirstDetailTbvc.swift in Sources */,
 				114E3A131EA8BDA700897B0E /* FirstMainTbvCell.swift in Sources */,
+				11AC16391EADD86B00C5D619 /* ThirdDetailTbvc.swift in Sources */,
 				11C152721EA2305200403394 /* MainVC.swift in Sources */,
+				11AC16411EADE25400C5D619 /* ThirdDetailCourseCell.swift in Sources */,
 				1138CF331EACD93800593E4F /* ThirdDescriptionCell.swift in Sources */,
 				11A367601EAB567C000BBAE2 /* ThirdMainTbvc.swift in Sources */,
+				11AC16451EADE28D00C5D619 /* ThirdDetailTourCell.swift in Sources */,
 				110CCA5A1EA3C4F100F6BCAF /* Model.swift in Sources */,
 				110CCA481EA316BD00F6BCAF /* SWRevealViewController.m in Sources */,
 				11A3675C1EAB35FE000BBAE2 /* firstHeroCell.swift in Sources */,
+				11AC163B1EADDA3400C5D619 /* ThirdDetailVC.swift in Sources */,
 				1138CF351EACD95400593E4F /* ThirdLiseCell.swift in Sources */,
 				114E3A191EA9086E00897B0E /* FourthVC.swift in Sources */,
 				11C152591EA1FE7E00403394 /* AppDelegate.swift in Sources */,
 				1138CF311EAC8E7400593E4F /* ThirdLiseVC.swift in Sources */,
 				110CCA4B1EA316F900F6BCAF /* Reachability.m in Sources */,
 				114E3A111EA8BD8400897B0E /* FirstMainTbvc.swift in Sources */,
+				11AC16431EADE27100C5D619 /* ThirdDetailSchoolCell.swift in Sources */,
 				114E3A171EA8D1AF00897B0E /* FirstVC.swift in Sources */,
 				11C152701EA2303700403394 /* LoginVC.swift in Sources */,
 				114E3A1B1EA90C2400897B0E /* FourthCollectionCell.swift in Sources */,

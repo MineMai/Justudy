@@ -58,7 +58,6 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, 
     }
     
     
-    
     func likePressed(sender:DOFavoriteButton)
     {
         let buttonRow = sender.tag
@@ -75,7 +74,10 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, 
     }
     
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "ThirdDetailSegue", sender: nil)
+    }
     
     
     
