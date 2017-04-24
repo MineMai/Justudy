@@ -43,6 +43,11 @@
 		11AC16411EADE25400C5D619 /* ThirdDetailCourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC16401EADE25400C5D619 /* ThirdDetailCourseCell.swift */; };
 		11AC16431EADE27100C5D619 /* ThirdDetailSchoolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC16421EADE27100C5D619 /* ThirdDetailSchoolCell.swift */; };
 		11AC16451EADE28D00C5D619 /* ThirdDetailTourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC16441EADE28D00C5D619 /* ThirdDetailTourCell.swift */; };
+		11AC16471EADF4A700C5D619 /* ActLikeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC16461EADF4A700C5D619 /* ActLikeVC.swift */; };
+		11AC16491EADF4BF00C5D619 /* ActOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC16481EADF4BF00C5D619 /* ActOrderVC.swift */; };
+		11AC164B1EADFD1E00C5D619 /* ZoomingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC164A1EADFD1E00C5D619 /* ZoomingLayout.swift */; };
+		11AC164D1EADFD8100C5D619 /* ActLikeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC164C1EADFD8100C5D619 /* ActLikeCell.swift */; };
+		11AC164F1EADFD9800C5D619 /* ActOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC164E1EADFD9800C5D619 /* ActOrderCell.swift */; };
 		11C152591EA1FE7E00403394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C152581EA1FE7E00403394 /* AppDelegate.swift */; };
 		11C1525E1EA1FE7E00403394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C1525C1EA1FE7E00403394 /* Main.storyboard */; };
 		11C152611EA1FE7E00403394 /* JustStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11C1525F1EA1FE7E00403394 /* JustStudy.xcdatamodeld */; };
@@ -95,6 +100,11 @@
 		11AC16401EADE25400C5D619 /* ThirdDetailCourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdDetailCourseCell.swift; sourceTree = "<group>"; };
 		11AC16421EADE27100C5D619 /* ThirdDetailSchoolCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdDetailSchoolCell.swift; sourceTree = "<group>"; };
 		11AC16441EADE28D00C5D619 /* ThirdDetailTourCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdDetailTourCell.swift; sourceTree = "<group>"; };
+		11AC16461EADF4A700C5D619 /* ActLikeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActLikeVC.swift; sourceTree = "<group>"; };
+		11AC16481EADF4BF00C5D619 /* ActOrderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActOrderVC.swift; sourceTree = "<group>"; };
+		11AC164A1EADFD1E00C5D619 /* ZoomingLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomingLayout.swift; sourceTree = "<group>"; };
+		11AC164C1EADFD8100C5D619 /* ActLikeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActLikeCell.swift; sourceTree = "<group>"; };
+		11AC164E1EADFD9800C5D619 /* ActOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActOrderCell.swift; sourceTree = "<group>"; };
 		11C152551EA1FE7E00403394 /* JustStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C152581EA1FE7E00403394 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11C1525D1EA1FE7E00403394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -140,6 +150,7 @@
 			children = (
 				11C1525C1EA1FE7E00403394 /* Main.storyboard */,
 				11C152641EA1FE7E00403394 /* LaunchScreen.storyboard */,
+				11AC164A1EADFD1E00C5D619 /* ZoomingLayout.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -219,6 +230,10 @@
 			isa = PBXGroup;
 			children = (
 				11A367681EAB74C5000BBAE2 /* MyActivityVC.swift */,
+				11AC16461EADF4A700C5D619 /* ActLikeVC.swift */,
+				11AC16481EADF4BF00C5D619 /* ActOrderVC.swift */,
+				11AC164C1EADFD8100C5D619 /* ActLikeCell.swift */,
+				11AC164E1EADFD9800C5D619 /* ActOrderCell.swift */,
 			);
 			name = MyActivity;
 			sourceTree = "<group>";
@@ -430,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11A3675E1EAB5355000BBAE2 /* FirstMapVC.swift in Sources */,
+				11AC164D1EADFD8100C5D619 /* ActLikeCell.swift in Sources */,
 				110CCAA81EA5F92900F6BCAF /* MenuCollectionCell.swift in Sources */,
 				110CCA561EA3215B00F6BCAF /* SignUpVC.swift in Sources */,
 				110CCA541EA31BC200F6BCAF /* FireBaseHandler.swift in Sources */,
@@ -438,6 +454,7 @@
 				1138CF251EAC57B700593E4F /* FirstInfoCell.swift in Sources */,
 				1138CF291EAC62E400593E4F /* FirstTeacherCell.swift in Sources */,
 				1138CF2B1EAC649100593E4F /* FirstOrganizerCell.swift in Sources */,
+				11AC164F1EADFD9800C5D619 /* ActOrderCell.swift in Sources */,
 				11C152611EA1FE7E00403394 /* JustStudy.xcdatamodeld in Sources */,
 				110CCA581EA34D2600F6BCAF /* MenuTBVC.swift in Sources */,
 				11AC163D1EADDECF00C5D619 /* ThirdDetailHeroCell.swift in Sources */,
@@ -453,12 +470,15 @@
 				110CCA5A1EA3C4F100F6BCAF /* Model.swift in Sources */,
 				110CCA481EA316BD00F6BCAF /* SWRevealViewController.m in Sources */,
 				11A3675C1EAB35FE000BBAE2 /* firstHeroCell.swift in Sources */,
+				11AC164B1EADFD1E00C5D619 /* ZoomingLayout.swift in Sources */,
 				11AC163B1EADDA3400C5D619 /* ThirdDetailVC.swift in Sources */,
 				1138CF351EACD95400593E4F /* ThirdLiseCell.swift in Sources */,
 				114E3A191EA9086E00897B0E /* FourthVC.swift in Sources */,
 				11C152591EA1FE7E00403394 /* AppDelegate.swift in Sources */,
+				11AC16491EADF4BF00C5D619 /* ActOrderVC.swift in Sources */,
 				1138CF311EAC8E7400593E4F /* ThirdLiseVC.swift in Sources */,
 				110CCA4B1EA316F900F6BCAF /* Reachability.m in Sources */,
+				11AC16471EADF4A700C5D619 /* ActLikeVC.swift in Sources */,
 				114E3A111EA8BD8400897B0E /* FirstMainTbvc.swift in Sources */,
 				11AC16431EADE27100C5D619 /* ThirdDetailSchoolCell.swift in Sources */,
 				114E3A171EA8D1AF00897B0E /* FirstVC.swift in Sources */,
