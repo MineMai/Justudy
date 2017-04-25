@@ -13,6 +13,7 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var backgroundImage: UIImageView!
     
 
     override func viewDidLoad() {
@@ -21,7 +22,7 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        
+        backgroundImage.image = UIImage(named: testdata.posts[0]["image"]!)
         
     }
     
@@ -45,7 +46,10 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     }
     
     
-    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let pageIndex = Int(floor((scrollView.contentOffset.x - 150) / 300 ) + 1)
+        backgroundImage.image = UIImage(named: testdata.posts[pageIndex]["image"]!)
+    }
     
     
     
