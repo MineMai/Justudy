@@ -9,6 +9,9 @@
 import UIKit
 
 class ThirdDetailVC: UIViewController {
+    
+    //給彈跳視窗用的
+    let transitionDelegate = TransitionDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,20 +19,29 @@ class ThirdDetailVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func orderSchoolBtn(_ sender: UIButton)
+    {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let overlayVC = sb.instantiateViewController(withIdentifier: "ThirdDetailOverlayVC") as! ThirdDetailOverlayVC
+        
+        overlayVC.transitioningDelegate = transitionDelegate
+        overlayVC.modalPresentationStyle = .custom
+        self.present(overlayVC, animated: true, completion: nil)
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    
 
 }
+
+
+
+
+
+
+
+
+

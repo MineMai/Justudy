@@ -21,6 +21,9 @@
 		1138CF311EAC8E7400593E4F /* ThirdLiseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138CF301EAC8E7400593E4F /* ThirdLiseVC.swift */; };
 		1138CF331EACD93800593E4F /* ThirdDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138CF321EACD93800593E4F /* ThirdDescriptionCell.swift */; };
 		1138CF351EACD95400593E4F /* ThirdLiseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138CF341EACD95400593E4F /* ThirdLiseCell.swift */; };
+		113A43CB1EAF38EF00A21B0C /* AnimatedTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43C91EAF38EF00A21B0C /* AnimatedTransitioner.swift */; };
+		113A43CC1EAF38EF00A21B0C /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43CA1EAF38EF00A21B0C /* PresentationController.swift */; };
+		113A43CE1EAF395F00A21B0C /* ThirdDetailOverlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113A43CD1EAF395F00A21B0C /* ThirdDetailOverlayVC.swift */; };
 		114E3A111EA8BD8400897B0E /* FirstMainTbvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A101EA8BD8400897B0E /* FirstMainTbvc.swift */; };
 		114E3A131EA8BDA700897B0E /* FirstMainTbvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A121EA8BDA700897B0E /* FirstMainTbvCell.swift */; };
 		114E3A151EA8C61900897B0E /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A141EA8C61800897B0E /* TestModel.swift */; };
@@ -77,6 +80,9 @@
 		1138CF301EAC8E7400593E4F /* ThirdLiseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLiseVC.swift; sourceTree = "<group>"; };
 		1138CF321EACD93800593E4F /* ThirdDescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdDescriptionCell.swift; sourceTree = "<group>"; };
 		1138CF341EACD95400593E4F /* ThirdLiseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLiseCell.swift; sourceTree = "<group>"; };
+		113A43C91EAF38EF00A21B0C /* AnimatedTransitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedTransitioner.swift; sourceTree = "<group>"; };
+		113A43CA1EAF38EF00A21B0C /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		113A43CD1EAF395F00A21B0C /* ThirdDetailOverlayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdDetailOverlayVC.swift; sourceTree = "<group>"; };
 		113E8DCB46BA3CA96A0FD6BD /* Pods-JustStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustStudy/Pods-JustStudy.release.xcconfig"; sourceTree = "<group>"; };
 		114E3A101EA8BD8400897B0E /* FirstMainTbvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstMainTbvc.swift; sourceTree = "<group>"; };
 		114E3A121EA8BDA700897B0E /* FirstMainTbvCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstMainTbvCell.swift; sourceTree = "<group>"; };
@@ -150,6 +156,8 @@
 			children = (
 				11C1525C1EA1FE7E00403394 /* Main.storyboard */,
 				11C152641EA1FE7E00403394 /* LaunchScreen.storyboard */,
+				113A43C91EAF38EF00A21B0C /* AnimatedTransitioner.swift */,
+				113A43CA1EAF38EF00A21B0C /* PresentationController.swift */,
 				11AC164A1EADFD1E00C5D619 /* ZoomingLayout.swift */,
 			);
 			name = View;
@@ -202,6 +210,7 @@
 				11AC16401EADE25400C5D619 /* ThirdDetailCourseCell.swift */,
 				11AC16421EADE27100C5D619 /* ThirdDetailSchoolCell.swift */,
 				11AC16441EADE28D00C5D619 /* ThirdDetailTourCell.swift */,
+				113A43CD1EAF395F00A21B0C /* ThirdDetailOverlayVC.swift */,
 			);
 			name = Third;
 			sourceTree = "<group>";
@@ -462,6 +471,7 @@
 				11A3675A1EAB33FC000BBAE2 /* FirstDetailTbvc.swift in Sources */,
 				114E3A131EA8BDA700897B0E /* FirstMainTbvCell.swift in Sources */,
 				11AC16391EADD86B00C5D619 /* ThirdDetailTbvc.swift in Sources */,
+				113A43CB1EAF38EF00A21B0C /* AnimatedTransitioner.swift in Sources */,
 				11C152721EA2305200403394 /* MainVC.swift in Sources */,
 				11AC16411EADE25400C5D619 /* ThirdDetailCourseCell.swift in Sources */,
 				1138CF331EACD93800593E4F /* ThirdDescriptionCell.swift in Sources */,
@@ -473,6 +483,7 @@
 				11AC164B1EADFD1E00C5D619 /* ZoomingLayout.swift in Sources */,
 				11AC163B1EADDA3400C5D619 /* ThirdDetailVC.swift in Sources */,
 				1138CF351EACD95400593E4F /* ThirdLiseCell.swift in Sources */,
+				113A43CE1EAF395F00A21B0C /* ThirdDetailOverlayVC.swift in Sources */,
 				114E3A191EA9086E00897B0E /* FourthVC.swift in Sources */,
 				11C152591EA1FE7E00403394 /* AppDelegate.swift in Sources */,
 				11AC16491EADF4BF00C5D619 /* ActOrderVC.swift in Sources */,
@@ -484,6 +495,7 @@
 				114E3A171EA8D1AF00897B0E /* FirstVC.swift in Sources */,
 				11C152701EA2303700403394 /* LoginVC.swift in Sources */,
 				114E3A1B1EA90C2400897B0E /* FourthCollectionCell.swift in Sources */,
+				113A43CC1EAF38EF00A21B0C /* PresentationController.swift in Sources */,
 				1138CF271EAC5A8F00593E4F /* FirstDescriptionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
