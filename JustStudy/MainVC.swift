@@ -60,14 +60,20 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         navigationItem.title = "留學說明會"
         setupHorizontalBar()
         
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
         
         //檢查誰登入，並將資料取出，給側邊欄用
         isFBLogin = false
         isGoogleLogin = false
         checkWhoLogin()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        //檢查誰登入，並將資料取出，給側邊欄用
+        //isFBLogin = false
+        //isGoogleLogin = false
+        //checkWhoLogin()
         //loadProfile()
     }
     

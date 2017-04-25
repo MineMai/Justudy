@@ -1529,7 +1529,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Du8-vP-bVO"/>
                                 </constraints>
-                                <state key="normal" title="預約學校面對面"/>
+                                <state key="normal" title="我要預約"/>
                                 <connections>
                                     <action selector="orderSchoolBtn:" destination="sC2-YB-8Zd" eventType="touchUpInside" id="2Q3-uu-6Sf"/>
                                 </connections>
@@ -2176,7 +2176,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="Vle-1t-38T"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2286,7 +2286,7 @@
                                                         <constraint firstAttribute="height" constant="45" id="I6q-36-FlH"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="dOW-Yu-43x"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
