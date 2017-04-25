@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xkd-aK-5GD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="db1-ds-FCm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,17 +26,17 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xLF-fx-wUE">
                                 <rect key="frame" x="75" y="228" width="224" height="30"/>
-                                <color key="backgroundColor" red="0.1803921568627451" green="0.16862745098039217" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="224" id="YsG-N0-hSV"/>
                                     <constraint firstAttribute="height" constant="30" id="lJb-1Z-ZqG"/>
                                 </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -45,17 +45,17 @@
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4eD-l9-cEy">
                                 <rect key="frame" x="75" y="283" width="224" height="30"/>
-                                <color key="backgroundColor" red="0.1803921568627451" green="0.16862745098039217" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="DAW-La-tbr"/>
                                     <constraint firstAttribute="width" constant="224" id="rKn-D9-AYa"/>
                                 </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -69,7 +69,7 @@
                                     <constraint firstAttribute="width" constant="252" id="m62-uY-9ed"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="50"/>
-                                <color key="textColor" red="0.90980392156862744" green="0.24705882352941178" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.96862745098039216" green="0.83137254901960778" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFJ-rx-8kj">
@@ -115,7 +115,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <state key="normal" title="Register Now">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="registerBtn:" destination="db1-ds-FCm" eventType="touchUpInside" id="Eb4-PH-9VR"/>
@@ -144,7 +144,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.14117647058823529" green="0.12941176470588234" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="2xB-2i-Pr6" firstAttribute="centerX" secondItem="juI-Yt-OW4" secondAttribute="centerX" id="0Yb-1i-laj"/>
                             <constraint firstItem="xLF-fx-wUE" firstAttribute="top" secondItem="2xB-2i-Pr6" secondAttribute="bottom" constant="65" id="0sb-xq-nbt"/>
@@ -265,7 +265,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.14117647058823529" green="0.12941176470588234" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="UzT-Mx-GUX" firstAttribute="centerX" secondItem="79m-aI-xxF" secondAttribute="centerX" id="4om-21-w7g"/>
                             <constraint firstItem="ckt-id-8ig" firstAttribute="centerX" secondItem="79m-aI-xxF" secondAttribute="centerX" id="9nq-Qe-jIW"/>
@@ -324,7 +324,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="67Z-kc-cU2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.14117647058823529" green="0.12941176470588234" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="70" maxY="0.0"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="tHc-vh-Ymu">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
@@ -347,7 +347,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" red="0.14117647058823529" green="0.12941176470588234" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="a8k-gU-dmx" firstAttribute="top" secondItem="tHc-vh-Ymu" secondAttribute="top" constant="25" id="0Dd-Md-yUR"/>
                                 <constraint firstItem="a8k-gU-dmx" firstAttribute="leading" secondItem="tHc-vh-Ymu" secondAttribute="leading" constant="20" id="6f7-4t-CGS"/>
@@ -379,7 +379,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="Wfo-x1-MJG"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -391,7 +391,7 @@
                                                 <constraint firstItem="DOj-SW-HmT" firstAttribute="leading" secondItem="xM8-Gm-ft0" secondAttribute="trailing" constant="20" id="fl9-IR-WqK"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.14117647058823529" green="0.12941176470588234" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <segue destination="xkd-aK-5GD" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="ruu-Z2-lP2"/>
                                         </connections>
@@ -416,7 +416,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="0wN-Z0-7kk"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -428,7 +428,7 @@
                                                 <constraint firstItem="Fdc-CJ-7HP" firstAttribute="leading" secondItem="4rY-gg-P7E" secondAttribute="trailing" constant="20" id="t4Q-2D-pmL"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.14117647059999999" green="0.12941176469999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="sZa-SX-DM7">
                                         <rect key="frame" x="0.0" y="240" width="375" height="60"/>
@@ -450,7 +450,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="Epx-Ai-bCO"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -462,7 +462,7 @@
                                                 <constraint firstItem="fkM-Yu-k9m" firstAttribute="centerY" secondItem="uuG-lX-YoX" secondAttribute="centerY" id="ykg-X2-ne1"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.14117647059999999" green="0.12941176469999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="L63-ue-ief">
                                         <rect key="frame" x="0.0" y="300" width="375" height="60"/>
@@ -484,7 +484,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="HUo-LV-7Bj"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -496,7 +496,7 @@
                                                 <constraint firstItem="GbQ-C1-2yl" firstAttribute="leading" secondItem="zv9-NS-dxl" secondAttribute="trailing" constant="20" id="xWh-aP-bh7"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.14117647059999999" green="0.12941176469999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <segue destination="db1-ds-FCm" kind="show" identifier="logOutSegue" id="2iw-d8-nLh"/>
                                         </connections>
@@ -1191,7 +1191,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="84V-tR-Gpj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4598" y="863"/>
+            <point key="canvasLocation" x="4598" y="850"/>
         </scene>
         <!--Third Main Tbvc-->
         <scene sceneID="FVU-iu-DFs">
@@ -2124,6 +2124,7 @@
                                 <segment title="收藏"/>
                                 <segment title="報名"/>
                             </segments>
+                            <color key="tintColor" red="0.96862745098039216" green="0.83137254901960778" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="segment:" destination="4zQ-wB-4ta" eventType="valueChanged" id="nbq-uv-PXW"/>
                             </connections>

@@ -20,6 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate/*, GIDSignInDelegate*/ {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        //設定NavigationBar顏色
+        UINavigationBar.appearance().barTintColor = UIColor(red: 0.15, green: 0.75, blue: 0.62, alpha: 1.0)
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        
+        
         //Firebase
         FIRApp.configure()
         

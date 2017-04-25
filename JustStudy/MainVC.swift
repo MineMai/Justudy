@@ -31,6 +31,9 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //移除返回鈕的文字
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
         
         menuCollection.delegate = self
         menuCollection.dataSource = self
