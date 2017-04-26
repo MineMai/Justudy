@@ -16,7 +16,35 @@ import GoogleSignIn
 class AppDelegate: UIResponder, UIApplicationDelegate/*, GIDSignInDelegate*/ {
 
     var window: UIWindow?
-
+    
+    var myActivity = [MyActivity]()
+    
+    func loadCoredata()
+    {
+        let context = persistentContainer.viewContext
+        do
+        {
+            let results = try context.fetch(MyActivity.fetchRequest())
+            if results.count == 0
+            {
+                //還沒有存資料
+            }
+            else
+            {
+                for item in results
+                {
+                    if let myAct = item as? MyActivity
+                    {
+                        myActivity.append(myAct)
+                    }
+                }
+            }
+        }
+        catch
+        {
+            print("無法取用CoreData")
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
@@ -24,7 +52,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate/*, GIDSignInDelegate*/ {
         UINavigationBar.appearance().barTintColor = UIColor(red: 0.15, green: 0.75, blue: 0.62, alpha: 1.0)
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        //設定TabBar顏色
+        UITabBar.appearance().tintColor = UIColor(red: 0.15, green: 0.75, blue: 0.62, alpha: 1.0)
+        UITabBar.appearance().barTintColor = UIColor.black
         
+        //讀取CoreData資料
+        loadCoredata()
         
         //Firebase
         FIRApp.configure()

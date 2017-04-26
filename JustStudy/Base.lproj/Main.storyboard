@@ -342,7 +342,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="21" id="fxf-M3-zkr"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -814,6 +814,9 @@
                                 <state key="normal" title="我要報名">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpBtn:" destination="r9G-Hy-D3r" eventType="touchUpInside" id="94O-SH-G0Z"/>
+                                </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MpL-mZ-P4T">
                                 <rect key="frame" x="0.0" y="64" width="375" height="415"/>
