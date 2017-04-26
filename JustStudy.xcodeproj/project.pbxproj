@@ -30,6 +30,7 @@
 		114E3A171EA8D1AF00897B0E /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A161EA8D1AF00897B0E /* FirstVC.swift */; };
 		114E3A191EA9086E00897B0E /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A181EA9086E00897B0E /* FourthVC.swift */; };
 		114E3A1B1EA90C2400897B0E /* FourthCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A1A1EA90C2400897B0E /* FourthCollectionCell.swift */; };
+		1186955C1EB08F9C0090E84F /* ChatEnterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1186955B1EB08F9C0090E84F /* ChatEnterVC.swift */; };
 		11A367541EAB1A85000BBAE2 /* DOFavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3674F1EAB1A85000BBAE2 /* DOFavoriteButton.swift */; };
 		11A367551EAB1A85000BBAE2 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A367501EAB1A85000BBAE2 /* heart.png */; };
 		11A367561EAB1A85000BBAE2 /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A367511EAB1A85000BBAE2 /* like.png */; };
@@ -90,6 +91,7 @@
 		114E3A161EA8D1AF00897B0E /* FirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		114E3A181EA9086E00897B0E /* FourthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthVC.swift; sourceTree = "<group>"; };
 		114E3A1A1EA90C2400897B0E /* FourthCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthCollectionCell.swift; sourceTree = "<group>"; };
+		1186955B1EB08F9C0090E84F /* ChatEnterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatEnterVC.swift; sourceTree = "<group>"; };
 		11A3674F1EAB1A85000BBAE2 /* DOFavoriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOFavoriteButton.swift; sourceTree = "<group>"; };
 		11A367501EAB1A85000BBAE2 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 		11A367511EAB1A85000BBAE2 /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like.png; sourceTree = "<group>"; };
@@ -235,6 +237,14 @@
 			name = MainTBVC;
 			sourceTree = "<group>";
 		};
+		1186955A1EB08F620090E84F /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				1186955B1EB08F9C0090E84F /* ChatEnterVC.swift */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
 		11A367671EAB7470000BBAE2 /* MyActivity */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +307,7 @@
 				110CCAA71EA5F92900F6BCAF /* MenuCollectionCell.swift */,
 				114E3A0F1EA8BD4B00897B0E /* MainTBVC */,
 				11A367671EAB7470000BBAE2 /* MyActivity */,
+				1186955A1EB08F620090E84F /* Chat */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -487,6 +498,7 @@
 				114E3A191EA9086E00897B0E /* FourthVC.swift in Sources */,
 				11C152591EA1FE7E00403394 /* AppDelegate.swift in Sources */,
 				11AC16491EADF4BF00C5D619 /* ActOrderVC.swift in Sources */,
+				1186955C1EB08F9C0090E84F /* ChatEnterVC.swift in Sources */,
 				1138CF311EAC8E7400593E4F /* ThirdLiseVC.swift in Sources */,
 				110CCA4B1EA316F900F6BCAF /* Reachability.m in Sources */,
 				11AC16471EADF4A700C5D619 /* ActLikeVC.swift in Sources */,
