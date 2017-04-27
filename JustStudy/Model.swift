@@ -47,6 +47,21 @@ var sideProfileImage:UIImage?
 var sideProfileName:String?
 
 
+//IntroPages' model
+class IntroPage{
+    
+    var head = ""
+    var message = ""
+    var image = ""
+    
+    init(head:String,message:String,image:String) {
+        self.head = head
+        self.message = message
+        self.image = image
+    }
+}
+
+
 
 
 

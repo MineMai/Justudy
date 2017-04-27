@@ -34,6 +34,30 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+## CHIPageControl
+
+The MIT License (MIT)
+
+Copyright (c) 2017 Chili
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 ## FBSDKCoreKit
 
 Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
@@ -99,31 +123,31 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Firebase
 
-Copyright 2016 Google
+Copyright 2017 Google
 
 ## FirebaseAnalytics
 
-Copyright 2016 Google
+Copyright 2017 Google
 
 ## FirebaseAuth
 
-Copyright 2016 Google
+Copyright 2017 Google
 
 ## FirebaseCore
 
-Copyright 2016 Google
+Copyright 2017 Google
 
 ## FirebaseDatabase
 
-Copyright 2016 Google
+Copyright 2017 Google
 
 ## FirebaseInstanceID
 
-Copyright 2016 Google
+Copyright 2017 Google
 
 ## FirebaseStorage
 
-Copyright 2016 Google
+Copyright 2017 Google
 
 ## GTMOAuth2
 
@@ -537,21 +561,9 @@ Copyright 2016 Google
    limitations under the License.
 
 
-## GoogleAppUtilities
-
-Copyright 2016 Google
-
-## GoogleInterchangeUtilities
-
-Copyright 2016 Google
-
 ## GoogleSignIn
 
-Copyright 2016 Google
-
-## GoogleSymbolUtilities
-
-Copyright 2016 Google
+Copyright 2017 Google
 
 ## GoogleToolboxForMac
 
@@ -757,6 +769,30 @@ Copyright 2016 Google
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+
+
+## JSQMessagesViewController
+
+
+MIT License
+Copyright (c) 2013-present Jesse Squires
+
+http://www.jessesquires.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the "Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the
+following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
+OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 ## SDWebImage

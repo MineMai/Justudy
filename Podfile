@@ -17,5 +17,7 @@ target 'JustStudy' do
   pod 'GoogleSignIn'
   pod 'SDWebImage'
   pod 'SVProgressHUD'
+  pod 'JSQMessagesViewController', :git => 'https://github.com/jessesquires/JSQMessagesViewController.git', :branch => 'develop'
+  pod 'CHIPageControl', '~> 0.1.3'
 
 end

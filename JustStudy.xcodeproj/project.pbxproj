@@ -61,6 +61,11 @@
 		11C152701EA2303700403394 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C1526F1EA2303700403394 /* LoginVC.swift */; };
 		11C152721EA2305200403394 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C152711EA2305200403394 /* MainVC.swift */; };
 		821D1F3D9098DDCC9E346134 /* Pods_JustStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932841AAB021DBAB20C1B1D2 /* Pods_JustStudy.framework */; };
+		92E83D751EB0C79C0015A102 /* MemberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E83D741EB0C79C0015A102 /* MemberVC.swift */; };
+		92E83D771EB0C9B10015A102 /* MemberListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E83D761EB0C9B10015A102 /* MemberListTVC.swift */; };
+		92E83D791EB0CA220015A102 /* ManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E83D781EB0CA220015A102 /* ManagerVC.swift */; };
+		92E83D831EB0FA190015A102 /* IntroPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E83D821EB0FA190015A102 /* IntroPageVC.swift */; };
+		92E83D851EB0FB570015A102 /* IntroPageCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E83D841EB0FB570015A102 /* IntroPageCVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +129,11 @@
 		11C1526F1EA2303700403394 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		11C152711EA2305200403394 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		11C152741EA2338500403394 /* JustStudy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JustStudy.entitlements; sourceTree = "<group>"; };
+		92E83D741EB0C79C0015A102 /* MemberVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberVC.swift; sourceTree = "<group>"; };
+		92E83D761EB0C9B10015A102 /* MemberListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberListTVC.swift; sourceTree = "<group>"; };
+		92E83D781EB0CA220015A102 /* ManagerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerVC.swift; sourceTree = "<group>"; };
+		92E83D821EB0FA190015A102 /* IntroPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPageVC.swift; sourceTree = "<group>"; };
+		92E83D841EB0FB570015A102 /* IntroPageCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPageCVC.swift; sourceTree = "<group>"; };
 		932841AAB021DBAB20C1B1D2 /* Pods_JustStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F563E2CAEC4538A1EEF5B5 /* Pods-JustStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JustStudy/Pods-JustStudy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -241,6 +251,9 @@
 			isa = PBXGroup;
 			children = (
 				1186955B1EB08F9C0090E84F /* ChatEnterVC.swift */,
+				92E83D781EB0CA220015A102 /* ManagerVC.swift */,
+				92E83D741EB0C79C0015A102 /* MemberVC.swift */,
+				92E83D761EB0C9B10015A102 /* MemberListTVC.swift */,
 			);
 			name = Chat;
 			sourceTree = "<group>";
@@ -300,6 +313,8 @@
 			isa = PBXGroup;
 			children = (
 				11C152581EA1FE7E00403394 /* AppDelegate.swift */,
+				92E83D821EB0FA190015A102 /* IntroPageVC.swift */,
+				92E83D841EB0FB570015A102 /* IntroPageCVC.swift */,
 				11C1526F1EA2303700403394 /* LoginVC.swift */,
 				110CCA551EA3215B00F6BCAF /* SignUpVC.swift */,
 				110CCA571EA34D2600F6BCAF /* MenuTBVC.swift */,
@@ -474,12 +489,14 @@
 				1138CF251EAC57B700593E4F /* FirstInfoCell.swift in Sources */,
 				1138CF291EAC62E400593E4F /* FirstTeacherCell.swift in Sources */,
 				1138CF2B1EAC649100593E4F /* FirstOrganizerCell.swift in Sources */,
+				92E83D851EB0FB570015A102 /* IntroPageCVC.swift in Sources */,
 				11AC164F1EADFD9800C5D619 /* ActOrderCell.swift in Sources */,
 				11C152611EA1FE7E00403394 /* JustStudy.xcdatamodeld in Sources */,
 				110CCA581EA34D2600F6BCAF /* MenuTBVC.swift in Sources */,
 				11AC163D1EADDECF00C5D619 /* ThirdDetailHeroCell.swift in Sources */,
 				11A367691EAB74C5000BBAE2 /* MyActivityVC.swift in Sources */,
 				11A3675A1EAB33FC000BBAE2 /* FirstDetailTbvc.swift in Sources */,
+				92E83D771EB0C9B10015A102 /* MemberListTVC.swift in Sources */,
 				114E3A131EA8BDA700897B0E /* FirstMainTbvCell.swift in Sources */,
 				11AC16391EADD86B00C5D619 /* ThirdDetailTbvc.swift in Sources */,
 				113A43CB1EAF38EF00A21B0C /* AnimatedTransitioner.swift in Sources */,
@@ -492,10 +509,12 @@
 				110CCA481EA316BD00F6BCAF /* SWRevealViewController.m in Sources */,
 				11A3675C1EAB35FE000BBAE2 /* firstHeroCell.swift in Sources */,
 				11AC164B1EADFD1E00C5D619 /* ZoomingLayout.swift in Sources */,
+				92E83D751EB0C79C0015A102 /* MemberVC.swift in Sources */,
 				11AC163B1EADDA3400C5D619 /* ThirdDetailVC.swift in Sources */,
 				1138CF351EACD95400593E4F /* ThirdLiseCell.swift in Sources */,
 				113A43CE1EAF395F00A21B0C /* ThirdDetailOverlayVC.swift in Sources */,
 				114E3A191EA9086E00897B0E /* FourthVC.swift in Sources */,
+				92E83D831EB0FA190015A102 /* IntroPageVC.swift in Sources */,
 				11C152591EA1FE7E00403394 /* AppDelegate.swift in Sources */,
 				11AC16491EADF4BF00C5D619 /* ActOrderVC.swift in Sources */,
 				1186955C1EB08F9C0090E84F /* ChatEnterVC.swift in Sources */,
@@ -508,6 +527,7 @@
 				11C152701EA2303700403394 /* LoginVC.swift in Sources */,
 				114E3A1B1EA90C2400897B0E /* FourthCollectionCell.swift in Sources */,
 				113A43CC1EAF38EF00A21B0C /* PresentationController.swift in Sources */,
+				92E83D791EB0CA220015A102 /* ManagerVC.swift in Sources */,
 				1138CF271EAC5A8F00593E4F /* FirstDescriptionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
