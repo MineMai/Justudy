@@ -49,7 +49,10 @@ class ActOrderVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "showQRSegue", sender: nil)
+    }
     
     
 

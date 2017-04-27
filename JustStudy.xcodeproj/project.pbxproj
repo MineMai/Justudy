@@ -31,6 +31,9 @@
 		114E3A191EA9086E00897B0E /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A181EA9086E00897B0E /* FourthVC.swift */; };
 		114E3A1B1EA90C2400897B0E /* FourthCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E3A1A1EA90C2400897B0E /* FourthCollectionCell.swift */; };
 		1186955C1EB08F9C0090E84F /* ChatEnterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1186955B1EB08F9C0090E84F /* ChatEnterVC.swift */; };
+		1186955E1EB1DDDE0090E84F /* ShowQRcodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1186955D1EB1DDDE0090E84F /* ShowQRcodeVC.swift */; };
+		118695601EB1DFC80090E84F /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1186955F1EB1DFC80090E84F /* SettingVC.swift */; };
+		118695621EB1E3320090E84F /* VidioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118695611EB1E3320090E84F /* VidioVC.swift */; };
 		11A367541EAB1A85000BBAE2 /* DOFavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3674F1EAB1A85000BBAE2 /* DOFavoriteButton.swift */; };
 		11A367551EAB1A85000BBAE2 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A367501EAB1A85000BBAE2 /* heart.png */; };
 		11A367561EAB1A85000BBAE2 /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A367511EAB1A85000BBAE2 /* like.png */; };
@@ -97,6 +100,9 @@
 		114E3A181EA9086E00897B0E /* FourthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthVC.swift; sourceTree = "<group>"; };
 		114E3A1A1EA90C2400897B0E /* FourthCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthCollectionCell.swift; sourceTree = "<group>"; };
 		1186955B1EB08F9C0090E84F /* ChatEnterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatEnterVC.swift; sourceTree = "<group>"; };
+		1186955D1EB1DDDE0090E84F /* ShowQRcodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowQRcodeVC.swift; sourceTree = "<group>"; };
+		1186955F1EB1DFC80090E84F /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		118695611EB1E3320090E84F /* VidioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VidioVC.swift; sourceTree = "<group>"; };
 		11A3674F1EAB1A85000BBAE2 /* DOFavoriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOFavoriteButton.swift; sourceTree = "<group>"; };
 		11A367501EAB1A85000BBAE2 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 		11A367511EAB1A85000BBAE2 /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like.png; sourceTree = "<group>"; };
@@ -232,6 +238,7 @@
 			children = (
 				114E3A181EA9086E00897B0E /* FourthVC.swift */,
 				114E3A1A1EA90C2400897B0E /* FourthCollectionCell.swift */,
+				118695611EB1E3320090E84F /* VidioVC.swift */,
 			);
 			name = Fourth;
 			sourceTree = "<group>";
@@ -266,6 +273,7 @@
 				11AC16481EADF4BF00C5D619 /* ActOrderVC.swift */,
 				11AC164C1EADFD8100C5D619 /* ActLikeCell.swift */,
 				11AC164E1EADFD9800C5D619 /* ActOrderCell.swift */,
+				1186955D1EB1DDDE0090E84F /* ShowQRcodeVC.swift */,
 			);
 			name = MyActivity;
 			sourceTree = "<group>";
@@ -320,6 +328,7 @@
 				110CCA571EA34D2600F6BCAF /* MenuTBVC.swift */,
 				11C152711EA2305200403394 /* MainVC.swift */,
 				110CCAA71EA5F92900F6BCAF /* MenuCollectionCell.swift */,
+				1186955F1EB1DFC80090E84F /* SettingVC.swift */,
 				114E3A0F1EA8BD4B00897B0E /* MainTBVC */,
 				11A367671EAB7470000BBAE2 /* MyActivity */,
 				1186955A1EB08F620090E84F /* Chat */,
@@ -479,6 +488,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				118695621EB1E3320090E84F /* VidioVC.swift in Sources */,
+				1186955E1EB1DDDE0090E84F /* ShowQRcodeVC.swift in Sources */,
 				11A3675E1EAB5355000BBAE2 /* FirstMapVC.swift in Sources */,
 				11AC164D1EADFD8100C5D619 /* ActLikeCell.swift in Sources */,
 				110CCAA81EA5F92900F6BCAF /* MenuCollectionCell.swift in Sources */,
@@ -503,6 +514,7 @@
 				11C152721EA2305200403394 /* MainVC.swift in Sources */,
 				11AC16411EADE25400C5D619 /* ThirdDetailCourseCell.swift in Sources */,
 				1138CF331EACD93800593E4F /* ThirdDescriptionCell.swift in Sources */,
+				118695601EB1DFC80090E84F /* SettingVC.swift in Sources */,
 				11A367601EAB567C000BBAE2 /* ThirdMainTbvc.swift in Sources */,
 				11AC16451EADE28D00C5D619 /* ThirdDetailTourCell.swift in Sources */,
 				110CCA5A1EA3C4F100F6BCAF /* Model.swift in Sources */,

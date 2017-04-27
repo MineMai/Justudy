@@ -52,6 +52,16 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     }
     
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "showVidioSegue", sender: nil)
+    }
+    
+    
+    
+    
+    
+    
     
 
 }
