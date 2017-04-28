@@ -28,11 +28,11 @@
                                     <constraint firstAttribute="width" constant="252" id="Pdh-g1-0wB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="50"/>
-                                <color key="textColor" red="0.96862745098039216" green="0.83137254901960778" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.25882352941176467" green="0.52156862745098043" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.81960784313725488" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xxW-ko-FQF" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="OV9-i5-HWH"/>
                             <constraint firstItem="xxW-ko-FQF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="np5-th-Kve"/>

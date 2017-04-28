@@ -228,7 +228,7 @@
                                     <constraint firstAttribute="width" constant="252" id="m62-uY-9ed"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="50"/>
-                                <color key="textColor" red="0.96862745098039216" green="0.83137254901960778" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.25882352941176467" green="0.52156862745098043" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFJ-rx-8kj">
@@ -239,7 +239,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <state key="normal" title="Login">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="loginBtn:" destination="db1-ds-FCm" eventType="touchUpInside" id="92w-6K-mty"/>
@@ -274,7 +274,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <state key="normal" title="Register Now">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="registerBtn:" destination="db1-ds-FCm" eventType="touchUpInside" id="Eb4-PH-9VR"/>
@@ -303,7 +303,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.81960784313725488" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="2xB-2i-Pr6" firstAttribute="centerX" secondItem="juI-Yt-OW4" secondAttribute="centerX" id="0Yb-1i-laj"/>
                             <constraint firstItem="xLF-fx-wUE" firstAttribute="top" secondItem="2xB-2i-Pr6" secondAttribute="bottom" constant="65" id="0sb-xq-nbt"/>
@@ -404,7 +404,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Sign Up">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="signUpBtn:" destination="WCs-Rz-0L5" eventType="touchUpInside" id="Qlh-HT-Zo5"/>
@@ -424,7 +424,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.81960784313725488" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="UzT-Mx-GUX" firstAttribute="centerX" secondItem="79m-aI-xxF" secondAttribute="centerX" id="4om-21-w7g"/>
                             <constraint firstItem="ckt-id-8ig" firstAttribute="centerX" secondItem="79m-aI-xxF" secondAttribute="centerX" id="9nq-Qe-jIW"/>
@@ -644,7 +644,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="67Z-kc-cU2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.81960784313725488" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="70" maxY="0.0"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="tHc-vh-Ymu">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
@@ -663,11 +663,11 @@
                                         <constraint firstAttribute="height" constant="21" id="fxf-M3-zkr"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.99607843137254903" green="0.81960784313725488" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="a8k-gU-dmx" firstAttribute="top" secondItem="tHc-vh-Ymu" secondAttribute="top" constant="25" id="0Dd-Md-yUR"/>
                                 <constraint firstItem="a8k-gU-dmx" firstAttribute="leading" secondItem="tHc-vh-Ymu" secondAttribute="leading" constant="20" id="6f7-4t-CGS"/>
@@ -711,7 +711,7 @@
                                                 <constraint firstItem="DOj-SW-HmT" firstAttribute="leading" secondItem="xM8-Gm-ft0" secondAttribute="trailing" constant="20" id="fl9-IR-WqK"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.99607843137254903" green="0.81960784313725488" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <segue destination="xkd-aK-5GD" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="ruu-Z2-lP2"/>
                                         </connections>
@@ -748,7 +748,7 @@
                                                 <constraint firstItem="Fdc-CJ-7HP" firstAttribute="leading" secondItem="4rY-gg-P7E" secondAttribute="trailing" constant="20" id="t4Q-2D-pmL"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.99607843137254903" green="0.81960784313725488" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="sZa-SX-DM7">
                                         <rect key="frame" x="0.0" y="240" width="375" height="60"/>
@@ -782,7 +782,7 @@
                                                 <constraint firstItem="fkM-Yu-k9m" firstAttribute="centerY" secondItem="uuG-lX-YoX" secondAttribute="centerY" id="ykg-X2-ne1"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.99607843137254903" green="0.81960784313725488" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <segue destination="id5-uD-QHE" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="esL-Vu-P7I"/>
                                         </connections>
@@ -819,7 +819,7 @@
                                                 <constraint firstItem="GbQ-C1-2yl" firstAttribute="leading" secondItem="zv9-NS-dxl" secondAttribute="trailing" constant="20" id="xWh-aP-bh7"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.15294117647058825" green="0.75294117647058822" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.99607843137254903" green="0.81960784313725488" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <segue destination="db1-ds-FCm" kind="show" identifier="logOutSegue" id="2iw-d8-nLh"/>
                                         </connections>
@@ -1128,10 +1128,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yh0-MZ-ElB">
-                                <rect key="frame" x="0.0" y="479" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="474" width="375" height="45"/>
                                 <color key="backgroundColor" red="0.23665773868560791" green="0.36618995666503906" blue="0.58801275491714478" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="zwJ-vX-Lp8"/>
+                                    <constraint firstAttribute="height" constant="45" id="zwJ-vX-Lp8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="我要報名">
@@ -1142,7 +1142,7 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MpL-mZ-P4T">
-                                <rect key="frame" x="0.0" y="64" width="375" height="415"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="410"/>
                                 <connections>
                                     <segue destination="FIu-78-XXm" kind="embed" id="OcS-VW-QGc"/>
                                 </connections>
@@ -1850,10 +1850,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vM7-cX-azU">
-                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
                                 <color key="backgroundColor" red="1" green="0.97248407810000004" blue="0.1108604614" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Du8-vP-bVO"/>
+                                    <constraint firstAttribute="height" constant="45" id="Du8-vP-bVO"/>
                                 </constraints>
                                 <state key="normal" title="我要預約"/>
                                 <connections>
@@ -1861,7 +1861,7 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rtf-tR-IbE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="627"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="622"/>
                                 <connections>
                                     <segue destination="XcL-D2-Axy" kind="embed" id="8EA-hV-X7y"/>
                                 </connections>
@@ -2399,7 +2399,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NPk-T2-xjU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首頁" image="Menuhome" id="G6X-8E-ZrF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="YjH-VH-u8N">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YjH-VH-u8N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2442,13 +2442,15 @@
                                     <constraint firstAttribute="height" constant="30" id="IE3-bX-G9c"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="開始線上客服"/>
+                                <state key="normal" title="開始線上客服">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
                                 <connections>
                                     <action selector="chatEnterButton:" destination="Qyu-Y0-4Q4" eventType="touchUpInside" id="moI-ak-PCe"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.99607843137254903" green="0.81960784313725488" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.25882352941176467" green="0.52156862745098043" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="RZZ-PY-bvo" firstAttribute="top" secondItem="9EF-O9-RiI" secondAttribute="bottom" constant="40" id="AB9-lN-yWS"/>
                             <constraint firstItem="RZZ-PY-bvo" firstAttribute="centerX" secondItem="rHA-eN-D5y" secondAttribute="centerX" id="GUZ-lt-wW8"/>
@@ -2563,7 +2565,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mZr-mQ-cyr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="我的活動" image="HOT" id="0Yc-ST-LPo"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tNc-tg-W5U">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tNc-tg-W5U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2582,7 +2584,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0oP-D3-mza" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="線上客服" image="chat" id="uOI-eI-gc0"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="K1V-71-MTg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K1V-71-MTg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3043,7 +3045,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="d8z-oW-rd0" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rZD-bh-LU4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rZD-bh-LU4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3061,7 +3063,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="id5-uD-QHE" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="kNy-3M-F8W">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kNy-3M-F8W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3079,7 +3081,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yFr-FU-3If" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="aYR-qJ-NGe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aYR-qJ-NGe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3122,6 +3124,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ruu-Z2-lP2"/>
-        <segue reference="JAj-FZ-FBo"/>
+        <segue reference="h45-U0-EAf"/>
     </inferredMetricsTieBreakers>
 </document>

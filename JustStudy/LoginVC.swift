@@ -37,7 +37,7 @@ class LoginVC: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, UITextF
         
         //Firebase的登入註冊鈕外觀
         loginBtn.layer.borderWidth = 1.0
-        loginBtn.layer.borderColor = UIColor.white.cgColor
+        loginBtn.layer.borderColor = UIColor(red:0.74, green:0.76, blue:0.78, alpha:1.0).cgColor
         loginBtn.layer.cornerRadius = 10
         
         //設定Google 登入鈕
@@ -176,6 +176,7 @@ class LoginVC: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, UITextF
         if let err = error
         {
             print("使用Google登入失敗",err)
+            SVProgressHUD.dismiss()
             return
         }
     

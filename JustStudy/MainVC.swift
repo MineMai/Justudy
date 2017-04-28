@@ -184,7 +184,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         let menucell = menuCollection.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: indexPath) as! MenuCollectionCell
         menucell.menuIcon.image = UIImage(named: menuIconNames[indexPath.row])?.withRenderingMode(.alwaysTemplate)
         menucell.tintColor = UIColor(red: 0.356, green: 0.054, blue: 0.05, alpha: 1.0)
-        menucell.backgroundColor = UIColor(red:0.15, green:0.75, blue:0.62, alpha:1.0)
+        menucell.backgroundColor = UIColor(red:1.00, green:0.82, blue:0.00, alpha:1.0)
         return menucell
         
     }
