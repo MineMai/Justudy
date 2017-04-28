@@ -84,9 +84,19 @@
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
+		<key>youtube-ios-player-helper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>05293607155936FB4AC2009EE16E66B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0930D9AACEE2ECF9DA4AD0B326A53F27</key>
 		<dict>
 			<key>primary</key>
@@ -152,12 +162,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C260D5AF5D3BFD25A6897908D8BFE484</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C5EE56BD20640CA71053D1824E09576E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>E2B15703FFC5CA60861C1CF01EA389AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E396A93E4C79B22B7816E9F02F62ECED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1EBB0B7CD77A15FB3C5CBED7AD50A33</key>
 		<dict>
 			<key>primary</key>
 			<true/>
