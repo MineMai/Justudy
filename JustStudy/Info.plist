@@ -80,5 +80,7 @@
 	<false/>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>取得您的位置以利尋找路線</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Please tap &quot;OK&quot; for QRCode correct using.</string>
 </dict>
 </plist>

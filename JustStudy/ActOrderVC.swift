@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ActOrderVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -51,13 +52,18 @@ class ActOrderVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        performSegue(withIdentifier: "showQRSegue", sender: nil)
+            let passTopic = testdata.posts[indexPath.row]["topic"]
+            performSegue(withIdentifier: "showQRSegue", sender: passTopic)
+   
     }
     
-    
-
-    
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showQRSegue"{
+            let dvc = segue.destination as! ShowQRcodeVC
+            dvc.activityName = sender as! String
+        }
+    }
+   
 }
 
 

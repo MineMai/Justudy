@@ -86,6 +86,7 @@ PODS:
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
   - SVProgressHUD (2.1.2)
+  - youtube-ios-player-helper (0.1.6)
 
 DEPENDENCIES:
   - CHIPageControl (~> 0.1.3)
@@ -101,6 +102,7 @@ DEPENDENCIES:
   - JSQMessagesViewController (from `https://github.com/jessesquires/JSQMessagesViewController.git`, branch `develop`)
   - SDWebImage
   - SVProgressHUD
+  - youtube-ios-player-helper (~> 0.1.4)
 
 EXTERNAL SOURCES:
   JSQMessagesViewController:
@@ -132,7 +134,8 @@ SPEC CHECKSUMS:
   JSQMessagesViewController: c11b9e77372ab72c45c67311f6da7342e32df1e8
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: 139e8c761e55c9fa14e5e4635b73ae0350b92803
+PODFILE CHECKSUM: ee0b760506401ec2f6443b07462e401f98edf173
 
 COCOAPODS: 1.2.0

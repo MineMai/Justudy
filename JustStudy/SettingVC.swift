@@ -7,13 +7,25 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SettingVC: UIViewController {
     
 
+    @IBOutlet weak var scanQR: UIButton!
     @IBOutlet weak var menuBtn: UIBarButtonItem!
     
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if FIRAuth.auth()?.currentUser?.uid == "hGRNtRdLVLc8Dilgkytt7U0RMTi2"{
+            scanQR.isHidden = false
+        }
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,7 +39,10 @@ class SettingVC: UIViewController {
     }
     
     
+    
+    
     @IBAction func scanQRBtn(_ sender: UIButton) {
+        performSegue(withIdentifier: "scanView", sender: nil)
     }
 
     
