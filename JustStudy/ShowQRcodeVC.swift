@@ -16,7 +16,7 @@ class ShowQRcodeVC: UIViewController {
     
     var qrcodeImage:CIImage!
     var activityName:String!
-    var userMail:String! = FIRAuth.auth()?.currentUser?.email
+    var userMail = FIRAuth.auth()!.currentUser!.email
     var justudy = "@justudy#"
 
     override func viewDidLoad() {
@@ -26,7 +26,7 @@ class ShowQRcodeVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         topicLabel.text = activityName
-        let dataSet = "\(justudy),\(userMail)"
+        let dataSet = "\(justudy),\(userMail!)"
         if qrcodeImage == nil {
             
             let data = dataSet.data(using: String.Encoding.isoLatin1, allowLossyConversion: false)

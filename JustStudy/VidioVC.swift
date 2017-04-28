@@ -18,9 +18,7 @@ class VidioVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        yView.load(withVideoId: "KhrOA0HnnLk", playerVars: ["playsinline":1,
-                                                            "rel":0,
-                                                            "showinfo":0])
+        yView.load(withVideoId: "KhrOA0HnnLk", playerVars: ["playsinline":1,"rel":0,"showinfo":0])
         
         
     }
