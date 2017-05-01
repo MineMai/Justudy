@@ -109,7 +109,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
                     {
                         print("進入Google")
                         isGoogleLogin = true
-                        googleUsers = Googlesers(name: name, email: email, pictureURL: photoUrl)
+                        googleUsers = GooglUsers(name: name, email: email, pictureURL: photoUrl)
                     }
                 }
                 //let uid = profile.uid // Provider-specific UID

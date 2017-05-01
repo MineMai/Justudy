@@ -26,9 +26,9 @@ class FBUsers
 }
 
 var isGoogleLogin = false
-var googleUsers:Googlesers?
+var googleUsers:GooglUsers?
 
-class Googlesers
+class GooglUsers
 {
     var name:String?
     var email:String?
@@ -62,9 +62,37 @@ class IntroPage{
 }
 
 
+var activity = [Activity]()
 
-
-
+class Activity
+{
+    var id:Int?
+    var subject:String?
+    var description:String?
+    var date:String?
+    var location:String?
+    var presenter_name:String?
+    var presenter_info:String?
+    var organizer:String?
+    var liked:Int?
+    var image1:String?
+    var image2:String?
+    
+    init(id:Int, subject:String, description:String, date:String, location:String, presenter_name:String, presenter_info:String, organizer:String, liked:Int, image1:String, image2:String)
+    {
+        self.id = id
+        self.subject = subject
+        self.description = description
+        self.date = date
+        self.location = location
+        self.presenter_name = presenter_name
+        self.presenter_info = presenter_info
+        self.organizer = organizer
+        self.liked = liked
+        self.image1 = image1
+        self.image2 = image2
+    }
+}
 
 
 

@@ -10,16 +10,15 @@ import UIKit
 
 class FirstMainTbvc: UITableViewController {
     
+    lazy var session = { return URLSession(configuration: .default) }()
+    
     var isLikeSelected = Array(repeating: false, count: testdata.posts.count)
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        loadData()
     
     }
     
@@ -30,17 +29,80 @@ class FirstMainTbvc: UITableViewController {
         self.tabBarController?.tabBar.isHidden = false
     }
     
+    //MARK: - loadData
+    func loadData()
+    {
+        let apiAddress = "http://api.justudy.tw/v1/activities"
+        
+        if let url = URL(string: apiAddress)
+        {
+            let task = session.dataTask(with: url, completionHandler: { (data, response, error) in
+                
+                if error != nil
+                {
+                    print(error?.localizedDescription as Any)
+                }
+                if let downloadedData = data
+                {
+                    do
+                    {
+                        let json = try JSONSerialization.jsonObject(with: downloadedData, options: [])
+                        
+                        DispatchQueue.main.async {
+                            self.parseJSON(json: json)
+                        }
+                    }
+                    catch{
+                        
+                    }
+                }
+            })
+            task.resume() //開始執行下載
+        }
+    }
+    
+    func parseJSON(json:Any)
+    {
+        if let okJSON = json as? [String:Any]
+        {
+            if let json = okJSON["result"] as? [[String:Any]]
+            {
+                for i in 0..<json.count
+                {
+                    let data = json[i]
+                    guard let id = data["id"] as? Int, let subject = data["subject"] as? String, let description = data["description"] as? String, let datetime = data["datetime"] as? String, let location = data["location"] as? String, let presenter_name = data["presenter_name"] as? String, let presenter_info = data["presenter_info"] as? String, let organizer = data["organizer"] as? String, let liked = data["liked"] as? Int, let image1 = data["card_image"] as? [String:String], let image2  = data["banner_image"] as? [String:String] else {return}
+                    
+                    let myDate = datetime
+                    let dateFormatter = DateFormatter()
+                    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+                    let date = dateFormatter.date(from:myDate)!
+                    dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+                    let dateString = dateFormatter.string(from:date)
+                    
+                    guard let url1 = image1["url"] else {return}
+                    
+                    guard let url2 = image2["url"] else {return}
+                    
+                    let act = Activity(id: id, subject: subject, description: description, date: dateString, location: location, presenter_name: presenter_name, presenter_info: presenter_info, organizer: organizer, liked: liked, image1: url1, image2: url2)
+                    activity.append(act)
+                    tableView.reloadData()
+                }
+            }
+        }
+    }
+    
+    
+    
+    
+    
     
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return testdata.posts.count
+        return activity.count
     }
 
     
@@ -48,10 +110,13 @@ class FirstMainTbvc: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FirstMainTbvCell", for: indexPath) as! FirstMainTbvCell
         
         cell.firstLikeBtn.isSelected = isLikeSelected[indexPath.row]
-        cell.firstTopicLabel.text = testdata.posts[indexPath.row]["topic"]
-        cell.firstTimeLabel.text = testdata.posts[indexPath.row]["time"]
-        cell.firstPlaceLabel.text = testdata.posts[indexPath.row]["place"]
-        cell.firstImageView.image = UIImage(named: testdata.posts[indexPath.row]["image"]!)
+        cell.firstTopicLabel.text = activity[indexPath.row].subject
+        cell.firstTimeLabel.text = activity[indexPath.row].date
+        cell.firstPlaceLabel.text = activity[indexPath.row].location
+        //cell.firstImageView.image = UIImage(named: testdata.posts[indexPath.row]["image"]!)
+        
+        let cacheURL = URL(string: activity[indexPath.row].image1!)
+        cell.firstImageView.sd_setImage(with: cacheURL, placeholderImage: UIImage(named: "picture_placeholder.png"))
         
         cell.firstLikeBtn.tag = indexPath.row
         cell.firstLikeBtn.addTarget(self, action: #selector(likePressed), for: .touchUpInside)
@@ -59,10 +124,14 @@ class FirstMainTbvc: UITableViewController {
         return cell
     }
     
+    
+    //MARK: - didSelectRowAt
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tabBarController?.tabBar.isHidden = true
         let _ = performSegue(withIdentifier: "firstShowSegue", sender: nil)
         
+        //消除點選的灰色
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func likePressed(sender:DOFavoriteButton)
@@ -81,49 +150,18 @@ class FirstMainTbvc: UITableViewController {
     }
     
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
