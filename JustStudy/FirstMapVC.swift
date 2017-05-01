@@ -68,13 +68,13 @@ class FirstMapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate
         }
         //這就是目前使用者位置
         //print(currentLocation.coordinate.latitude) //這就是目前使用者位置
-        
+        myLocation = currentLocation.coordinate
         if isMoveMap {
             
         }
         else
         {
-            moveMap(currentLocation: currentLocation)
+            //moveMap(currentLocation: currentLocation)
             isMoveMap = true
         }
         
