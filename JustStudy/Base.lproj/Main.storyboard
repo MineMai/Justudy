@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="db1-ds-FCm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d8z-oW-rd0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -41,7 +41,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MZP-bc-QpW">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MZP-bc-QpW">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                                 </imageView>
                                                 <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9b-uJ-iVi">
@@ -77,9 +77,9 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tf-Xp-Iv6">
-                                <rect key="frame" x="62" y="150" width="250" height="0.0"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tf-Xp-Iv6">
+                                <rect key="frame" x="62" y="333.5" width="250" height="0.0"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Light" family="PingFang TC" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -145,11 +145,11 @@
                             <constraint firstItem="12b-nv-tmO" firstAttribute="top" secondItem="jB7-Wn-s4B" secondAttribute="bottom" constant="30" id="FaS-Jp-9uf"/>
                             <constraint firstAttribute="trailing" secondItem="5pl-ce-ny0" secondAttribute="trailing" constant="120" id="GYt-dL-IxZ"/>
                             <constraint firstItem="KdL-TT-OS9" firstAttribute="top" secondItem="nHl-QJ-8Xz" secondAttribute="bottom" constant="60" id="Gog-zU-Inw"/>
+                            <constraint firstItem="4tf-Xp-Iv6" firstAttribute="centerY" secondItem="Pwc-3B-iBx" secondAttribute="centerY" id="HhP-hH-0J9"/>
                             <constraint firstItem="3HT-cv-t9A" firstAttribute="top" secondItem="Pwc-3B-iBx" secondAttribute="top" id="NO3-8b-WQl"/>
                             <constraint firstItem="3HT-cv-t9A" firstAttribute="leading" secondItem="Pwc-3B-iBx" secondAttribute="leading" id="Pd7-N8-7hf"/>
                             <constraint firstItem="12b-nv-tmO" firstAttribute="top" secondItem="3HT-cv-t9A" secondAttribute="bottom" id="XOp-te-uSZ"/>
                             <constraint firstItem="5pl-ce-ny0" firstAttribute="bottom" secondItem="jB7-Wn-s4B" secondAttribute="bottom" id="a1c-kd-d2u"/>
-                            <constraint firstItem="4tf-Xp-Iv6" firstAttribute="top" secondItem="KdL-TT-OS9" secondAttribute="bottom" constant="15" id="bdP-zW-OF1"/>
                             <constraint firstItem="jB7-Wn-s4B" firstAttribute="centerX" secondItem="Pwc-3B-iBx" secondAttribute="centerX" id="eTl-9M-ied"/>
                             <constraint firstItem="4tf-Xp-Iv6" firstAttribute="width" secondItem="Pwc-3B-iBx" secondAttribute="width" multiplier="250:375" id="sSM-ah-KNd"/>
                             <constraint firstItem="eDf-k5-S1u" firstAttribute="leading" secondItem="Pwc-3B-iBx" secondAttribute="leading" constant="120" id="wbm-Ft-Tg9"/>
@@ -2366,11 +2366,11 @@
                         <viewControllerLayoutGuide type="bottom" id="07a-j7-sGf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6GT-ps-qSJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="519"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hb8-sh-4rE" customClass="YTPlayerView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="211"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hb8-sh-4rE" secondAttribute="height" multiplier="16:9" id="SXv-TZ-qNh"/>
@@ -2399,7 +2399,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NPk-T2-xjU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首頁" image="Menuhome" id="G6X-8E-ZrF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="YjH-VH-u8N">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YjH-VH-u8N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2565,7 +2565,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mZr-mQ-cyr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="我的活動" image="HOT" id="0Yc-ST-LPo"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tNc-tg-W5U">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tNc-tg-W5U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2584,7 +2584,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0oP-D3-mza" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="線上客服" image="chat" id="uOI-eI-gc0"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="K1V-71-MTg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K1V-71-MTg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3045,7 +3045,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="d8z-oW-rd0" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rZD-bh-LU4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rZD-bh-LU4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3063,7 +3063,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="id5-uD-QHE" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="kNy-3M-F8W">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kNy-3M-F8W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3081,7 +3081,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yFr-FU-3If" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="aYR-qJ-NGe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aYR-qJ-NGe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

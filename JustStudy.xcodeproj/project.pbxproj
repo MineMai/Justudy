@@ -397,7 +397,7 @@
 				TargetAttributes = {
 					11C152541EA1FE7E00403394 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = SDCL9Y2H6C;
+						DevelopmentTeam = 8H7X36TF25;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -680,7 +680,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = JustStudy/JustStudy.entitlements;
-				DEVELOPMENT_TEAM = SDCL9Y2H6C;
+				DEVELOPMENT_TEAM = 8H7X36TF25;
 				INFOPLIST_FILE = JustStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -700,7 +700,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = JustStudy/JustStudy.entitlements;
-				DEVELOPMENT_TEAM = SDCL9Y2H6C;
+				DEVELOPMENT_TEAM = 8H7X36TF25;
 				INFOPLIST_FILE = JustStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -41,10 +41,10 @@ class QRListVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        let userInfo = getMember[getMember.count - indexPath.row - 1].components(separatedBy: ",")
+        let userInfo = getMember[indexPath.row].components(separatedBy: ",")
         
         cell.textLabel?.text = "\(userInfo[1])"
-        cell.detailTextLabel?.text = getTime[getTime.count - indexPath.row - 1]
+        cell.detailTextLabel?.text = getTime[indexPath.row]
         cell.detailTextLabel?.textColor = UIColor.lightGray
         
         return cell
@@ -57,9 +57,36 @@ class QRListVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete {
-                     
-            getMember.remove(at: getMember.count - indexPath.row - 1)
-            getTime.remove(at: getTime.count - indexPath.row - 1)
+            
+            let scriptUrl = "https://script.google.com/macros/s/AKfycbyadkr-rxTMjtxtB0WB_cGJRiZqrNvByuZ05o75QNXUUIJKw_c/exec"
+            
+            // QueryString與app 串資料
+            let urlWithParams = scriptUrl + "?rownumber=\(indexPath.row + 1)&type=get"
+            
+            let url = URL(string: urlWithParams.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)!
+            
+            print(url)
+            var urlRequest = URLRequest(url:url)
+            urlRequest.httpMethod = "GET"
+            
+            let task = URLSession.shared.dataTask(with: urlRequest as URLRequest) {
+                data, response, error in
+                let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                print("responseString = \(responseString!)")
+                
+                // Check for error
+                if error != nil {
+                    print("error=\(error!)")
+                } else {
+                    print("pass")
+                }
+            }
+            task.resume()
+            
+            getMember.remove(at: indexPath.row)
+            getTime.remove(at: indexPath.row)
+            
+            print(getMember)
             
             listTableView.reloadData()
         }
@@ -73,6 +100,30 @@ class QRListVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             self.getTime.removeAll()
             self.listTableView.reloadData()
             
+            let scriptUrl = "https://script.google.com/macros/s/AKfycbxFKxTPHiNS5Hh9KI2aEt3lA_mKVvG86ZY7AFeB1foPYc_alRU/exec"
+            
+            // QueryString與app 串資料
+            let urlWithParams = scriptUrl + "?type=get"
+            
+            let url = URL(string: urlWithParams.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)!
+            
+            print(url)
+            var urlRequest = URLRequest(url:url)
+            urlRequest.httpMethod = "GET"
+            
+            let task = URLSession.shared.dataTask(with: urlRequest as URLRequest) {
+                data, response, error in
+                let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                print("responseString = \(responseString!)")
+                
+                // Check for error
+                if error != nil {
+                    print("error=\(error!)")
+                } else {
+                    print("pass")
+                }
+            }
+            task.resume()
         }))
         
         clearAlert.addAction(UIAlertAction(title: "取消", style: .cancel, handler: nil))

@@ -51,18 +51,16 @@ class ActOrderVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-            let passTopic = testdata.posts[indexPath.row]["topic"]
-            performSegue(withIdentifier: "showQRSegue", sender: passTopic)
-   
+        performSegue(withIdentifier: "showQRSegue", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showQRSegue"{
             let dvc = segue.destination as! ShowQRcodeVC
-            dvc.activityName = sender as! String
+            dvc.activityName = testdata.posts[(collectionView.indexPathsForSelectedItems?.first?.row)!]["topic"]!
         }
     }
+
    
 }
 

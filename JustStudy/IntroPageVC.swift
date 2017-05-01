@@ -23,17 +23,19 @@ class IntroPageVC: UIViewController,UICollectionViewDelegate,UICollectionViewDat
     var progress = 0.0
     var pageIndexPath:IndexPath?
     let introPageNumbers = 4
-//    var introPageData:[IntroPage] = [IntroPage(head: "H1", message: "M1", image: "intro1"),
-//                                     IntroPage(head: "H2", message: "M2", image: "intro2"),
-//                                     IntroPage(head: "H3", message: "M3", image: "intro3"),
-//                                     IntroPage(head: "H4", message: "M4", image: "intro4")]
+    var introPageData:[IntroPage] = [
+        IntroPage(head: "Justudy", message: "畢業即失業？\n厭倦一成不變的生活？\n找不到人生方向？\n想投資或是改變自己？", image: "intro0"),
+        IntroPage(head: "Justudy", message: "提供國外學校中文線上服務\n直接、無隔閡、無國界\n可面對面諮詢＆活動預約", image: "intro1"),
+        IntroPage(head: "Justudy", message: "邀請國外海歸或業界達人\n分享相關趨勢與經驗\n解答您的不安與疑惑", image: "intro2"),
+        IntroPage(head: "Justudy", message: "精準選擇未來所需\n提升語言聽說讀寫能力\n取得專業技能國際證照", image: "intro3")]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //init labels
         //introHeadLabel.text = introPageData[0].head
-        //introMessageLabel.text = introPageData[0].message
+        introMessageLabel.text = introPageData[0].message
         
         //init page number
         self.introPageControl.numberOfPages = self.introPageNumbers
@@ -84,13 +86,13 @@ class IntroPageVC: UIViewController,UICollectionViewDelegate,UICollectionViewDat
             introSkipButton.isHidden = false
             introStartButton.isHidden = true
             //introHeadLabel.text = introPageData[Int(progress)].head
-            //introMessageLabel.text = introPageData[Int(progress)].message
+            introMessageLabel.text = introPageData[Int(progress)].message
         }else{
             introNextButton.isHidden = true
             introSkipButton.isHidden = true
             introStartButton.isHidden = false
             //introHeadLabel.text = introPageData[3].head
-            //introMessageLabel.text = introPageData[3].message
+            introMessageLabel.text = introPageData[3].message
         }
     }
 

@@ -27,7 +27,7 @@ class ShowQRcodeVC: UIViewController {
         super.viewWillAppear(animated)
         topicLabel.text = activityName
         let dataSet = "\(justudy),\(userMail!)"
-        if qrcodeImage == nil {
+        //if qrcodeImage == nil {
             
             let data = dataSet.data(using: String.Encoding.isoLatin1, allowLossyConversion: false)
             let filter = CIFilter(name: "CIQRCodeGenerator")
@@ -35,10 +35,10 @@ class ShowQRcodeVC: UIViewController {
             filter?.setValue("Q", forKey: "inputCorrectionLevel")
             qrcodeImage = filter?.outputImage
             displayQRCodeImage()
-        }else{
-            imageView.image = nil
-            qrcodeImage = nil
-        }
+        //}else{
+        //    imageView.image = nil
+        //    qrcodeImage = nil
+        //}
     }
     
     func displayQRCodeImage(){

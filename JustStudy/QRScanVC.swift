@@ -149,6 +149,37 @@ class QRScanVC: UIViewController,AVCaptureMetadataOutputObjectsDelegate  {
                             
                             self.countLabel.text = "\(self.howManyPeople.count)"
                             
+                            //**** send to sheet
+                            
+                            let scriptUrl = "https://script.google.com/macros/s/AKfycbzYVQTKE-BjrKO7h4b_N5doenGhmtJepQjLmPwgcj1FZmnRuTfE/exec"
+                            
+                            // QueryString與app 串資料
+                            let urlWithParams = scriptUrl + "?mail=\(userInfoArray[1])&time=\(self.getTime!)&type=get"
+                            
+                            let url = URL(string: urlWithParams.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)!
+                            
+                            print(url)
+                            var urlRequest = URLRequest(url:url)
+                            
+                            urlRequest.httpMethod = "GET"
+                            
+                            let task = URLSession.shared.dataTask(with: urlRequest as URLRequest) {
+                                data, response, error in
+                                let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                                print("responseString = \(responseString!)")
+                                
+                                // Check for error
+                                if error != nil {
+                                    print("error=\(error!)")
+                                } else {
+                                    print("pass")
+                                }
+                            }
+                            task.resume()
+                            
+                            //****************************
+                            
+                            
                             self.captureSession?.startRunning()
                             self.qrCodeFrameView?.frame = CGRect.zero
                         }))
