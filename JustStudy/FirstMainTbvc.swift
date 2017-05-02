@@ -13,13 +13,26 @@ class FirstMainTbvc: UITableViewController {
     lazy var session = { return URLSession(configuration: .default) }()
     
     var isLikeSelected = Array(repeating: false, count: testdata.posts.count)
+    
+    let pullToRefreshControl = UIRefreshControl()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //加入下拉更新
+        tableView.refreshControl = pullToRefreshControl
+        pullToRefreshControl.addTarget(self, action: #selector(refreshTable), for: .valueChanged)
         
         loadData()
     
+    }
+    
+    // MARK: - 下拉更新
+    func refreshTable()
+    {
+        loadData()
+        tableView.reloadData()
+        pullToRefreshControl.endRefreshing()
     }
     
     override func viewWillDisappear(_ animated: Bool) {

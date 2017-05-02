@@ -55,10 +55,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate/*, GIDSignInDelegate*/ {
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         //設定TabBar顏色
-        UITabBar.appearance().tintColor = UIColor(red:1.00, green:0.82, blue:0.00, alpha:1.0)
+        UITabBar.appearance().tintColor = UIColor(red:0.26, green:0.52, blue:0.96, alpha:1.0)
             //UIColor(red:0.26, green:0.52, blue:0.96, alpha:1.0)
-        UITabBar.appearance().barTintColor = UIColor(red:0.26, green:0.52, blue:0.96, alpha:1.0)
-            //UIColor(red:1.00, green:0.82, blue:0.00, alpha:1.0)
+        UITabBar.appearance().barTintColor = UIColor(red:1.00, green:0.82, blue:0.00, alpha:1.0)
+        //UIColor(red:0.26, green:0.52, blue:0.96, alpha:1.0)
+        //UIColor(red:1.00, green:0.82, blue:0.00, alpha:1.0)
+        
         
         //讀取CoreData資料
         loadCoredata()
