@@ -18,6 +18,10 @@ class FourthCollectionCell: UICollectionViewCell {
     
     @IBOutlet weak var heroBackView: UIView!
     
+    @IBOutlet weak var peopleLikeBtn: DOFavoriteButton!
+    
+    @IBOutlet weak var likeCountLabel: UILabel!
+    
     
     
     override func awakeFromNib() {

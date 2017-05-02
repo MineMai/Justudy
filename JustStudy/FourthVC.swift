@@ -15,6 +15,7 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     
     @IBOutlet weak var backgroundImage: UIImageView!
     
+    var isLikeSelected = Array(repeating: false, count: 5)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,17 +33,35 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return 5
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FourthCollectionCell", for: indexPath) as! FourthCollectionCell
         
+        cell.peopleLikeBtn.isSelected = isLikeSelected[indexPath.row]
         cell.heroImage.image = UIImage(named: testdata.posts[indexPath.row]["image"]!)
 //        cell.heroBackImage.image = UIImage(named: testdata.posts[indexPath.row]["image"]!)
+        cell.peopleLikeBtn.tag = indexPath.row
+        cell.peopleLikeBtn.addTarget(self, action: #selector(likePressed),for: .touchUpInside)
         
         return cell
+    }
+    
+    func likePressed(sender:DOFavoriteButton)
+    {
+        let buttonRow = sender.tag
+        
+        if sender.isSelected {
+            sender.deselect()
+            isLikeSelected.remove(at: buttonRow)
+            isLikeSelected.insert(false, at: buttonRow)
+        } else {
+            sender.select()
+            isLikeSelected.remove(at: buttonRow)
+            isLikeSelected.insert(true, at: buttonRow)
+        }
     }
     
     
