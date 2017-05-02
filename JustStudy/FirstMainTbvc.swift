@@ -76,6 +76,7 @@ class FirstMainTbvc: UITableViewController {
     
     func parseJSON(json:Any)
     {
+        activity = []
         if let okJSON = json as? [String:Any]
         {
             if let json = okJSON["result"] as? [[String:Any]]
