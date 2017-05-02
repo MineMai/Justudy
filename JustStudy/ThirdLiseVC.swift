@@ -28,7 +28,10 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, 
         
         setScrollImage()
         
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
     }
     
     

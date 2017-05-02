@@ -1537,7 +1537,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="172.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat4" translatesAutoresizingMaskIntoConstraints="NO" id="gVP-hh-mnU">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="English" translatesAutoresizingMaskIntoConstraints="NO" id="gVP-hh-mnU">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="172.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英語證照" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixH-6n-QsB">
@@ -1547,8 +1547,9 @@
                                                         <constraint firstAttribute="width" constant="106" id="uWI-ki-rdv"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
@@ -1568,7 +1569,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="172.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat7" translatesAutoresizingMaskIntoConstraints="NO" id="T0r-kz-YDF">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="makeup" translatesAutoresizingMaskIntoConstraints="NO" id="T0r-kz-YDF">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="172.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="時尚證照" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5n-St-i0h">
@@ -1578,8 +1579,9 @@
                                                         <constraint firstAttribute="height" constant="33" id="Nn8-3y-Lls"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
@@ -1599,7 +1601,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="172.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat8" translatesAutoresizingMaskIntoConstraints="NO" id="Mpf-Dg-zKp">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chef" translatesAutoresizingMaskIntoConstraints="NO" id="Mpf-Dg-zKp">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="172.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="廚藝證照" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bl3-kO-abP">
@@ -1609,8 +1611,9 @@
                                                         <constraint firstAttribute="width" constant="106" id="Tq3-TT-uCR"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
@@ -3135,6 +3138,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Chef" width="960" height="811"/>
+        <image name="English" width="702" height="336"/>
         <image name="HOT" width="30" height="35"/>
         <image name="LisenceKind" width="25" height="25"/>
         <image name="LisenceSchool" width="30" height="30"/>
@@ -3143,9 +3148,6 @@
         <image name="OrLine" width="864" height="45"/>
         <image name="a3" width="1600" height="1066"/>
         <image name="back" width="128" height="128"/>
-        <image name="cat4" width="640" height="480"/>
-        <image name="cat7" width="640" height="480"/>
-        <image name="cat8" width="640" height="480"/>
         <image name="chat" width="30" height="30"/>
         <image name="close" width="256" height="256"/>
         <image name="demo-6" width="1920" height="1169"/>
@@ -3156,6 +3158,7 @@
         <image name="icon_menu_24dp" width="24" height="24"/>
         <image name="like.png" width="128" height="128"/>
         <image name="logout_128p" width="128" height="128"/>
+        <image name="makeup" width="1080" height="539"/>
         <image name="place" width="40" height="40"/>
         <image name="profile_picture" width="300" height="300"/>
         <image name="settings" width="128" height="128"/>

@@ -16,6 +16,13 @@ class ThirdMainTbvc: UITableViewController {
         
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        //self.tabBarController?.tabBar.isHidden = true
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
