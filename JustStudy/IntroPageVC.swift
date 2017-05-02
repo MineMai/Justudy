@@ -24,10 +24,10 @@ class IntroPageVC: UIViewController,UICollectionViewDelegate,UICollectionViewDat
     var pageIndexPath:IndexPath?
     let introPageNumbers = 4
     var introPageData:[IntroPage] = [
-        IntroPage(head: "Justudy", message: "畢業即失業？\n厭倦一成不變的生活？\n找不到人生方向？\n想投資或是改變自己？", image: "intro0"),
-        IntroPage(head: "Justudy", message: "提供國外學校中文線上服務\n直接、無隔閡、無國界\n可面對面諮詢＆活動預約", image: "intro1"),
-        IntroPage(head: "Justudy", message: "邀請國外海歸或業界達人\n分享相關趨勢與經驗\n解答您的不安與疑惑", image: "intro2"),
-        IntroPage(head: "Justudy", message: "精準選擇未來所需\n提升語言聽說讀寫能力\n取得專業技能國際證照", image: "intro3")]
+        IntroPage(head: "Justudy", message: "厭倦一成不變的生活?\n畢業後找不到人生方向?", image: "intro0"),
+        IntroPage(head: "Justudy", message: "提供中文線上服務\n面對面諮詢＆活動預約", image: "intro1"),
+        IntroPage(head: "Justudy", message: "邀請海歸或業界達人\n分享相關趨勢與經驗", image: "intro2"),
+        IntroPage(head: "Justudy", message: "選擇提升語言能力\n或取得專業國際證照", image: "intro3")]
     
     
     override func viewDidLoad() {

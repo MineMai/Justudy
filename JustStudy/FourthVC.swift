@@ -23,7 +23,7 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        backgroundImage.image = UIImage(named: testdata.posts[0]["image"]!)
+        backgroundImage.image = UIImage(named: expertsdata.posts[0]["image"]!)
         
     }
     
@@ -33,7 +33,7 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return expertsdata.posts.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -41,8 +41,10 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FourthCollectionCell", for: indexPath) as! FourthCollectionCell
         
         cell.peopleLikeBtn.isSelected = isLikeSelected[indexPath.row]
-        cell.heroImage.image = UIImage(named: testdata.posts[indexPath.row]["image"]!)
+        cell.heroImage.image = UIImage(named: expertsdata.posts[indexPath.row]["image"]!)
 //        cell.heroBackImage.image = UIImage(named: testdata.posts[indexPath.row]["image"]!)
+        cell.heroTopicLabel.text = expertsdata.posts[indexPath.row]["topic"]
+        cell.heroNameLabel.text = expertsdata.posts[indexPath.row]["name"]
         cell.peopleLikeBtn.tag = indexPath.row
         cell.peopleLikeBtn.addTarget(self, action: #selector(likePressed),for: .touchUpInside)
         
@@ -67,13 +69,21 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = Int(floor((scrollView.contentOffset.x - 150) / 300 ) + 1)
-        backgroundImage.image = UIImage(named: testdata.posts[pageIndex]["image"]!)
+        backgroundImage.image = UIImage(named: expertsdata.posts[pageIndex]["image"]!)
     }
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         performSegue(withIdentifier: "showVidioSegue", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showVidioSegue"{
+            let dvc = segue.destination as! VidioVC
+            dvc.getVideoAddress = expertsdata.posts[(collectionView.indexPathsForSelectedItems?.first?.row)!]["video"]
+
+        }
     }
     
     
