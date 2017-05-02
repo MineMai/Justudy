@@ -11,6 +11,7 @@ import UIKit
 class FirstDetailTbvc: UITableViewController {
     
     var heroCell:firstHeroCell? //因為要把heroCell給scroll用
+    var detailIndex = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,7 @@ class FirstDetailTbvc: UITableViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         //把TableView往上移
         tableView.contentInset = UIEdgeInsets(top: -64, left: 0, bottom: 0, right: 0)*/
+        
         
     }
 
@@ -44,26 +46,28 @@ class FirstDetailTbvc: UITableViewController {
         {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "heroCell", for: indexPath) as! firstHeroCell
-            cell.heroImage.image = UIImage(named: "demo-6")
+            let cacheURL = URL(string: activity[detailIndex].image1!)
+            cell.heroImage.sd_setImage(with: cacheURL, placeholderImage: UIImage(named: "picture_placeholder.png"))
+            
             heroCell = cell
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as! FirstInfoCell
-            cell.firstInfoTopic.text = "123"
-            cell.firstInfoTime.text = "456"
-            cell.firstInfoPlaceBtn.setTitle("10650台北市大安區信義路2段166號", for: .normal)
+            cell.firstInfoTopic.text = activity[detailIndex].subject
+            cell.firstInfoTime.text = activity[detailIndex].date
+            cell.firstInfoPlaceBtn.setTitle(activity[detailIndex].location, for: .normal)
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "descriptionCell", for: indexPath) as! FirstDescriptionCell
-            cell.firstDescription.text = "國際品牌顧問公司BrandKeys公佈2016全球百大忠誠品牌在前十名中，Apple的平板和手機各佔據兩個名次Amazon的三項服務各佔據三個名次"
+            cell.firstDescription.text = activity[detailIndex].description
             return cell
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "teacherCell", for: indexPath) as! FirstTeacherCell
-            cell.firstTeacherLabel.text = "亞洲倍數模式實踐發揚者，豐富跨領域產業背景資深企業管理顧問輔導企業超過50間"
+            cell.firstTeacherLabel.text = activity[detailIndex].presenter_info
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: "organizerCell", for: indexPath) as! FirstOrganizerCell
-            cell.firstOrganizerLabel.text = "工業研究院"
+            cell.firstOrganizerLabel.text = activity[detailIndex].organizer
             return cell
         }
         
@@ -76,7 +80,7 @@ class FirstDetailTbvc: UITableViewController {
         if segue.identifier == "goMapSegue"
         {
             let mapvc = segue.destination as? FirstMapVC
-            mapvc?.targetLocation = "10650台北市大安區信義路2段166號"
+            mapvc?.targetLocation = activity[detailIndex].location
             
 //            if let index = detailindex
 //            {

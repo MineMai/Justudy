@@ -134,6 +134,14 @@ class FirstMainTbvc: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "firstShowSegue"
+        {
+            let vc = segue.destination as! FirstVC
+            vc.firstVCIndex = (tableView.indexPathForSelectedRow?.row)!
+        }
+    }
+    
     func likePressed(sender:DOFavoriteButton)
     {
         let buttonRow = sender.tag

@@ -11,7 +11,7 @@ import UIKit
 class FirstVC: UIViewController {
     
     
-    
+    var firstVCIndex = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,13 @@ class FirstVC: UIViewController {
         
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tableViewSegue"
+        {
+            let vc = segue.destination as! FirstDetailTbvc
+            vc.detailIndex = firstVCIndex
+        }
+    }
     
     
 
