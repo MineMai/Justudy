@@ -93,7 +93,7 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, 
         // 設置尺寸 也就是可見視圖範圍
         myScrollView.frame = CGRect(x: 0, y: 0, width: topView.frame.width, height: topView.frame.height)
         // 實際視圖範圍
-        myScrollView.contentSize = CGSize(width: topView.frame.width * 5, height: topView.frame.height)
+        myScrollView.contentSize = CGSize(width: topView.frame.width * 4, height: topView.frame.height)
         
         // 是否顯示滑動條
         myScrollView.showsHorizontalScrollIndicator = false
@@ -113,7 +113,7 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, 
         pageControl = UIPageControl(frame: CGRect(x: 0, y: 0, width: fullSize.width * 0.85, height: 30))
         pageControl.center = CGPoint(x: fullSize.width * 0.5, y: topView.frame.height * 0.9)
         // 有幾頁 就是有幾個點點
-        pageControl.numberOfPages = 5
+        pageControl.numberOfPages = 4
         // 起始預設的頁數
         pageControl.currentPage = 0
         // 目前所在頁數的點點顏色
@@ -127,10 +127,10 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, 
         pageControl.backgroundColor = UIColor.clear
         self.topView.addSubview(pageControl)
         
-        for i in 0...4
+        for i in 0...3
         {
             let myImageView = UIImageView(frame: CGRect(x: topView.frame.width * CGFloat(i), y: 0, width: topView.frame.width, height: topView.frame.height))
-            myImageView.image = UIImage(named: "cat\(i + 1)")
+            myImageView.image = UIImage(named: "commercial\(i + 1)")
             myImageView.contentMode = .scaleAspectFill
             myScrollView.addSubview(myImageView)
         }
