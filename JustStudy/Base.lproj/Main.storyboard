@@ -1159,6 +1159,9 @@
                             <constraint firstAttribute="trailing" secondItem="MpL-mZ-P4T" secondAttribute="trailing" id="ygo-e1-yg0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="signUpBtn" destination="yh0-MZ-ElB" id="ucA-p1-LvG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="par-hv-wdk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1883,6 +1886,9 @@
                             <constraint firstItem="vM7-cX-azU" firstAttribute="top" secondItem="rtf-tR-IbE" secondAttribute="bottom" id="xF4-pl-TrK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="orderSchoolBtn" destination="vM7-cX-azU" id="PmR-KO-uqk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cA-BC-gAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3218,7 +3224,7 @@
         <image name="user" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ruu-Z2-lP2"/>
         <segue reference="JAj-FZ-FBo"/>
+        <segue reference="yak-fS-d2g"/>
     </inferredMetricsTieBreakers>
 </document>

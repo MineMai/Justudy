@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol OrderBtnStatus {
+    func changeBtnStatus()
+}
+
 class ThirdDetailOverlayVC: UIViewController, UITextFieldDelegate, UIPickerViewDelegate {
     
     @IBOutlet weak var schoolNameLabel: UILabel!
@@ -22,6 +26,7 @@ class ThirdDetailOverlayVC: UIViewController, UITextFieldDelegate, UIPickerViewD
     
     @IBOutlet weak var orderTimeTexeField: UITextField!
     
+    var btnStatusDelege:OrderBtnStatus?
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -56,11 +61,15 @@ class ThirdDetailOverlayVC: UIViewController, UITextFieldDelegate, UIPickerViewD
         //加入按一下手勢在view上面，來觸發關鍵盤方法
         let tap = UITapGestureRecognizer(target: self, action: #selector(closeKeyboard))
         view.addGestureRecognizer(tap)
+        
+        
+        
     }
     
     
     @IBAction func comfirnBtn(_ sender: UIButton)
     {
+        btnStatusDelege?.changeBtnStatus()
         //消失彈跳視窗
         self.presentingViewController?.dismiss(animated: true, completion: nil)
         

@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ThirdDetailVC: UIViewController {
+class ThirdDetailVC: UIViewController, OrderBtnStatus {
+    
+    
+    @IBOutlet weak var orderSchoolBtn: UIButton!
     
     //給彈跳視窗用的
     let transitionDelegate = TransitionDelegate()
@@ -24,14 +27,20 @@ class ThirdDetailVC: UIViewController {
     {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let overlayVC = sb.instantiateViewController(withIdentifier: "ThirdDetailOverlayVC") as! ThirdDetailOverlayVC
-        
+        overlayVC.btnStatusDelege = self
         overlayVC.transitioningDelegate = transitionDelegate
         overlayVC.modalPresentationStyle = .custom
         self.present(overlayVC, animated: true, completion: nil)
         
     }
     
-
+    func changeBtnStatus()
+    {
+        orderSchoolBtn.setTitle("已預約", for: .normal)
+        orderSchoolBtn.tintColor = UIColor.white
+        orderSchoolBtn.backgroundColor = UIColor.darkGray
+        orderSchoolBtn.isEnabled = false
+    }
     
     
 

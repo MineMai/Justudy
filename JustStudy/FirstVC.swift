@@ -10,6 +10,7 @@ import UIKit
 
 class FirstVC: UIViewController {
     
+    @IBOutlet weak var signUpBtn: UIButton!
     
     var firstVCIndex = 0
 
@@ -24,6 +25,10 @@ class FirstVC: UIViewController {
     @IBAction func signUpBtn(_ sender: UIButton)
     {
         showSuccessView()
+        signUpBtn.setTitle("已報名", for: .normal)
+        signUpBtn.tintColor = UIColor.white
+        signUpBtn.backgroundColor = UIColor.darkGray
+        signUpBtn.isEnabled = false
         
     }
     
