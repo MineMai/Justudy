@@ -2699,7 +2699,7 @@
         <!--My ActivityVC-->
         <scene sceneID="6KL-ec-EIR">
             <objects>
-                <viewController id="4zQ-wB-4ta" customClass="MyActivityVC" customModule="JustStudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="4zQ-wB-4ta" customClass="MyActivityVC" customModule="JustStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ESk-eA-fop"/>
                         <viewControllerLayoutGuide type="bottom" id="h26-wJ-nfk"/>

@@ -63,6 +63,7 @@ class IntroPage{
 
 
 var activity = [Activity]()
+var likedActivity = [Activity]() //給收藏用的
 
 class Activity
 {

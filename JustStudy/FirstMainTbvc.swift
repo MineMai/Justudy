@@ -171,7 +171,9 @@ class FirstMainTbvc: UITableViewController {
             sender.select()
             isLikeSelected.remove(at: buttonRow)
             isLikeSelected.insert(true, at: buttonRow)
+            likedActivity.append(activity[buttonRow]) //點了收藏存進Array
         }
+        
     }
     
 

@@ -22,12 +22,16 @@ class ActLikeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        collectionView.reloadData()
+    }
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return testdata.posts.count
+        return likedActivity.count
     }
     
     
@@ -36,13 +40,13 @@ class ActLikeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActLikeCell", for: indexPath) as! ActLikeCell
         
         //cell.imageView.image = nil
-        cell.actLikeTitle.text = testdata.posts[indexPath.row]["topic"]
-        cell.actLikeSubtitle.text = testdata.posts[indexPath.row]["time"]
-        cell.imageView.image = UIImage(named: testdata.posts[indexPath.row]["image"]!)
+        cell.actLikeTitle.text = likedActivity[indexPath.row].subject
+        cell.actLikeSubtitle.text = likedActivity[indexPath.row].date
+        //cell.imageView.image = UIImage(named: likedActivity[indexPath.row].image1!)
         
-        //let cacheURL = URL(string: hostMsg[indexPath.row].imageURL)
+        let cacheURL = URL(string: likedActivity[indexPath.row].image1!)
         
-        //cell.imageView.sd_setImage(with: cacheURL, placeholderImage: UIImage(named: "picture_placeholder.png"))
+        cell.imageView.sd_setImage(with: cacheURL, placeholderImage: UIImage(named: "picture_placeholder.png"))
         
         return cell
         
