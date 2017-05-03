@@ -95,7 +95,7 @@ class FirstMapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate
             
             if error != nil
             {
-                print("xx地址轉座標錯誤: \(String(describing: error?.localizedDescription))")
+                print("地址轉座標錯誤: \(String(describing: error?.localizedDescription))")
                 return
             }
             else

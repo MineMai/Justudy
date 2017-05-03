@@ -9,6 +9,9 @@
 import UIKit
 
 class ThirdDetailTourCell: UITableViewCell {
+    
+    @IBOutlet weak var flyOverBtn: UIButton!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()

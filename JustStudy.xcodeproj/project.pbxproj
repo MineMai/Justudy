@@ -14,6 +14,7 @@
 		110CCA581EA34D2600F6BCAF /* MenuTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110CCA571EA34D2600F6BCAF /* MenuTBVC.swift */; };
 		110CCA5A1EA3C4F100F6BCAF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110CCA591EA3C4F100F6BCAF /* Model.swift */; };
 		110CCAA81EA5F92900F6BCAF /* MenuCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110CCAA71EA5F92900F6BCAF /* MenuCollectionCell.swift */; };
+		11131C361EB8E6670024D119 /* ThirdMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11131C351EB8E6670024D119 /* ThirdMapVC.swift */; };
 		1138CF251EAC57B700593E4F /* FirstInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138CF241EAC57B700593E4F /* FirstInfoCell.swift */; };
 		1138CF271EAC5A8F00593E4F /* FirstDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138CF261EAC5A8F00593E4F /* FirstDescriptionCell.swift */; };
 		1138CF291EAC62E400593E4F /* FirstTeacherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138CF281EAC62E400593E4F /* FirstTeacherCell.swift */; };
@@ -85,6 +86,7 @@
 		110CCA571EA34D2600F6BCAF /* MenuTBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTBVC.swift; sourceTree = "<group>"; };
 		110CCA591EA3C4F100F6BCAF /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		110CCAA71EA5F92900F6BCAF /* MenuCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionCell.swift; sourceTree = "<group>"; };
+		11131C351EB8E6670024D119 /* ThirdMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdMapVC.swift; sourceTree = "<group>"; };
 		1138CF241EAC57B700593E4F /* FirstInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstInfoCell.swift; sourceTree = "<group>"; };
 		1138CF261EAC5A8F00593E4F /* FirstDescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstDescriptionCell.swift; sourceTree = "<group>"; };
 		1138CF281EAC62E400593E4F /* FirstTeacherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTeacherCell.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				11AC16421EADE27100C5D619 /* ThirdDetailSchoolCell.swift */,
 				11AC16441EADE28D00C5D619 /* ThirdDetailTourCell.swift */,
 				113A43CD1EAF395F00A21B0C /* ThirdDetailOverlayVC.swift */,
+				11131C351EB8E6670024D119 /* ThirdMapVC.swift */,
 			);
 			name = Third;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				1138CF251EAC57B700593E4F /* FirstInfoCell.swift in Sources */,
 				1138CF291EAC62E400593E4F /* FirstTeacherCell.swift in Sources */,
 				1138CF2B1EAC649100593E4F /* FirstOrganizerCell.swift in Sources */,
+				11131C361EB8E6670024D119 /* ThirdMapVC.swift in Sources */,
 				92E83D851EB0FB570015A102 /* IntroPageCVC.swift in Sources */,
 				11AC164F1EADFD9800C5D619 /* ActOrderCell.swift in Sources */,
 				11C152611EA1FE7E00403394 /* JustStudy.xcdatamodeld in Sources */,

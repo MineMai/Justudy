@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class FirstMainTbvc: UITableViewController {
     
@@ -45,6 +46,7 @@ class FirstMainTbvc: UITableViewController {
     //MARK: - loadData
     func loadData()
     {
+        SVProgressHUD.show(withStatus: "Loading")
         let apiAddress = "http://api.justudy.tw/v1/activities"
         
         if let url = URL(string: apiAddress)
@@ -100,6 +102,7 @@ class FirstMainTbvc: UITableViewController {
                     let act = Activity(id: id, subject: subject, description: description, date: dateString, location: location, presenter_name: presenter_name, presenter_info: presenter_info, organizer: organizer, liked: liked, image1: url1, image2: url2)
                     activity.append(act)
                     tableView.reloadData()
+                    SVProgressHUD.dismiss()
                 }
             }
         }

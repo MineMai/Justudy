@@ -61,6 +61,20 @@ class ThirdDetailTbvc: UITableViewController {
 
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ThirdMapSegue"
+        {
+            let vc = segue.destination as! ThirdMapVC
+            vc.location = "Chome-1-2 Oshiage, Sumida, Tokyo 131-0045"
+            //^//28-13 Sarugaku-Cho Shibuya-ku , Tokyo , 150-0033
+            //^//350 5th Ave, New York, NY 10118
+            //^//100 - 555 W 12th Avenue Vancouver, BC, Canada V5Z 3X7
+            //^//Talamban RdCebu City, Cebu, Philippines
+            //^//100 - 555 W 12th Avenue Vancouver, BC, Canada
+            //Chome-1-2 Oshiage, Sumida, Tokyo 131-0045日本
+        }
+    }
+    
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
