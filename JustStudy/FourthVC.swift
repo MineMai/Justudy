@@ -73,7 +73,15 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = Int(floor((scrollView.contentOffset.x - 150) / 300 ) + 1)
-        backgroundImage.image = UIImage(named: expertsdata.posts[pageIndex]["image"]!)
+        
+        if pageIndex < 0 {
+            backgroundImage.image = UIImage(named: expertsdata.posts[0]["image"]!)
+        }else if pageIndex > 4{
+            backgroundImage.image = UIImage(named: expertsdata.posts[4]["image"]!)
+        }else{
+            backgroundImage.image = UIImage(named: expertsdata.posts[pageIndex]["image"]!)
+        }
+
     }
     
     

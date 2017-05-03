@@ -44,7 +44,22 @@ class MemberListTVC: UITableViewController {
         // Configure the cell...
         let email = roomArray[indexPath.row].value
         cell.textLabel?.text = email as? String
+        
+        //resize the dot
+        cell.imageView?.image = UIImage(named: "newDot")
+        let itemSize = CGSize(width:10.0, height:10.0)
+        UIGraphicsBeginImageContextWithOptions(itemSize, false, 0.0)
+        let imageRect = CGRect(x:0.0, y:0.0, width:itemSize.width, height:itemSize.height)
+        cell.imageView?.image!.draw(in:imageRect)
+        cell.imageView?.image! = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.imageView?.image = nil
     }
     
     //轉場時將key帶至下個畫面處理，其為uid，下頁用uid帶出對話內容
