@@ -2362,10 +2362,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIa-uU-rbL">
-                                                    <rect key="frame" x="55" y="344.5" width="16" height="16"/>
+                                                    <rect key="frame" x="55" y="344.5" width="20" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="H5U-mq-I83"/>
-                                                        <constraint firstAttribute="width" constant="16" id="lMB-OH-asx"/>
+                                                        <constraint firstAttribute="width" constant="20" id="lMB-OH-asx"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -2381,10 +2381,10 @@
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="image" keyPath="image" value="like.png"/>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="imageColorOn">
-                                                            <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="imageColorOff">
-                                                            <color key="value" red="0.25882352939999997" green="0.52156862749999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
                                                             <color key="value" red="0.99607843139999996" green="0.81960784310000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2492,7 +2492,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NPk-T2-xjU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首頁" image="Menuhome" id="G6X-8E-ZrF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YjH-VH-u8N">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="YjH-VH-u8N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2658,7 +2658,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mZr-mQ-cyr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="我的活動" image="HOT" id="0Yc-ST-LPo"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tNc-tg-W5U">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tNc-tg-W5U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2677,7 +2677,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0oP-D3-mza" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="線上客服" image="chat" id="uOI-eI-gc0"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K1V-71-MTg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="K1V-71-MTg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3138,7 +3138,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="d8z-oW-rd0" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rZD-bh-LU4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rZD-bh-LU4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3156,7 +3156,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="id5-uD-QHE" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kNy-3M-F8W">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="kNy-3M-F8W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3174,7 +3174,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yFr-FU-3If" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aYR-qJ-NGe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="aYR-qJ-NGe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

@@ -47,6 +47,7 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
         cell.heroNameLabel.text = expertsdata.posts[indexPath.row]["name"]
         cell.peopleLikeBtn.tag = indexPath.row
         cell.peopleLikeBtn.addTarget(self, action: #selector(likePressed),for: .touchUpInside)
+        cell.likeCountLabel.text = expertsdata.posts[indexPath.row]["likeCount"]
         
         return cell
     }
@@ -59,11 +60,14 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
             sender.deselect()
             isLikeSelected.remove(at: buttonRow)
             isLikeSelected.insert(false, at: buttonRow)
+            expertsdata.posts[buttonRow]["likeCount"] = String(Int(expertsdata.posts[buttonRow]["likeCount"]!)! - 1)
         } else {
             sender.select()
             isLikeSelected.remove(at: buttonRow)
             isLikeSelected.insert(true, at: buttonRow)
+            expertsdata.posts[buttonRow]["likeCount"] = String(Int(expertsdata.posts[buttonRow]["likeCount"]!)! + 1)
         }
+        collectionView.reloadData()
     }
     
     
