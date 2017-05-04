@@ -1871,7 +1871,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rtf-tR-IbE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="622"/>
                                 <connections>
-                                    <segue destination="XcL-D2-Axy" kind="embed" id="8EA-hV-X7y"/>
+                                    <segue destination="XcL-D2-Axy" kind="embed" identifier="ThirdTableViewSegue" id="8EA-hV-X7y"/>
                                 </connections>
                             </containerView>
                         </subviews>

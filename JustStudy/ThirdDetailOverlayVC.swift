@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 protocol OrderBtnStatus {
     func changeBtnStatus()
@@ -70,6 +71,12 @@ class ThirdDetailOverlayVC: UIViewController, UITextFieldDelegate, UIPickerViewD
     @IBAction func comfirnBtn(_ sender: UIButton)
     {
         btnStatusDelege?.changeBtnStatus()
+        SVProgressHUD.show(withStatus: "處理中")
+        SVProgressHUD.dismiss(withDelay: 2) { 
+            SVProgressHUD.showSuccess(withStatus: "預約成功")
+            SVProgressHUD.dismiss(withDelay: 1)
+        }
+        
         //消失彈跳視窗
         self.presentingViewController?.dismiss(animated: true, completion: nil)
         

@@ -13,6 +13,9 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, 
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
+    var listIndex = 0
+    
+    
     var isLikeSelected = Array(repeating: false, count: testdata.posts.count)
     
     var myScrollView: UIScrollView!
@@ -28,10 +31,13 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, 
         
         setScrollImage()
         
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
+        
+        
     }
     
     
@@ -41,7 +47,7 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return testdata.posts.count
+        return licenseData.posts[listIndex].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -49,10 +55,10 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, 
         let cell = tableView.dequeueReusableCell(withIdentifier: "ThirdLiseCell", for: indexPath) as! ThirdLiseCell
         
         cell.lisenceLikeBtn.isSelected = isLikeSelected[indexPath.row]
-        cell.lisenceTopic.text = "哈利波特魔法"
-        cell.lisencePlace.text = "英國"
-        cell.lisenceKind.text = "魔術"
-        cell.lisenceImage.image = UIImage(named: "demo-6")
+        cell.lisenceTopic.text = licenseData.posts[listIndex][indexPath.row]["subject"]
+        cell.lisencePlace.text = licenseData.posts[listIndex][indexPath.row]["address"]
+        cell.lisenceKind.text = licenseData.posts[listIndex][indexPath.row]["type"]
+        cell.lisenceImage.image = UIImage(named: licenseData.posts[listIndex][indexPath.row]["image"]!)
         cell.lisenceLikeBtn.tag = indexPath.row
         cell.lisenceLikeBtn.addTarget(self, action: #selector(likePressed),for: .touchUpInside)
             

@@ -10,6 +10,7 @@ import Foundation
 
 let testdata = testData()
 var expertsdata = expertsData()
+var licenseData = LicenseData()
 
 struct testData
 {
@@ -93,8 +94,81 @@ struct expertsData
 
 
 
-
-
+struct LicenseData
+{
+    var posts =
+    [
+        [
+            ["id":"1",
+             "subject":"111",
+             "address":"xxx",
+             "type":"xxx",
+             "course_detail":"xxx",
+             "scholl_detail":"xxx",
+             "image":"xxx"],
+            ["id":"1",
+             "subject":"122",
+             "address":"xxx",
+             "type":"xxx",
+             "course_detail":"xxx",
+             "scholl_detail":"xxx",
+             "image":"xxx"],
+            ["id":"1",
+             "subject":"133",
+             "address":"xxx",
+             "type":"xxx",
+             "course_detail":"xxx",
+             "scholl_detail":"xxx",
+             "image":"xxx"]
+        ],
+        [
+            ["id":"1",
+             "subject":"211",
+             "address":"xxx",
+             "type":"xxx",
+             "course_detail":"xxx",
+             "scholl_detail":"xxx",
+             "image":"xxx"],
+            ["id":"1",
+             "subject":"222",
+             "address":"xxx",
+             "type":"xxx",
+             "course_detail":"xxx",
+             "scholl_detail":"xxx",
+             "image":"xxx"],
+            ["id":"1",
+             "subject":"233",
+             "address":"xxx",
+             "type":"xxx",
+             "course_detail":"xxx",
+             "scholl_detail":"xxx",
+             "image":"xxx"]
+        ],
+        [
+            ["id":"1",
+             "subject":"311",
+             "address":"xxx",
+             "type":"xxx",
+             "course_detail":"xxx",
+             "scholl_detail":"xxx",
+             "image":"xxx"],
+            ["id":"1",
+             "subject":"322",
+             "address":"xxx",
+             "type":"xxx",
+             "course_detail":"xxx",
+             "scholl_detail":"xxx",
+             "image":"xxx"],
+            ["id":"1",
+             "subject":"333",
+             "address":"xxx",
+             "type":"xxx",
+             "course_detail":"xxx",
+             "scholl_detail":"xxx",
+             "image":"xxx"]
+        ]
+    ]
+}
 
 
 
