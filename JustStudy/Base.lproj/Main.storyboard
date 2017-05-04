@@ -2469,7 +2469,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hb8-sh-4rE" customClass="YTPlayerView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                                <rect key="frame" x="0.0" y="150" width="375" height="211"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hb8-sh-4rE" secondAttribute="height" multiplier="16:9" id="SXv-TZ-qNh"/>
@@ -2480,7 +2480,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="hb8-sh-4rE" secondAttribute="trailing" id="Vaf-WW-bJ0"/>
                             <constraint firstItem="hb8-sh-4rE" firstAttribute="leading" secondItem="6GT-ps-qSJ" secondAttribute="leading" id="c0Z-qf-pdb"/>
-                            <constraint firstItem="hb8-sh-4rE" firstAttribute="top" secondItem="Shs-5b-5yH" secondAttribute="bottom" id="s3l-wv-3tD"/>
+                            <constraint firstItem="hb8-sh-4rE" firstAttribute="top" secondItem="Shs-5b-5yH" secondAttribute="bottom" constant="150" id="s3l-wv-3tD"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class FirstVC: UIViewController {
     
@@ -24,7 +25,12 @@ class FirstVC: UIViewController {
     
     @IBAction func signUpBtn(_ sender: UIButton)
     {
-        showSuccessView()
+        //showSuccessView()
+        SVProgressHUD.show(withStatus: "處理中")
+        SVProgressHUD.dismiss(withDelay: 1) {
+            self.showSuccessView()
+        }
+        
         signUpBtn.setTitle("已報名", for: .normal)
         signUpBtn.tintColor = UIColor.white
         signUpBtn.backgroundColor = UIColor.darkGray

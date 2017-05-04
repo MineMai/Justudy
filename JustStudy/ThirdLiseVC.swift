@@ -15,8 +15,7 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, 
     
     var listIndex = 0
     
-    
-    var isLikeSelected = Array(repeating: false, count: testdata.posts.count)
+    var isLikeSelected = Array(repeating: false, count: 3)
     
     var myScrollView: UIScrollView!
     var pageControl: UIPageControl!
