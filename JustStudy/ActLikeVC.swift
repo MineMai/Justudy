@@ -42,6 +42,7 @@ class ActLikeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         //cell.imageView.image = nil
         cell.actLikeTitle.text = likedActivity[indexPath.row].subject
         cell.actLikeSubtitle.text = likedActivity[indexPath.row].date
+        cell.actLikePlace.text = likedActivity[indexPath.row].location
         //cell.imageView.image = UIImage(named: likedActivity[indexPath.row].image1!)
         
         let cacheURL = URL(string: likedActivity[indexPath.row].image1!)

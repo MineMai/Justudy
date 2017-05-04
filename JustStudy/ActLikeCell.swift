@@ -17,6 +17,9 @@ class ActLikeCell: UICollectionViewCell {
     
     @IBOutlet weak var actLikeSubtitle: UILabel!
     
+    @IBOutlet weak var actLikePlace: UILabel!
+    
+    
     @IBOutlet weak var imageCoverView: UIView!
     
     
