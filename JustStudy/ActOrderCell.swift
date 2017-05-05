@@ -17,6 +17,9 @@ class ActOrderCell: UICollectionViewCell {
     
     @IBOutlet weak var actOrderSubtitle: UILabel!
     
+    @IBOutlet weak var buttonLabel: UILabel!
+    
+    
     @IBOutlet weak var imageCoverView: UIView!
     
     override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {

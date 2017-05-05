@@ -73,15 +73,34 @@ class ThirdDetailOverlayVC: UIViewController, UITextFieldDelegate, UIPickerViewD
     
     @IBAction func comfirnBtn(_ sender: UIButton)
     {
-        btnStatusDelege?.changeBtnStatus()
-        SVProgressHUD.show(withStatus: "處理中")
-        SVProgressHUD.dismiss(withDelay: 2) { 
-            SVProgressHUD.showSuccess(withStatus: "預約成功")
-            SVProgressHUD.dismiss(withDelay: 1)
+        if orderTimeTexeField.text != ""
+        {
+            btnStatusDelege?.changeBtnStatus()
+            SVProgressHUD.show(withStatus: "處理中")
+            SVProgressHUD.dismiss(withDelay: 2) {
+                
+                let schoolName = licenseData.posts[self.overlayKind][self.overlayIndex]["school_name"] as! String
+                let subject = licenseData.posts[self.overlayKind][self.overlayIndex]["subject"] as! String
+                let date = self.orderTimeTexeField.text
+                let image = licenseData.posts[self.overlayKind][self.overlayIndex]["image"] as! String
+                let book = BookedAct(schoolName: schoolName, subject: subject, date: date!, image: image)
+                
+                bookedAct.append(book)
+                
+                SVProgressHUD.showSuccess(withStatus: "預約成功")
+                SVProgressHUD.dismiss(withDelay: 1)
+            }
+            
+            //消失彈跳視窗
+            self.presentingViewController?.dismiss(animated: true, completion: nil)
         }
-        
-        //消失彈跳視窗
-        self.presentingViewController?.dismiss(animated: true, completion: nil)
+        else
+        {
+            let alert = UIAlertController(title: "請選擇時間", message: nil, preferredStyle: .alert)
+            let ok = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(ok)
+            present(alert, animated: true, completion: nil)
+        }
         
     }
     

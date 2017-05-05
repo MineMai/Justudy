@@ -64,6 +64,7 @@ class IntroPage{
 
 var activity = [Activity]()
 var likedActivity = [Activity]() //給收藏用的
+var bookedAct = [BookedAct]() //給預約用的
 
 class Activity
 {
@@ -97,7 +98,21 @@ class Activity
 
 
 
-
+class BookedAct
+{
+    var schoolName:String?
+    var subject:String?
+    var date:String?
+    var image:String?
+    
+    init(schoolName:String, subject:String, date:String, image:String)
+    {
+        self.schoolName = schoolName
+        self.subject = subject
+        self.date = date
+        self.image = image
+    }
+}
 
 
 

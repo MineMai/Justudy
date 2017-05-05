@@ -57,6 +57,7 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, 
         cell.lisenceTopic.text = licenseData.posts[listIndex][indexPath.row]["subject"] as? String
         cell.lisencePlace.text = licenseData.posts[listIndex][indexPath.row]["address"] as? String
         cell.lisenceKind.text = licenseData.posts[listIndex][indexPath.row]["type"] as? String
+        cell.lisenceSchool.text = licenseData.posts[listIndex][indexPath.row]["school_name"] as? String
         cell.lisenceImage.image = UIImage(named: licenseData.posts[listIndex][indexPath.row]["image"]! as! String)
         cell.lisenceLikeBtn.tag = indexPath.row
         cell.lisenceLikeBtn.addTarget(self, action: #selector(likePressed),for: .touchUpInside)
