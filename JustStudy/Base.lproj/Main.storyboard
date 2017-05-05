@@ -1696,17 +1696,11 @@
                                                         <constraint firstAttribute="width" constant="20" id="5VR-uk-HLg"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LisenceKind" translatesAutoresizingMaskIntoConstraints="NO" id="r46-h3-Ptq">
-                                                    <rect key="frame" x="111" y="275" width="20" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="8Tk-UY-NqU"/>
-                                                        <constraint firstAttribute="width" constant="20" id="phr-dt-TEi"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="課程名稱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHW-sp-6Rl">
-                                                    <rect key="frame" x="36" y="226" width="62" height="18"/>
+                                                    <rect key="frame" x="36" y="226" width="150" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="27I-zd-Zzy"/>
+                                                        <constraint firstAttribute="width" constant="150" id="Mox-JT-uLo"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
@@ -1722,22 +1716,12 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="國家" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHZ-dK-toU">
-                                                    <rect key="frame" x="36" y="276" width="55" height="18"/>
+                                                    <rect key="frame" x="36" y="276" width="320" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="FmW-TX-WR6"/>
-                                                        <constraint firstAttribute="width" constant="55" id="gzg-Zg-fZg"/>
+                                                        <constraint firstAttribute="width" constant="320" id="gzg-Zg-fZg"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="類別" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJ9-xA-nOU">
-                                                    <rect key="frame" x="139" y="276" width="45" height="18"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="18" id="51I-vx-hTj"/>
-                                                        <constraint firstAttribute="width" constant="45" id="pfn-F7-av5"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1748,7 +1732,7 @@
                                                         <constraint firstAttribute="height" constant="8" id="Pmf-UP-Gde"/>
                                                     </constraints>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RED-ul-ahP">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RED-ul-ahP">
                                                     <rect key="frame" x="0.0" y="8" width="375" height="210"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="210" id="vmN-IE-A9Z"/>
@@ -1779,31 +1763,48 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LisenceKind" translatesAutoresizingMaskIntoConstraints="NO" id="r46-h3-Ptq">
+                                                    <rect key="frame" x="194" y="226" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="WyG-T4-wt5"/>
+                                                        <constraint firstAttribute="height" constant="20" id="e2i-Gf-QJT"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="類別" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJ9-xA-nOU">
+                                                    <rect key="frame" x="219" y="227" width="146" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="fPL-hT-471"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="yJ9-xA-nOU" firstAttribute="centerY" secondItem="r46-h3-Ptq" secondAttribute="centerY" id="0pP-dG-2iy"/>
                                                 <constraint firstItem="HdL-H8-j5I" firstAttribute="leading" secondItem="aRz-6Q-aNR" secondAttribute="leading" constant="8" id="4JL-jG-ker"/>
                                                 <constraint firstItem="yHW-sp-6Rl" firstAttribute="leading" secondItem="2Wl-qh-IUh" secondAttribute="trailing" constant="8" id="4lB-XH-gev"/>
                                                 <constraint firstItem="yHW-sp-6Rl" firstAttribute="top" secondItem="RED-ul-ahP" secondAttribute="bottom" constant="8" symbolic="YES" id="B8e-Lp-Atm"/>
                                                 <constraint firstItem="vHZ-dK-toU" firstAttribute="leading" secondItem="HdL-H8-j5I" secondAttribute="trailing" constant="8" id="CB0-g3-BmI"/>
                                                 <constraint firstAttribute="trailing" secondItem="RED-ul-ahP" secondAttribute="trailing" id="Cwl-tL-aE4"/>
-                                                <constraint firstItem="r46-h3-Ptq" firstAttribute="centerY" secondItem="vHZ-dK-toU" secondAttribute="centerY" id="JbV-cP-Z9a"/>
                                                 <constraint firstItem="LnM-cC-ldt" firstAttribute="leading" secondItem="7eS-Jo-Szy" secondAttribute="trailing" constant="8" id="Kmt-qw-YTQ"/>
+                                                <constraint firstItem="yJ9-xA-nOU" firstAttribute="leading" secondItem="r46-h3-Ptq" secondAttribute="trailing" constant="5" id="LAw-8D-e8S"/>
                                                 <constraint firstItem="LnM-cC-ldt" firstAttribute="centerY" secondItem="7eS-Jo-Szy" secondAttribute="centerY" id="MCa-Na-tsw"/>
-                                                <constraint firstItem="yJ9-xA-nOU" firstAttribute="leading" secondItem="r46-h3-Ptq" secondAttribute="trailing" constant="8" id="MEG-Bp-uw2"/>
+                                                <constraint firstItem="yJ9-xA-nOU" firstAttribute="centerY" secondItem="r46-h3-Ptq" secondAttribute="centerY" id="NHA-3B-SFd"/>
                                                 <constraint firstItem="N43-VA-lwd" firstAttribute="top" secondItem="aRz-6Q-aNR" secondAttribute="top" id="Nx1-tt-CcK"/>
                                                 <constraint firstItem="yHW-sp-6Rl" firstAttribute="centerY" secondItem="2Wl-qh-IUh" secondAttribute="centerY" id="TGY-kP-E7t"/>
                                                 <constraint firstItem="RED-ul-ahP" firstAttribute="leading" secondItem="aRz-6Q-aNR" secondAttribute="leading" id="Y1E-RP-S1Y"/>
                                                 <constraint firstItem="N43-VA-lwd" firstAttribute="leading" secondItem="aRz-6Q-aNR" secondAttribute="leading" id="Y4a-QG-u31"/>
                                                 <constraint firstItem="RED-ul-ahP" firstAttribute="top" secondItem="N43-VA-lwd" secondAttribute="bottom" id="YBB-Ef-Ee4"/>
                                                 <constraint firstItem="HdL-H8-j5I" firstAttribute="top" secondItem="7eS-Jo-Szy" secondAttribute="bottom" constant="5" id="c0y-iD-Scm"/>
+                                                <constraint firstItem="r46-h3-Ptq" firstAttribute="leading" secondItem="yHW-sp-6Rl" secondAttribute="trailing" constant="8" id="ctQ-Gr-61J"/>
                                                 <constraint firstAttribute="trailing" secondItem="N43-VA-lwd" secondAttribute="trailing" id="gMe-JN-LZr"/>
-                                                <constraint firstItem="r46-h3-Ptq" firstAttribute="leading" secondItem="vHZ-dK-toU" secondAttribute="trailing" constant="20" id="gbc-sz-FEH"/>
+                                                <constraint firstItem="r46-h3-Ptq" firstAttribute="top" secondItem="RED-ul-ahP" secondAttribute="bottom" constant="8" id="gi3-YP-ZFP"/>
                                                 <constraint firstAttribute="trailing" secondItem="LnM-cC-ldt" secondAttribute="trailing" constant="8" id="jAo-8b-KMR"/>
                                                 <constraint firstItem="nBl-JW-Kad" firstAttribute="top" secondItem="aRz-6Q-aNR" secondAttribute="top" constant="10" id="k0O-s1-3Fd"/>
                                                 <constraint firstItem="7eS-Jo-Szy" firstAttribute="leading" secondItem="aRz-6Q-aNR" secondAttribute="leading" constant="8" id="kQQ-GT-ufX"/>
                                                 <constraint firstAttribute="trailing" secondItem="nBl-JW-Kad" secondAttribute="trailing" constant="10" id="lSe-qe-XLJ"/>
                                                 <constraint firstItem="vHZ-dK-toU" firstAttribute="centerY" secondItem="HdL-H8-j5I" secondAttribute="centerY" id="ouQ-So-zDp"/>
+                                                <constraint firstAttribute="trailing" secondItem="yJ9-xA-nOU" secondAttribute="trailing" constant="10" id="pLM-tn-V0d"/>
                                                 <constraint firstItem="7eS-Jo-Szy" firstAttribute="top" secondItem="2Wl-qh-IUh" secondAttribute="bottom" constant="5" id="rDz-ll-Oyd"/>
                                                 <constraint firstItem="2Wl-qh-IUh" firstAttribute="leading" secondItem="aRz-6Q-aNR" secondAttribute="leading" constant="8" id="t6y-AU-pRV"/>
                                             </constraints>
@@ -1910,7 +1911,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ncM-Rf-7WV">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ncM-Rf-7WV">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="230" id="jeo-XA-yER"/>
@@ -2498,7 +2499,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NPk-T2-xjU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首頁" image="Menuhome" id="G6X-8E-ZrF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="YjH-VH-u8N">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YjH-VH-u8N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2664,7 +2665,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mZr-mQ-cyr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="我的活動" image="HOT" id="0Yc-ST-LPo"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tNc-tg-W5U">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tNc-tg-W5U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2683,7 +2684,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0oP-D3-mza" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="線上客服" image="chat" id="uOI-eI-gc0"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="K1V-71-MTg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K1V-71-MTg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3145,7 +3146,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="d8z-oW-rd0" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rZD-bh-LU4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rZD-bh-LU4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3163,7 +3164,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="id5-uD-QHE" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="kNy-3M-F8W">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kNy-3M-F8W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3181,7 +3182,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yFr-FU-3If" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="aYR-qJ-NGe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aYR-qJ-NGe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

@@ -78,6 +78,7 @@ class FirstMainTbvc: UITableViewController {
     
     func parseJSON(json:Any)
     {
+        SVProgressHUD.show(withStatus: "json")
         activity = []
         if let okJSON = json as? [String:Any]
         {

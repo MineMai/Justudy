@@ -82,7 +82,7 @@ class ThirdMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate
 //            }
 //        }
         
-        let coordinate = CLLocationCoordinate2D(latitude: 35.710294,longitude: 139.810726)
+        let coordinate = CLLocationCoordinate2D(latitude: 37.820157,longitude: -122.478212)
         camera = MKMapCamera(lookingAtCenter: coordinate,
                                   fromDistance: distance,
                                   pitch: pitch,
@@ -94,10 +94,13 @@ class ThirdMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate
 
 }
 
-
-
-
-
+//35.710294, 139.810726    :晴空塔
+//49.283776, -123.113901   :溫哥華
+//10.373932, 123.918832    :菲律賓
+//37.820157, -122.478212   :金門大橋
+//37.795442, -122.402768   :泛美金字塔
+//47.053902, 8.294148      :瑞士
+//43.675969, -79.410746    :多倫多
 
 
 

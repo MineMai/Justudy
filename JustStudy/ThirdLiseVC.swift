@@ -15,7 +15,7 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, 
     
     var listIndex = 0
     
-    var isLikeSelected = Array(repeating: false, count: 3)
+    var isLikeSelected = Array(repeating: false, count: 2)
     
     var myScrollView: UIScrollView!
     var pageControl: UIPageControl!
@@ -54,10 +54,10 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, 
         let cell = tableView.dequeueReusableCell(withIdentifier: "ThirdLiseCell", for: indexPath) as! ThirdLiseCell
         
         cell.lisenceLikeBtn.isSelected = isLikeSelected[indexPath.row]
-        cell.lisenceTopic.text = licenseData.posts[listIndex][indexPath.row]["subject"]
-        cell.lisencePlace.text = licenseData.posts[listIndex][indexPath.row]["address"]
-        cell.lisenceKind.text = licenseData.posts[listIndex][indexPath.row]["type"]
-        cell.lisenceImage.image = UIImage(named: licenseData.posts[listIndex][indexPath.row]["image"]!)
+        cell.lisenceTopic.text = licenseData.posts[listIndex][indexPath.row]["subject"] as? String
+        cell.lisencePlace.text = licenseData.posts[listIndex][indexPath.row]["address"] as? String
+        cell.lisenceKind.text = licenseData.posts[listIndex][indexPath.row]["type"] as? String
+        cell.lisenceImage.image = UIImage(named: licenseData.posts[listIndex][indexPath.row]["image"]! as! String)
         cell.lisenceLikeBtn.tag = indexPath.row
         cell.lisenceLikeBtn.addTarget(self, action: #selector(likePressed),for: .touchUpInside)
             
