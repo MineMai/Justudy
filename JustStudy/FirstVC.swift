@@ -13,6 +13,8 @@ class FirstVC: UIViewController {
     
     @IBOutlet weak var signUpBtn: UIButton!
     
+    lazy var session = { return URLSession(configuration: .default) }()
+    
     var firstVCIndex = 0
 
     override func viewDidLoad() {
@@ -28,6 +30,9 @@ class FirstVC: UIViewController {
         //showSuccessView()
         SVProgressHUD.show(withStatus: "處理中")
         SVProgressHUD.dismiss(withDelay: 1) {
+            
+            self.postData(id: activity[self.firstVCIndex].id!)
+            
             self.showSuccessView()
         }
         
@@ -85,6 +90,37 @@ class FirstVC: UIViewController {
             
         }
     }
+    
+    
+    
+    
+    func postData(id:Int)
+    {
+        let id = id
+        let token = "Wnv3qgNZ6uy41pgXFYZT"
+        if let url = URL(string: "http://api.justudy.tw/v1/activities/\(id)/participate?auth_token=\(token)")
+        {
+            var request = URLRequest(url: url)
+            request.httpMethod = "POST"
+            let task = session.dataTask(with: request, completionHandler: { (data, response, error) in
+                if error != nil
+                {
+                    print(error!.localizedDescription)
+                }
+                
+                let json = try! JSONSerialization.jsonObject(with: data!, options: [])
+                if let userData =  json as? [String:Any]
+                {
+                    if let mes = userData["message"]
+                    {
+                        print("mes = \(mes)")
+                    }
+                }
+            })
+            task.resume()
+        }
+    }
+    
     
     
     

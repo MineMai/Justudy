@@ -27,7 +27,6 @@ class LoginVC: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, UITextF
     
     
     
-    
     //用來存放從FB and Google取來的個資 
     var FBdata:[String:Any]?
     var googledata:[String:Any]?
@@ -141,6 +140,10 @@ class LoginVC: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, UITextF
         //import Firebase後，連結Firebase與Facebook的Auth signin功能--(2)
         let accessToken = FBSDKAccessToken.current() //取得Token
         guard let accessTokenString = accessToken?.tokenString else { return } //解包
+        //-----------------
+        
+        //-----------------
+        
         let credntials = FIRFacebookAuthProvider.credential(withAccessToken: accessTokenString) //取得憑證
         FIRAuth.auth()?.signIn(with: credntials, completion: { (user, error) in
             if error != nil
@@ -184,6 +187,13 @@ class LoginVC: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, UITextF
         guard let idToken = user.authentication.idToken else { return }
         guard let accessToken = user.authentication.accessToken else { return }
         let credentials = FIRGoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
+        
+        //-------------------
+        //print("idToken = \(idToken)")
+        //print("accessToken = \(accessToken)")
+        //postUser(token: accessToken)
+        //-------------------
+        
         FIRAuth.auth()?.signIn(with: credentials, completion: { (user, error) in
             
             if let err = error
@@ -257,6 +267,14 @@ class LoginVC: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, UITextF
         present(alert, animated: true, completion: nil)
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 

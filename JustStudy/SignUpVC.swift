@@ -21,6 +21,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
     
     @IBOutlet weak var signUpBtn: UIButton!
     
+    
     var avatar:UIImage?
     
 

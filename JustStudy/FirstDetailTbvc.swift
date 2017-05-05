@@ -10,6 +10,7 @@ import UIKit
 
 class FirstDetailTbvc: UITableViewController {
     
+    
     var heroCell:firstHeroCell? //因為要把heroCell給scroll用
     var detailIndex = 0
 
@@ -133,6 +134,8 @@ class FirstDetailTbvc: UITableViewController {
             
         }
     }
+    
+    
     
 
     
