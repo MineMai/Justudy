@@ -77,7 +77,7 @@ class ThirdDetailOverlayVC: UIViewController, UITextFieldDelegate, UIPickerViewD
         {
             btnStatusDelege?.changeBtnStatus()
             SVProgressHUD.show(withStatus: "處理中")
-            SVProgressHUD.dismiss(withDelay: 2) {
+            SVProgressHUD.dismiss(withDelay: 1.5) {
                 
                 let schoolName = licenseData.posts[self.overlayKind][self.overlayIndex]["school_name"] as! String
                 let subject = licenseData.posts[self.overlayKind][self.overlayIndex]["subject"] as! String
