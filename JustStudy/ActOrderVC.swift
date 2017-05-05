@@ -61,7 +61,7 @@ class ActOrderVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showQRSegue"{
             let dvc = segue.destination as! ShowQRcodeVC
-            dvc.activityName = testdata.posts[(collectionView.indexPathsForSelectedItems?.first?.row)!]["topic"]!
+            dvc.activityName = bookedAct[(collectionView.indexPathsForSelectedItems?.first?.row)!].subject
         }
     }
 
