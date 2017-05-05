@@ -15,6 +15,9 @@ protocol OrderBtnStatus {
 
 class ThirdDetailOverlayVC: UIViewController, UITextFieldDelegate, UIPickerViewDelegate {
     
+    var overlayKind = 0
+    var overlayIndex = 0
+    
     @IBOutlet weak var schoolNameLabel: UILabel!
     
     @IBOutlet weak var courseLabel: UILabel!
@@ -63,8 +66,8 @@ class ThirdDetailOverlayVC: UIViewController, UITextFieldDelegate, UIPickerViewD
         let tap = UITapGestureRecognizer(target: self, action: #selector(closeKeyboard))
         view.addGestureRecognizer(tap)
         
-        
-        
+        schoolNameLabel.text = licenseData.posts[overlayKind][overlayIndex]["school_name"] as? String
+        courseLabel.text = licenseData.posts[overlayKind][overlayIndex]["subject"] as? String
     }
     
     

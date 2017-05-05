@@ -14,6 +14,9 @@ class ThirdMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate
     
     @IBOutlet weak var mapView: MKMapView!
     
+    var mapViewKind = 0
+    var mapViewIndex = 0
+    
     let distance: CLLocationDistance = 800
     let pitch: CGFloat = 65
     let heading = 0.0
@@ -24,6 +27,8 @@ class ThirdMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(mapViewKind)
+        print(mapViewIndex)
 //        mapView.mapType = .hybridFlyover
 //        let coordinate = CLLocationCoordinate2D(latitude: 40.7484405,
 //                                                longitude: -73.9856644)
@@ -32,29 +37,35 @@ class ThirdMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate
 //                             pitch: pitch,
 //                             heading: heading)
 //        mapView.camera = camera!
-        
+//        
 //        if let locat = location
 //        {
 //            print(locat)
 //            findLocation(address: locat)
 //        }
         
+//        let xx1 = licenseData.posts[mapViewKind][mapViewIndex]["lat"] as! Double
+//        let xx2 = licenseData.posts[mapViewKind][mapViewIndex]["log"] as! Double
+//        print(xx1)
+//        print(xx2)
+        
+        findLocation()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
-        if let locat = location
-        {
-            print(locat)
-            findLocation(address: locat)
-        }
+//        if let locat = location
+//        {
+//            print(locat)
+//            findLocation(address: locat)
+//        }
     }
     
     
     //MARK: 找出目的地
-    func findLocation(address:String)
+    func findLocation()
     {
-        mapView.mapType = .hybridFlyover
 //        let geoCoder = CLGeocoder() //地址轉座標
 //        geoCoder.geocodeAddressString(address) { (placemarks, error) in
 //            
@@ -81,8 +92,9 @@ class ThirdMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate
 //                }
 //            }
 //        }
-        
-        let coordinate = CLLocationCoordinate2D(latitude: 37.820157,longitude: -122.478212)
+        //-------------------------
+        mapView.mapType = .hybridFlyover
+        let coordinate = CLLocationCoordinate2D(latitude: licenseData.posts[mapViewKind][mapViewIndex]["lat"] as! Double,longitude: licenseData.posts[mapViewKind][mapViewIndex]["log"] as! Double)
         camera = MKMapCamera(lookingAtCenter: coordinate,
                                   fromDistance: distance,
                                   pitch: pitch,

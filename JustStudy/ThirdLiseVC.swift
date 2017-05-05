@@ -85,9 +85,19 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         performSegue(withIdentifier: "ThirdDetailSegue", sender: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "ThirdDetailSegue"
+        {
+            let vc = segue.destination as! ThirdDetailVC
+            vc.detailVCKind = listIndex
+            vc.detailVCIndex = (tableView.indexPathForSelectedRow?.row)!
+        }
+    }
     
     
     

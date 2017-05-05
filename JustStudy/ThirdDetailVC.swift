@@ -13,13 +13,17 @@ class ThirdDetailVC: UIViewController, OrderBtnStatus {
     
     @IBOutlet weak var orderSchoolBtn: UIButton!
     
+    var detailVCKind = 0
+    var detailVCIndex = 0
+    
     //給彈跳視窗用的
     let transitionDelegate = TransitionDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //print(detailVCKind)
+        //print(detailVCIndex)
     }
 
     
@@ -30,6 +34,8 @@ class ThirdDetailVC: UIViewController, OrderBtnStatus {
         overlayVC.btnStatusDelege = self
         overlayVC.transitioningDelegate = transitionDelegate
         overlayVC.modalPresentationStyle = .custom
+        overlayVC.overlayKind = detailVCKind
+        overlayVC.overlayIndex = detailVCIndex
         self.present(overlayVC, animated: true, completion: nil)
         
     }
@@ -41,6 +47,18 @@ class ThirdDetailVC: UIViewController, OrderBtnStatus {
         orderSchoolBtn.backgroundColor = UIColor.darkGray
         orderSchoolBtn.isEnabled = false
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ThirdTableViewSegue"
+        {
+            let vc = segue.destination as! ThirdDetailTbvc
+            vc.detailTbvcKind = detailVCKind
+            vc.detailTbvcIndex = detailVCIndex
+            
+        }
+    }
+    
     
     
 
