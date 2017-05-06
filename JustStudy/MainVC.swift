@@ -34,6 +34,12 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         //移除返回鈕的文字
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
+        //tabbar color setting
+        tabBarController?.tabBar.barTintColor = UIColor(red:0.09, green:0.16, blue:0.49, alpha:1.0)
+        tabBarController?.tabBar.tintColor = UIColor(red:0.09, green:0.16, blue:0.49, alpha:1.0)
+        tabBarController?.tabBar.unselectedItemTintColor = UIColor.white
+
+        
         
         menuCollection.delegate = self
         menuCollection.dataSource = self

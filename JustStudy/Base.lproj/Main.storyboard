@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d8z-oW-rd0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d8z-oW-rd0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -2572,7 +2572,7 @@
         <!--MemberVC-->
         <scene sceneID="fzt-NW-RLp">
             <objects>
-                <viewController id="glc-yn-TdE" customClass="MemberVC" customModule="JustStudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="glc-yn-TdE" customClass="MemberVC" customModule="JustStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FzM-sn-wSh"/>
                         <viewControllerLayoutGuide type="bottom" id="tRC-ql-zz7"/>
@@ -2623,7 +2623,7 @@
         <!--ManagerVC-->
         <scene sceneID="wGQ-91-SMf">
             <objects>
-                <viewController id="Td1-NA-hjG" customClass="ManagerVC" customModule="JustStudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="Td1-NA-hjG" customClass="ManagerVC" customModule="JustStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hge-x4-WEd"/>
                         <viewControllerLayoutGuide type="bottom" id="nud-T5-4wS"/>
@@ -2644,7 +2644,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xkd-aK-5GD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="yW8-rl-qir">
+                    <tabBar key="tabBar" contentMode="scaleToFill" selectionIndicatorImage="tabBlank" id="yW8-rl-qir">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2748,7 +2748,7 @@
                                 <segment title="我的收藏"/>
                                 <segment title="我的活動"/>
                             </segments>
-                            <color key="tintColor" red="0.96862745098039216" green="0.83137254901960778" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.98237353563308716" green="0.82003986835479736" blue="0.19923976063728333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="segment:" destination="4zQ-wB-4ta" eventType="valueChanged" id="nbq-uv-PXW"/>
                             </connections>
@@ -3230,6 +3230,7 @@
         <image name="place" width="40" height="40"/>
         <image name="profile_picture" width="300" height="300"/>
         <image name="settings1" width="128" height="128"/>
+        <image name="tabBlank" width="125" height="50"/>
         <image name="time" width="40" height="40"/>
         <image name="topic" width="40" height="40"/>
         <image name="user1" width="108" height="128"/>
