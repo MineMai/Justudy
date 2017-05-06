@@ -24,7 +24,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     
     @IBOutlet weak var menuCollection: UICollectionView!
     
-    let menuIconNames = ["Menuhome", "Menusubscriptions", "Menuaccount"]
+    let menuIconNames = ["test2"/*"Menuhome"*/, "test3"/*"Menusubscriptions"*/, "Menuaccount"]
     //menuBar需要的Constraint
     var horizontalBarLeftAnchorConstraint: NSLayoutConstraint?
     
