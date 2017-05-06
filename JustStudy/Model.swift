@@ -65,6 +65,7 @@ class IntroPage{
 var activity = [Activity]()
 var likedActivity = [Activity]() //給收藏用的
 var bookedAct = [BookedAct]() //給預約用的
+var applyedAct = [BookedAct]() //給報名用的
 
 class Activity
 {

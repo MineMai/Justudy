@@ -32,25 +32,35 @@ class ActOrderVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
         return bookedAct.count
+        
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActOrderCell", for: indexPath) as! ActOrderCell
         
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActOrderCell", for: indexPath) as! ActOrderCell
+            
         //cell.imageView.image = nil
         cell.actOrderTitle.text = bookedAct[indexPath.row].subject
         cell.buttonLabel.text = bookedAct[indexPath.row].date
         cell.actOrderSubtitle.text = bookedAct[indexPath.row].schoolName
-        cell.imageView.image = UIImage(named: bookedAct[indexPath.row].image!)
         
-        //let cacheURL = URL(string: hostMsg[indexPath.row].imageURL)
-        
-        //cell.imageView.sd_setImage(with: cacheURL, placeholderImage: UIImage(named: "picture_placeholder.png"))
-        
+        if bookedAct[indexPath.row].image!.characters.count > 8
+        {
+            let cacheURL = URL(string: bookedAct[indexPath.row].image!)
+            
+            cell.imageView.sd_setImage(with: cacheURL, placeholderImage: UIImage(named: "picture_placeholder.png"))
+        }
+        else
+        {
+            cell.imageView.image = UIImage(named: bookedAct[indexPath.row].image!)
+        }
+            
         return cell
+        
         
     }
     

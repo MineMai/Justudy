@@ -77,7 +77,7 @@ class ThirdDetailOverlayVC: UIViewController, UITextFieldDelegate, UIPickerViewD
         {
             btnStatusDelege?.changeBtnStatus()
             SVProgressHUD.show(withStatus: "處理中")
-            SVProgressHUD.dismiss(withDelay: 1.5) {
+            SVProgressHUD.dismiss(withDelay: 1.3) {
                 
                 let schoolName = licenseData.posts[self.overlayKind][self.overlayIndex]["school_name"] as! String
                 let subject = licenseData.posts[self.overlayKind][self.overlayIndex]["subject"] as! String
@@ -88,7 +88,7 @@ class ThirdDetailOverlayVC: UIViewController, UITextFieldDelegate, UIPickerViewD
                 bookedAct.append(book)
                 
                 SVProgressHUD.showSuccess(withStatus: "預約成功")
-                SVProgressHUD.dismiss(withDelay: 1)
+                SVProgressHUD.dismiss(withDelay: 0.6)
             }
             
             //消失彈跳視窗

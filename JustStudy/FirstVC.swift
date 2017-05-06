@@ -33,6 +33,10 @@ class FirstVC: UIViewController {
             
             self.postData(id: activity[self.firstVCIndex].id!)
             
+            let apply = BookedAct(schoolName: activity[self.firstVCIndex].location!, subject: activity[self.firstVCIndex].subject!, date: activity[self.firstVCIndex].date!, image: activity[self.firstVCIndex].image1!)
+            
+            bookedAct.append(apply)
+            
             self.showSuccessView()
         }
         
