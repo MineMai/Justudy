@@ -2270,7 +2270,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yS1-ai-ctt">
-                                <rect key="frame" x="187" y="112" width="0.0" height="0.0"/>
+                                <rect key="frame" x="188" y="102" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="入場票券 QRCode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSF-Th-t7a">
+                                <rect key="frame" x="106" y="113" width="163" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2283,9 +2289,11 @@
                             <constraint firstItem="cuI-jm-jgC" firstAttribute="height" secondItem="AHE-w4-3Sd" secondAttribute="height" multiplier="240:230" id="9jY-AE-Rof"/>
                             <constraint firstItem="cuI-jm-jgC" firstAttribute="centerY" secondItem="gLk-rh-QF2" secondAttribute="centerY" id="HK5-Ux-Mqx"/>
                             <constraint firstItem="yS1-ai-ctt" firstAttribute="centerX" secondItem="gLk-rh-QF2" secondAttribute="centerX" id="SZA-Ty-fLq"/>
-                            <constraint firstItem="AHE-w4-3Sd" firstAttribute="top" secondItem="yS1-ai-ctt" secondAttribute="bottom" constant="50" id="Z8a-U8-Yjl"/>
+                            <constraint firstItem="AHE-w4-3Sd" firstAttribute="top" secondItem="yS1-ai-ctt" secondAttribute="bottom" constant="60" id="Z8a-U8-Yjl"/>
                             <constraint firstItem="cuI-jm-jgC" firstAttribute="centerX" secondItem="gLk-rh-QF2" secondAttribute="centerX" id="aEq-AP-OmG"/>
                             <constraint firstItem="AHE-w4-3Sd" firstAttribute="centerY" secondItem="gLk-rh-QF2" secondAttribute="centerY" id="arj-gH-hWR"/>
+                            <constraint firstItem="nSF-Th-t7a" firstAttribute="centerX" secondItem="gLk-rh-QF2" secondAttribute="centerX" id="bxu-kE-QKR"/>
+                            <constraint firstItem="cuI-jm-jgC" firstAttribute="top" secondItem="nSF-Th-t7a" secondAttribute="bottom" constant="20" id="jCN-s6-bCl"/>
                         </constraints>
                     </view>
                     <connections>
@@ -3236,7 +3244,7 @@
         <image name="user1" width="108" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="h45-U0-EAf"/>
         <segue reference="ruu-Z2-lP2"/>
+        <segue reference="h45-U0-EAf"/>
     </inferredMetricsTieBreakers>
 </document>
