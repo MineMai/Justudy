@@ -21,6 +21,9 @@ class ThirdDetailVC: UIViewController, OrderBtnStatus {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //移除返回鈕的文字
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
 
         //print(detailVCKind)
         //print(detailVCIndex)

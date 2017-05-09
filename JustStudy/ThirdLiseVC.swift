@@ -25,6 +25,9 @@ class ThirdLiseVC: UIViewController, UIScrollViewDelegate, UITableViewDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //移除返回鈕的文字
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
         tableView.delegate = self
         tableView.dataSource = self
         
